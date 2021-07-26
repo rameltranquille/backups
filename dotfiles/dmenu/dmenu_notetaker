@@ -1,0 +1,28 @@
+#!/bin/python3
+import time
+import os, subprocess
+
+date = time.strftime("%m-%d-%Y")
+date_time = date + " " + time.strftime("%H:%M")
+title = "note-" + date + ".md"
+path = "/home/ramel/notes/"
+os.system("touch " + path + title)
+
+
+ls = subprocess.check_output("ls " + path, shell=True).decode('utf-8')
+entry = subprocess.check_output("ls -r /home/ramel/notes/ | egrep '.md' | dmenu -p 'note>>' -l 10 -g 1", 
+        shell=True).decode('utf-8')
+
+pdf_entry = title.rstrip("md") + "pdf"
+view_pdf = "pandoc {0}{1} -o {0}{2} & xdg-open {0}{2}".format(path, title,
+        pdf_entry)
+
+if entry not in ls:
+    with open(path + title, 'a') as file:
+        file.write("# "+date_time+"\n")
+        file.write(entry)
+else:
+    os.system(view_pdf)
+    
+
+

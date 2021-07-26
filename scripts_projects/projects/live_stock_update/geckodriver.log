@@ -1,0 +1,6 @@
+1619997347034	Marionette	INFO	Marionette enabled
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new Error("", "(unknown module)"))
+1619997347673	Marionette	INFO	Listening on port 44747
+1619997347768	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource://gre/actors/AutoCompleteChild.jsm, line 125: Error: Invalid autocomplete selectedIndex
+1619997533318	Marionette	INFO	Stopped listening on port 44747
