@@ -85,9 +85,9 @@ au Filetype html set
 	\ softtabstop=4
 	\ shiftwidth=2
 
-au Filetype css set 
-	\ tabstop=2 \ softtabstop=2
-	\ shiftwidth=2 
+" au Filetype css set 
+" 	\ tabstop=2 \ softtabstop=2
+	" \ shiftwidth=2 
 
 au Filetype cpp set 
 	\ textwidth=79
@@ -124,11 +124,12 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Mappings
 " =================================
 
+nnoremap <C-j> <esc>:m .+1<CR>==
+nnoremap <C-k> <esc>:m .-1<CR>==
+nnoremap Y y$
 nnoremap 'i :e ./index.md<CR>
 nnoremap 'q :vimgrep /\*\*Q\*\*/ %<CR>
 nmap ; :
-nnoremap J 5j
-nnoremap K 5k
 imap jj <Esc>
 inoremap <C-v> <ESC>"+pa
 nmap 'p :silent !./scripts/pdf_preview % <CR>

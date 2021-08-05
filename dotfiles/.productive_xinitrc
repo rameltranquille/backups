@@ -14,4 +14,4 @@ if [ -x /usr/bin/gcalcli  ]; then
   done &
 fi
 
-exec qtile -c .config/qtile/productive_config.py
+qtile start -c .config/qtile/productive_config.py

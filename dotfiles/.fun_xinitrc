@@ -1,10 +1,11 @@
 systemctl enable cronie.service &
 systemctl start cronie.service &
 picom -b &
-LC_ALL=en_US.utf8 conky -c .config/conky/conky.conf -o
+LC_ALL=en_US.utf8 conky -c .config/conky/conky.conf -o &
 flameshot &
 dropbox &
 dunst &
+sudo sh -c '\''sysctl -w abi.vsyscall32=0'\ &
 active_win &
 
 if [ -x /usr/bin/gcalcli  ]; then 
@@ -14,5 +15,5 @@ if [ -x /usr/bin/gcalcli  ]; then
   done &
 fi
 
-exec qtile 
+qtile start
 

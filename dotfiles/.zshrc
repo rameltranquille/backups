@@ -107,12 +107,17 @@ source $ZSH/oh-my-zsh.sh
 # Example aliases
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
+# alias fetch="cpufetch --color 255,255,255:251,103,110:255,255,255:251,103,110"
+alias cav="alacritty -o font.offset.y=-1 &"
+alias fetch="cpufetch --color 64,64,181:251,103,110:64,64,181:251,103,110"
+alias cpfun="cp -f /home/ramel/.fun_xinitrc /home/ramel/.xinitrc"
+alias cppro="cp -f /home/ramel/.productive_xinitrc /home/ramel/.xinitrc"
 alias index="code ./index.md"
 alias uas="u a +shallow"
 alias uau="u a +urgent"
 alias uai="u a +important"
 alias lutris_perms="sudo sh -c 'sysctl -w abi.vsyscall32=0'"
-alias p='pomodoro 90 15 --notif=True --timer=True'
+alias p='pomodoro 90 20 --notif=True --timer=True'
 alias ls='ls --color=auto'
 alias la='ls -A'
 alias l='ls -CF'
@@ -140,6 +145,10 @@ cd_with_fzf () {
 	cd $HOME && cd "$(fd -t d | fzf --bind="space:toggle-preview" --preview-window=:hidden)"
 	zle reset-prompt
 	}
+open_with_fzf () {
+	fd -t f -H -I | fzf -m --preview="xdg-mime query default {}" | xargs -ro -d "\n" xdg-open 2>&-
+	zle reset-prompt
+}
 zle -N cd_with_fzf{,} 
 bindkey ^f cd_with_fzf 
 zle -N open_with_fzf{,}

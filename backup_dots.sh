@@ -37,7 +37,7 @@ $HOME/.config/newsboat $HOME/.config/st $HOME/.config/conky/conky.conf
 $HOME/.config/dunst/dunstrc $HOME/.productive_xinitrc $HOME/.fun_xinitrc"
 
 script_projects="$HOME/projects $HOME/scripts"
-imp_docs="$HOME/docs/res.tex"
+# imp_docs="$HOME/docs/res.tex"
 
 init
 copy_dots
