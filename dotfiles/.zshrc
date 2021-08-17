@@ -108,6 +108,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias fetch="cpufetch --color 255,255,255:251,103,110:255,255,255:251,103,110"
+alias calc="gnome-calculator &"
 alias cav="alacritty -o font.offset.y=-1 &"
 alias fetch="cpufetch --color 64,64,181:251,103,110:64,64,181:251,103,110"
 alias cpfun="cp -f /home/ramel/.fun_xinitrc /home/ramel/.xinitrc"

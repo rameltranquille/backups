@@ -3,7 +3,7 @@ Backup and Dotfiles
 
 Backup files using [rsync](https://wiki.archlinux.org/title/rsync).
 
-## highlights
+## Highlights
 - [vimrc](./dotfiles/.vimrc)
 - [zshrc](./dotfiles/.zshrc)
 - [productive_qtile_config](./dotfiles/qtile/productive_config.py)
@@ -13,17 +13,11 @@ Backup files using [rsync](https://wiki.archlinux.org/title/rsync).
 
 ---
 
-## Future Todo
+## ToDo
 
-- [ ] remove the productive and fun xinits
 - [ ] remove projects folder and add dmenu scripts to scripts not projects
 - [ ] add screenshots for configs
 
-## DUE
-- [x] update readme w/ links to relevant parts of the repo
-- [x] update important docs
-- [x] link to rsync 
-- [x] explanation of dmenu scripts and other scripts
 
 
 
