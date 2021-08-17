@@ -1,0 +1,20 @@
+#!/usr/bin/bash
+# FileType: MD
+# ------------
+# Title: -----
+# Date: -----
+# Professor: ----
+
+read -p "Lecture Title >> " title
+read -p "Class  >> " class
+read -p "Prof Name  >> " prof
+
+fileCode="$(date +"%d%m%Y-%H:%M")"
+filetitle="$(echo $title | sed 's/ //g')"
+filename=$fileCode$filetitle
+touch "$filename.md"
+
+echo "# Title: $class - $title" >> $filename.md
+echo "> Date: $(date)">> $filename.md
+echo "> Professor: $prof" >> $ $filename.md
+code $filename.md

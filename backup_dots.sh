@@ -14,8 +14,9 @@ copy_dots () {
 
 copy_projects_scripts () {
 	for dir in $scriptNprojects; do
-		rsync -lptgoP $dir $HOME/.backup/scripts_projects/
+		rsync -avz $dir $HOME/.backup/scripts_projects/
 	done
+	ls $HOME/.backup/scripts_projects
 }
 
 copy_imp_docs () {
@@ -36,7 +37,8 @@ $HOME/.config/dmenu $HOME/.config/alacritty $HOME/.config/qtile
 $HOME/.config/newsboat $HOME/.config/st $HOME/.config/conky/conky.conf
 $HOME/.config/dunst/dunstrc $HOME/.productive_xinitrc $HOME/.fun_xinitrc"
 
-scriptNprojects="$HOME/projects $HOME/scripts"
+scriptNprojects="$HOME/scripts/ $HOME/projects/" 
+projects="$HOME/scripts/"
 # imp_docs="$HOME/docs/res.tex"
 
 init

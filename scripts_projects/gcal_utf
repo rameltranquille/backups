@@ -1,0 +1,12 @@
+#!/usr/bin/python
+
+import subprocess
+import re
+
+x = subprocess.check_output("gcalcli agenda --override-color --nocolor", shell=True)
+
+def strip_ansi_codes(text):
+    ansi_escape3 = re.compile(r'(\x9B|\x1B\[)[0-?]*[ -/ ]*[@-~]', flags=re.IGNORECASE)
+    text = ansi_escape3.sub('', text)
+    return text
+print(strip_ansi_codes(x.decode('utf-8')))
