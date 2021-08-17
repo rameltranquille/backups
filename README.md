@@ -20,9 +20,9 @@ Backup files using [rsync](https://wiki.archlinux.org/title/rsync).
 ## ToDo
 
 - [x] remove projects folder and add dmenu scripts to scripts not projects
-- [ ] update git auth token
+- [x] update git auth token
 - [ ] fix screenshots for configs in readme
-
+- [ ] update qtile config keys
 
 
 
