@@ -1,5 +1,5 @@
 #! /bin/bash
-MIN_BROWSER="surf"
+MIN_BROWSER="firefox"
 # set prefered launcher
 PREFERED_LAUNCHER=dmenu
 # set path where urls will be stored
@@ -53,7 +53,7 @@ bmks_del() {
 bmks_display() {
 	bmks_check
 	case $PREFERED_LAUNCHER in
-		dmenu) cat $URL_FILE_PATH/$URL_FILE_NAME | sort | dmenu -l $(cat $URL_FILE_PATH/$URL_FILE_NAME | wc -l) | awk '{print $(NF)}' | xargs -I '{}' $MIN_BROWSER {} ;;
+		dmenu) cat $URL_FILE_PATH/$URL_FILE_NAME | sort | dmenu -g 1 -l $(cat $URL_FILE_PATH/$URL_FILE_NAME | wc -l) | awk '{print $(NF)}' | xargs -I '{}' $MIN_BROWSER {} ;;
 		fzf) cat $URL_FILE_PATH/$URL_FILE_NAME | sort | fzf | awk '{print $(NF)}' | xargs -I '{}' $MIN_BROWSER {} ;;
 	esac
 }

@@ -117,7 +117,7 @@ alias index="code ./index.md"
 alias uas="u a +shallow"
 alias uau="u a +urgent"
 alias uai="u a +important"
-alias lutris_perms="sudo sh -c 'sysctl -w abi.vsyscall32=0'"
+# alias lutris_perms="sudo sh -c 'sysctl -w abi.vsyscall32=0'"
 alias p='pomodoro 90 20 --notif=True --timer=True'
 alias ls='ls --color=auto'
 alias la='ls -A'
@@ -141,6 +141,7 @@ alias tod="ultralist l group:project due:tod"
 alias uf="script -c \"ultralist l\"  < /dev/null | fzf --ansi"
 alias ga="gcalcli agenda today tomorrow"
 alias gcal="gcalcli calw && gcalcli agenda" 
+alias vert_screen="xrandr --output DVI-D-0 --primary --pos 0x286 --output HDMI-0 --rotate right"
 
 cd_with_fzf () {
 	cd $HOME && cd "$(fd -t d | fzf --bind="space:toggle-preview" --preview-window=:hidden)"
@@ -155,7 +156,7 @@ bindkey ^f cd_with_fzf
 zle -N open_with_fzf{,}
 bindkey ^o open_with_fzf
 
-ultralist l due:agenda group:project
+ultralist l duebefore:nextweek group:project
 
 
 

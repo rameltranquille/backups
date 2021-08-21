@@ -17,6 +17,6 @@ if [ $1 == "low" ]; then
 	xrandr --output HDMI-0 --brightness .50
 fi
 	
-dunstify -a "changeBrightness" -u low "Brightness: $1" &
+dunstify -a "changeBrightness" -u low "Brightness: $1" -t 700 &
 canberra-gtk-play -i audio-volume-change 
 

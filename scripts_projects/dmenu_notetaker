@@ -9,8 +9,8 @@ path = "/home/ramel/notes/"
 os.system("touch " + path + title)
 
 ls = subprocess.check_output("ls " + path, shell=True).decode('utf-8')
-entry = subprocess.check_output("ls /home/ramel/notes/ | dmenu -p 'Prompt' -l 1 -g 1", 
-        shell=True).decode('utf-8')
+cmd = "ls /home/ramel/notes/ | dmenu -shf '#3db39d' -shb '#db9ce3' -sb '#db9ce3' -p 'Prompt' -g 3"
+entry = subprocess.check_output(cmd, shell=True).decode('utf-8')
 
 if entry not in ls:
     with open(path + title, 'a') as file:

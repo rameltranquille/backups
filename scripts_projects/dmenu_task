@@ -17,7 +17,7 @@ for z in js:
         # ind_list = [i['id'] for i in js]
 
 x = '\n'.join(task_list)
-cmd = "echo \'{0}\'| dmenu -g 1 -l 10 -sb '#FB676E' -i -p 'task:'".format(x)
+cmd = "echo \'{0}\'| dmenu -g 1 -l 10 -sf '#12100E' -sb '#FB676E' -i -p 'task:'".format(x)
 
 task = subprocess.check_output(cmd, shell=True)
 task = task.decode('utf8').rstrip('\n')
