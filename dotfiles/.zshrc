@@ -142,6 +142,7 @@ alias uf="script -c \"ultralist l\"  < /dev/null | fzf --ansi"
 alias ga="gcalcli agenda today tomorrow"
 alias gcal="gcalcli calw && gcalcli agenda" 
 alias vert_screen="xrandr --output DVI-D-0 --primary --pos 0x286 --output HDMI-0 --rotate right"
+alias vi="nvim +PackerSync"
 
 cd_with_fzf () {
 	cd $HOME && cd "$(fd -t d | fzf --bind="space:toggle-preview" --preview-window=:hidden)"

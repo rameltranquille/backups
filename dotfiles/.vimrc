@@ -1,4 +1,4 @@
-let mapleader=","
+let mapleader=" "
 
 " =================================
 " Plugins
@@ -124,8 +124,8 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Mappings
 " =================================
 
-nnoremap <C-j> <esc>:m .+1<CR>==
-nnoremap <C-k> <esc>:m .-1<CR>==
+" nnoremap <C-j> <esc>:m .+1<CR>==
+" nnoremap <C-k> <esc>:m .-1<CR>==
 nnoremap Y y$
 nnoremap 'i :e ./index.md<CR>
 nnoremap 'q :vimgrep /\*\*Q\*\*/ %<CR>
@@ -143,4 +143,4 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 hi Normal guibg=NONE ctermbg=NONE
-hi Comment ctermfg=32
+" hi Comment ctermfg=32

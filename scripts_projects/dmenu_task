@@ -10,7 +10,7 @@ with open('/home/ramel/.todos.json') as file:
 task_list = []
 ind_list = []
 for z in js:
-    if z['archived'] == False:
+    if z['completed'] == False:
         task_list.append(z['subject'])
         ind_list.append(z['id'])
         # task_list = [i['subject'] for i in js] 
@@ -25,6 +25,7 @@ task = task.decode('utf8').rstrip('\n')
 try:
     ind = task_list.index(task)
     z = ind_list[ind]
+    os.system("ultralist complete {0}".format(z))
 except:
     try:
         os.system('ultralist add {0}'.format(task))
