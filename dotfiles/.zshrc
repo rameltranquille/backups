@@ -158,7 +158,7 @@ bindkey ^f cd_with_fzf
 zle -N open_with_fzf{,}
 bindkey ^o open_with_fzf
 
-# ultralist l duebefore:nextweek group:project
+ultralist l duebefore:nextweek group:project
 
 
 

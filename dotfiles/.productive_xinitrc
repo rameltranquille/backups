@@ -5,7 +5,7 @@ LC_ALL=en_US.utf8 conky -c .config/conky/conky.conf -o
 flameshot &
 dropbox &
 dunst &
-active_win &
+aw-qt &
 
 if [ -x /usr/bin/gcalcli  ]; then 
   while true; do
