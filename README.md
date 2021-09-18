@@ -17,10 +17,5 @@ Backup files using [rsync](https://wiki.archlinux.org/title/rsync).
 
 ---
 
-## ToDo
-
-- [x] fix screenshots for configs in readme
-- [x] update qtile config keys
-
 
 

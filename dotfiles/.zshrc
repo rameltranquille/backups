@@ -134,6 +134,7 @@ alias lb='xrandr --output DVI-D-0 --brightness .5 && xrandr --output HDMI-0 --br
 alias nb='xrandr --output DVI-D-0 --brightness .75 && xrandr --output HDMI-0 --brightness .75'
 alias dlm='youtube-dl --extract-audio --audio-format mp3'
 alias u='ultralist'
+alias ulp='ultralist l group:project priority:true'
 alias ull='ultralist l group:project'
 alias v='vifm -c vifm-v'
 alias uc="ultralist l due:agenda group:context"
@@ -144,6 +145,7 @@ alias ga="gcalcli agenda today tomorrow"
 alias gcal="gcalcli calw && gcalcli agenda" 
 alias vert_screen="xrandr --output DVI-D-0 --primary --pos 0x286 --output HDMI-0 --rotate right"
 alias vi="nvim +PackerSync"
+alias timer="alarm-clocl-applet"
 
 cd_with_fzf () {
 	cd $HOME && cd "$(fd -t d | fzf --bind="space:toggle-preview" --preview-window=:hidden)"

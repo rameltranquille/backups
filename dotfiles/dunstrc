@@ -176,7 +176,7 @@
     stack_duplicates = true
 
     # Hide the count of stacked notifications with the same content
-    hide_duplicate_count = false
+    hide_duplicate_count = true
 
     # Display indicators for URLs (U) and actions (A).
     show_indicators = yes
@@ -201,7 +201,7 @@
 
     # Should a notification popped up from history be sticky or timeout
     # as if it would normally do.
-    sticky_history = yes
+    sticky_history = no
 
     # Maximum amount of notifications kept in history
     history_length = 20
@@ -329,14 +329,14 @@
     # Otherwise the "#" and following would be interpreted as a comment.
     background = "#0F161E"
     foreground = "#fcdace"
-    timeout = 10
+    timeout = 20
     # Icon for notifications with low urgency, uncomment to enable
     icon = /home/ramel/pics/normal_notif.png
 
 [urgency_normal]
     background = "#0F161E"
     foreground = "#fb676e"
-    timeout = 10
+    timeout = 20
     # Icon for notifications with normal urgency, uncomment to enable
     icon = /home/ramel/pics/normal_notif.png
 
