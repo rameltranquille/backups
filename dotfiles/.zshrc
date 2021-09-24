@@ -3,6 +3,7 @@
 
 # Path to your oh-my-zsh installation.
 export ZSH="/home/ramel/.oh-my-zsh"
+export EDITOR="nvim"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -108,6 +109,8 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 # alias fetch="cpufetch --color 255,255,255:251,103,110:255,255,255:251,103,110"
+alias work="cd ~/Dropbox/fall2021/"
+alias t="todoist"
 alias edit="nvim"
 alias calc="gnome-calculator &"
 alias cav="alacritty -o font.offset.y=-1 &"
@@ -146,22 +149,106 @@ alias gcal="gcalcli calw && gcalcli agenda"
 alias vert_screen="xrandr --output DVI-D-0 --primary --pos 0x286 --output HDMI-0 --rotate right"
 alias vi="nvim +PackerSync"
 alias timer="alarm-clocl-applet"
+alias due="todoist list --filter '(today|overdue|tomorrow)'"
+alias due_school="todoist list --filter '#School'"
+alias due_important="todoist list --filter '#Important'"
+alias due_shallow="todoist list --filter '#Shallow'"
+
+###############################################################
+#------------FZF
+###############################################################
 
 cd_with_fzf () {
 	cd $HOME && cd "$(fd -t d | fzf --bind="space:toggle-preview" --preview-window=:hidden)"
 	zle reset-prompt
 	}
-open_with_fzf () {
-	fd -t f -H -I | fzf -m --preview="xdg-mime query default {}" | xargs -ro -d "\n" xdg-open 2>&-
-	zle reset-prompt
-}
 zle -N cd_with_fzf{,} 
 bindkey ^f cd_with_fzf 
-zle -N open_with_fzf{,}
-bindkey ^o open_with_fzf
 
-ultralist l duebefore:nextweek group:project
+###############################################################
+#------------TODOIST + FZF
+###############################################################
 
+select_items_command="todoist --namespace --project-namespace list | fzf | cut -d ' ' -f 1 | tr '\n' ' '"
 
+function insert-in-buffer () {
+    if [ -n "$1" ]; then
+        local new_left=""
+        if [ -n "$LBUFFER" ]; then
+            new_left="${new_left}${LBUFFER} "
+        fi
+        if [ -n "$2" ]; then
+            new_left="${new_left}${2} "
+        fi
+        new_left="${new_left}$1"
+        BUFFER=${new_left}${RBUFFER}
+        CURSOR=${#new_left}
+    fi
+}
 
+# todoist find item
+function fzf-todoist-item () {
+    local SELECTED_ITEMS="$(eval ${select_items_command})"
+    insert-in-buffer $SELECTED_ITEMS
+}
+zle -N fzf-todoist-item
+bindkey "^xtt" fzf-todoist-item
+
+# todoist find project
+function fzf-todoist-project () {
+    local SELECTED_PROJECT="$(todoist --project-namespace projects | fzf | head -n1 | cut -d ' ' -f 1)"
+    insert-in-buffer "${SELECTED_PROJECT}" "-P"
+}
+zle -N fzf-todoist-project
+bindkey "^xtp" fzf-todoist-project
+
+# todoist select date
+function fzf-todoist-date () {
+    date -v 1d &>/dev/null
+    if [ $? -eq 0 ]; then
+        # BSD date option
+        OPTION="-v+#d"
+    else
+        # GNU date option
+        OPTION="-d # day"
+    fi
+
+    local SELECTED_DATE="$(seq 0 30 | xargs -I# date $OPTION '+%d/%m/%Y %a' | fzf | cut -d ' ' -f 1)"
+    insert-in-buffer "'${SELECTED_DATE}'" "-d"
+}
+zle -N fzf-todoist-date
+bindkey "^xtd" fzf-todoist-date
+
+function todoist-exec-with-select-task () {
+    if [ -n "$2" ]; then
+        BUFFER="todoist $1 $(echo "$2" | tr '\n' ' ')"
+        CURSOR=$#BUFFER
+        zle accept-line
+    fi
+}
+
+# todoist close
+function fzf-todoist-close() {
+    local SELECTED_ITEMS="$(eval ${select_items_command})"
+    todoist-exec-with-select-task close $SELECTED_ITEMS
+}
+zle -N fzf-todoist-close
+bindkey "^xtc" fzf-todoist-close
+
+# todoist delete
+function fzf-todoist-delete() {
+    local SELECTED_ITEMS="$(eval ${select_items_command})"
+    todoist-exec-with-select-task delete $SELECTED_ITEMS
+}
+zle -N fzf-todoist-delete
+bindkey "^xtk" fzf-todoist-delete
+
+# todoist open
+function fzf-todoist-open() {
+    local SELECTED_ITEMS="$(eval ${select_items_command})"
+    todoist-exec-with-select-task "show --browse" $SELECTED_ITEMS
+}
+zle -N fzf-todoist-open
+bindkey "^n" fzf-todoist-open
+todoist l labels --filter '(today|overdue|tomorrow)'
 
