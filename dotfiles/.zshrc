@@ -250,5 +250,7 @@ function fzf-todoist-open() {
 }
 zle -N fzf-todoist-open
 bindkey "^n" fzf-todoist-open
+
+todoist sync
 todoist l labels --filter '(today|overdue|tomorrow)'
 
