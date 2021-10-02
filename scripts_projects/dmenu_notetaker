@@ -2,22 +2,22 @@
 import time
 import os, subprocess
 
+noteDir = "/home/ramel/Dropbox/quickNote/"
 date = time.strftime("%m-%d-%Y")
 date_time = date + time.strftime("%H:%M")
 title = "note-" + date + ".md"
-path = "/home/ramel/notes/"
-os.system("touch " + path + title)
+os.system("touch " + noteDir + title)
 
-ls = subprocess.check_output("ls " + path, shell=True).decode('utf-8')
-cmd = "ls /home/ramel/notes/ | dmenu -shf '#3db39d' -shb '#db9ce3' -sb '#db9ce3' -p 'Prompt' -g 3"
+ls = subprocess.check_output("ls " + noteDir, shell=True).decode('utf-8')
+cmd = "ls " + noteDir + " | dmenu -shf '#3db39d' -shb '#db9ce3' -sb '#db9ce3' -p 'Prompt' -g 3"
 entry = subprocess.check_output(cmd, shell=True).decode('utf-8')
 
 if entry not in ls:
-    with open(path + title, 'a') as file:
+    with open(noteDir + title, 'a') as file:
         file.write("# "+date_time+"\n")
         file.write(entry)
 else:
-    os.system("alacritty -e vim /home/ramel/notes/" + entry)
+    os.system("alacritty -e vim " + noteDir + entry)
     
 
 
