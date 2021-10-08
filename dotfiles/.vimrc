@@ -16,26 +16,26 @@ Plug 'machakann/vim-sandwich'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'dracula/vim',{'as':'dracula'}
+Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
-Plug 'lervag/vimtex'
 Plug 'vim-syntastic/syntastic'
-Plug 'ycm-core/YouCompleteMe'
+Plug 'ackyshake/VimCompletesMe'
 
 call plug#end()
 
 colorscheme dracula
 
 " Airline
-let g:airline_theme='molokai'
+let g:airline_theme='dracula'
 let g:airline#extensions#syntastic#enabled=1
 let g:airline#extensions#fzf#enabled=1
 
 " Syntastic
 " let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+" let g:syntastic_auto_loc_list = 1
+" let g:syntastic_check_on_open = 1
+" let g:syntastic_check_on_wq = 0
 
 " Vim Markdown
 let g:vim_markdown_math = 1
@@ -59,21 +59,9 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
     \ quit | endif
 
 
-" Vimtex
-let g:tex_flavor='latex'
-let g:vimtex_view_method='zathura'
-let g:vimtex_quickfix_mode=0
-set conceallevel=1
-let g:tex_conceal='abdmg'
-
-
 " =================================
 " Programming Language Specific
 " =================================
-
-autocmd Filetype tex nnoremap <buffer> <F12> :update<bar>VimtexCompile<CR>
-autocmd Filetype html nnoremap <buffer> <F12> :update<bar>!firefox %<CR>
-
 au Filetype python set 
 	\ tabstop=4
 	\ softtabstop=4
@@ -84,15 +72,6 @@ au Filetype html set
 	\ tabstop=2
 	\ softtabstop=4
 	\ shiftwidth=2
-
-" au Filetype css set 
-" 	\ tabstop=2 \ softtabstop=2
-	" \ shiftwidth=2 
-
-au Filetype cpp set 
-	\ textwidth=79
-	\ tabstop=4
-	\ shiftwidth=4
 
 
 " =================================
@@ -116,24 +95,17 @@ set splitbelow splitright
 filetype plugin indent on 
 syntax on
 
-
-" Disables automatic commenting on newline
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 
 " =================================
 " Mappings
 " =================================
 
-" nnoremap <C-j> <esc>:m .+1<CR>==
-" nnoremap <C-k> <esc>:m .-1<CR>==
 nnoremap Y y$
 nnoremap 'i :e ./index.md<CR>
 nnoremap 'q :vimgrep /\*\*Q\*\*/ %<CR>
 nmap ; :
 imap jj <Esc>
-inoremap <C-v> <ESC>"+pa
-nmap 'p :silent !./scripts/pdf_preview % <CR>
-
 nnoremap <C-b> i****<ESC>hi
 nnoremap <C-i> i**<ESC>i
 
@@ -143,4 +115,3 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 hi Normal guibg=NONE ctermbg=NONE
-" hi Comment ctermfg=32
