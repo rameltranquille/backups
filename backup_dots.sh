@@ -8,7 +8,7 @@ init () {
 
 copy_dots () {
 	for dir in $dotfiles; do
-		rsync -lptgoP $dir $HOME/.backup/dotfiles/
+		rsync --mkpath -lptgoP $dir $HOME/.backup/dotfiles/
 	done
 }
 
