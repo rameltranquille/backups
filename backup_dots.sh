@@ -8,7 +8,7 @@ init () {
 
 copy_dots () {
 	for dir in $dotfiles; do
-		rsync -lptgoP --exclude='*.git' $dir $HOME/.backup/dotfiles/
+		rsync -lptgoP $dir $HOME/.backup/dotfiles/
 	done
 }
 
