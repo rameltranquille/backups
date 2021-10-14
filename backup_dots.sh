@@ -34,7 +34,7 @@ git_update () {
 HOME="/home/ramel"
 dotfiles="$HOME/.bashrc $HOME/.zshrc $HOME/.vimrc $HOME/.config/nvim
 $HOME/.config/dmenu $HOME/.config/alacritty $HOME/.config/qtile
-$HOME/.config/newsboat $HOME/.config/st $HOME/.config/conky/conky.conf
+$HOME/.config/st $HOME/.config/conky/conky.conf
 $HOME/.config/dunst/dunstrc $HOME/.productive_xinitrc $HOME/.fun_xinitrc"
 
 scriptNprojects="$HOME/scripts/ $HOME/projects/" 

@@ -15,7 +15,7 @@ Plug 'plasticboy/vim-markdown'
 Plug 'machakann/vim-sandwich'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
-Plug 'dracula/vim',{'as':'dracula'}
+Plug 'ghifarit53/tokyonight-vim'
 Plug 'dense-analysis/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
@@ -24,10 +24,11 @@ Plug 'ackyshake/VimCompletesMe'
 
 call plug#end()
 
-colorscheme dracula
+colorscheme tokyonight
+let g:tokyonight_enable_italic = 1
 
 " Airline
-let g:airline_theme='dracula'
+let g:airline_theme='tokyonight'
 let g:airline#extensions#syntastic#enabled=1
 let g:airline#extensions#fzf#enabled=1
 
