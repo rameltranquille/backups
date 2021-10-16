@@ -1,5 +1,5 @@
 #! /bin/bash
-MIN_BROWSER="vieb"
+MIN_BROWSER="firefox"
 # set prefered launcher
 PREFERED_LAUNCHER=dmenu
 # set path where urls will be stored

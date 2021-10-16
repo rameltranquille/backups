@@ -34,7 +34,8 @@ def formatData(symbol):
     data = getData(symbol)
     return (symbol + " - Open:       " + data['1. open'] +
                 "\n    - Adj. Close: " + data['5. adjusted close'] +
-                "\n ---------------------------")
+                "\n")
+                # "\n ---------------------------")
 
 def main():
     print("Date: " + formatDate())

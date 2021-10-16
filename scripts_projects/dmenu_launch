@@ -52,10 +52,10 @@ def dmenu_setup(args):
     if args.notes:
         dmenu = scheme(
                     target='notes',
-                    prefix=os.path.expanduser('~/Dropbox/summer2021/'),
+                    prefix=os.path.expanduser('~/Dropbox/fall2021/'),
                     suffix="",
                     font='JetBrains Mono:light:size=14',
-                    nb='#465A65', nf='#F2F3D9', sb='#E1574C', sf='#F2F3D9',
+                    nb='#465A65', nf='#F2F3D9', sb='#9ece6a', sf='#12100E',
                    )
     if args.search:
         dmenu = scheme(
@@ -63,7 +63,7 @@ def dmenu_setup(args):
                     prefix=os.path.expanduser('~/docs/'),
                     suffix="",
                     font='JetBrains Mono:medium:size=14',
-                    nb='#465A65', nf='#F2F3D9', sb='#16F4D0', sf='#12100E',
+                    nb='#465A65', nf='#F2F3D9', sb='#7aa2f7', sf='#12100E',
                     #sb="#429ea6"
                    )
     
@@ -74,24 +74,21 @@ def dmenu_input(scheme):
     """Builds dmenu list of options and returns the value selected by user."""
     choices = []
     for basedir, dirs , files in os.walk(scheme.prefix, followlinks=True):
-        dirs.sort()
-        files.sort()
+        dirs.sort(reverse=True)
+        files.sort(reverse=True)
 
         dirsubpath = basedir[len(scheme.prefix):].lstrip('/')
         for f in files:
             if f.endswith(scheme.suffix):
                 full_path = os.path.join(dirsubpath, f.replace(scheme.suffix, '', -1))
-                if "index" not in full_path:
-                    choices += [re.sub(r'^.*?/', '/', full_path)]
-                else:
-                    choices += [full_path]
+                choices += [full_path]
 
     args = ["-fn", scheme.font, \
             "-nb", scheme.nb, \
             "-nf", scheme.nf, \
             "-sb", scheme.sb, \
             "-sf", scheme.sf, \
-            "-g", "3", \
+            "-g", "1", \
             "-l", "10", \
             "-p", "Open", \
             "-i" ]

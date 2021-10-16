@@ -17,9 +17,9 @@ Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'dense-analysis/ale'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-Plug 'vim-syntastic/syntastic'
+" Plug 'vim-airline/vim-airline'
+" Plug 'vim-airline/vim-airline-themes'
+" Plug 'vim-syntastic/syntastic'
 Plug 'ackyshake/VimCompletesMe'
 
 call plug#end()
@@ -28,9 +28,9 @@ colorscheme tokyonight
 let g:tokyonight_enable_italic = 1
 
 " Airline
-let g:airline_theme='tokyonight'
-let g:airline#extensions#syntastic#enabled=1
-let g:airline#extensions#fzf#enabled=1
+" let g:airline_theme='tokyonight'
+" let g:airline#extensions#syntastic#enabled=1
+" let g:airline#extensions#fzf#enabled=1
 
 " Syntastic
 " let g:syntastic_always_populate_loc_list = 1
@@ -43,13 +43,11 @@ let g:vim_markdown_math = 1
 let g:vim_markdown_strikethrough = 1
 let g:vim_markdown_no_extensions_in_markdown = 1
 
-
 " fzf
 let g:fzf_preview_window = ['right:40%', 'ctrl-/']
 nnoremap 'g  :Rg<CR>
 nnoremap <C-f> :FZF<CR>
 nnoremap f za
-
 
 " Nerdtree
 let NERDTreeShowHidden=1
