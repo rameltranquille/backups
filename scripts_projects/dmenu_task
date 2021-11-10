@@ -1,44 +1,61 @@
 #!/bin/python3
-
 import json
 import os
 import subprocess
 
-with open('/home/ramel/.todos.json') as file:
-    js = json.load(file)
+def main():
+    with open('/home/ramel/.todoist.cache.json') as file:
 
-task_list = []
-ind_list = []
-for z in js:
-    if z['completed'] == False:
-        task_list.append(z['subject'])
+        js = json.load(file)
+
+    task_list = []
+    ind_list = []
+    task = ""
+
+    for z in js["items"]:
         ind_list.append(z['id'])
-        # task_list = [i['subject'] for i in js] 
-        # ind_list = [i['id'] for i in js]
+        content = str(z['content'])
+        due = z['due'] #['date']
+        try:
+            due_date = due['date']
+        except:
+            due_due = ""
+        choice = due_date +  " | " + content 
+        task_list.append(choice)
 
-x = '\n'.join(task_list)
-cmd = "echo \'{0}\'| dmenu -g 1 -l 10 -sf '#12100E' -sb '#FB676E' -i -p 'task:'".format(x)
+    x = '\n'.join(task_list)
+    dmenu_cmd = "dmenu -g 1 -l 10 -sf '#12100E' -sb '#FB676E' -i -p"
+    cmd = "echo \"{0}\" | {1} Task:".format(x, dmenu_cmd)
 
-task = subprocess.check_output(cmd, shell=True)
-task = task.decode('utf8').rstrip('\n')
+    task = subprocess.check_output(cmd, shell=True)
+    task = task.decode('utf8').rstrip('\n')
 
-try:
-    ind = task_list.index(task)
-    z = ind_list[ind]
-    os.system("ultralist complete {0}".format(z))
-except:
     try:
-        os.system('ultralist add {0}'.format(task))
+        ind = task_list.index(task)
+        z = ind_list[ind]
+        os.system("todoist d {0}".format(z))
     except:
-        pass
+        addTodo(task, dmenu_cmd)
+
+    return 0
+
+def addTodo(task, dmenu_cmd):
+    get_project = "todoist projects | " + dmenu_cmd + " 'Project:'"
+    project = subprocess.check_output(get_project, shell=True).decode('utf8').rstrip('\n')
+    try: 
+        get_due_date = "echo 'today\ntomorrow\nnext week' | " + dmenu_cmd + " 'Due Date:'"
+    except: 
+        get_due_date = ""
+    due_date = subprocess.check_output(get_due_date, shell=True).decode('utf8').rstrip('\n')
+    subprocess.check_output("todoist add \"{0}\" -P \"{1}\" -d \"{2}\" & todoist sync".format(task, project[0], due_date), shell=True)
+
+
+if __name__ == "__main__":
+    main()
 
 
 
 
-
-
-
-
- 
+     
 
 

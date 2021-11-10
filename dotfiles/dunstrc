@@ -159,7 +159,7 @@
     # Show age of message if message is older than show_age_threshold
     # seconds.
     # Set to -1 to disable.
-    show_age_threshold = 20
+    show_age_threshold = -1
 
     # Split notifications into multiple lines if they don't fit into
     # geometry.
@@ -327,22 +327,22 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#0F161E"
-    foreground = "#fcdace"
-    timeout = 20
+    background = "#1b252b"
+    foreground = "#9ece6a"
+    timeout = 2
     # Icon for notifications with low urgency, uncomment to enable
     icon = /home/ramel/pics/normal_notif.png
 
 [urgency_normal]
-    background = "#0F161E"
-    foreground = "#fb676e"
-    timeout = 20
+    background = "#1b252b"
+    foreground = "#ff1f2c"
+    timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     icon = /home/ramel/pics/normal_notif.png
 
 
 [urgency_critical]
-    background = "#900000"
+    background = "#ff1f2c"
     foreground = "#000009"
     frame_color = "#ff0000"
     timeout = 30

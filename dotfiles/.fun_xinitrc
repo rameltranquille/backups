@@ -5,15 +5,7 @@ LC_ALL=en_US.utf8 conky -c .config/conky/conky.conf -o &
 flameshot &
 dropbox &
 dunst &
-sudo sh -c '\''sysctl -w abi.vsyscall32=0'\ &
-active_win &
 
-if [ -x /usr/bin/gcalcli  ]; then 
-  while true; do
-    /usr/bin/gcalcli remind
-    sleep 300
-  done &
-fi
 
 qtile start
 

@@ -5,13 +5,7 @@ LC_ALL=en_US.utf8 conky -c .config/conky/conky.conf -o
 flameshot &
 dropbox &
 dunst &
-aw-qt &
-
-if [ -x /usr/bin/gcalcli  ]; then 
-  while true; do
-    /usr/bin/gcalcli remind
-    sleep 300
-  done &
-fi
+todoist sync &
+feh --bg-fill --randomize /home/ramel/qtile/wallpapers/*
 
 qtile start -c .config/qtile/productive_config.py

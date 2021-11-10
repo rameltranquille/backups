@@ -47,7 +47,6 @@ let g:vim_markdown_no_extensions_in_markdown = 1
 let g:fzf_preview_window = ['right:40%', 'ctrl-/']
 nnoremap 'g  :Rg<CR>
 nnoremap <C-f> :FZF<CR>
-nnoremap f za
 
 " Nerdtree
 let NERDTreeShowHidden=1
@@ -107,6 +106,7 @@ nmap ; :
 imap jj <Esc>
 nnoremap <C-b> i****<ESC>hi
 nnoremap <C-i> i**<ESC>i
+nnoremap <leader>a ea
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j
