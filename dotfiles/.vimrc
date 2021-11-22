@@ -10,38 +10,17 @@ Plug 'preservim/nerdtree'
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'godlygeek/tabular'
-Plug 'plasticboy/vim-markdown'
 Plug 'machakann/vim-sandwich'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'ghifarit53/tokyonight-vim'
 Plug 'dense-analysis/ale'
-" Plug 'vim-airline/vim-airline'
-" Plug 'vim-airline/vim-airline-themes'
-" Plug 'vim-syntastic/syntastic'
 Plug 'ackyshake/VimCompletesMe'
 
 call plug#end()
 
 colorscheme tokyonight
 let g:tokyonight_enable_italic = 1
-
-" Airline
-" let g:airline_theme='tokyonight'
-" let g:airline#extensions#syntastic#enabled=1
-" let g:airline#extensions#fzf#enabled=1
-
-" Syntastic
-" let g:syntastic_always_populate_loc_list = 1
-" let g:syntastic_auto_loc_list = 1
-" let g:syntastic_check_on_open = 1
-" let g:syntastic_check_on_wq = 0
-
-" Vim Markdown
-let g:vim_markdown_math = 1
-let g:vim_markdown_strikethrough = 1
-let g:vim_markdown_no_extensions_in_markdown = 1
 
 " fzf
 let g:fzf_preview_window = ['right:40%', 'ctrl-/']
@@ -104,8 +83,8 @@ nnoremap 'i :e ./index.md<CR>
 nnoremap 'q :vimgrep /\*\*Q\*\*/ %<CR>
 nmap ; :
 imap jj <Esc>
-nnoremap <C-b> i****<ESC>hi
-nnoremap <C-i> i**<ESC>i
+" nnoremap <C-b> i****<ESC>hi
+" nnoremap <C-i> i**<ESC>i
 nnoremap <leader>a ea
 
 map <C-h> <C-w>h

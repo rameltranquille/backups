@@ -119,7 +119,6 @@ alias fetch="cpufetch --color 64,64,181:251,103,110:64,64,181:251,103,110"
 alias cpfun="cp -f /home/ramel/.fun_xinitrc /home/ramel/.xinitrc"
 alias cppro="cp -f /home/ramel/.productive_xinitrc /home/ramel/.xinitrc"
 alias index="code ./index.md"
-# alias lutris_perms="sudo sh -c 'sysctl -w abi.vsyscall32=0'"
 alias p='pomodoro 90 20 --notif=True --timer=True'
 alias ls='ls --color=auto'
 alias la='ls -A'
@@ -134,9 +133,6 @@ alias mb='xrandr --output DVI-D-0 --brightness 1 && xrandr --output HDMI-0 --bri
 alias lb='xrandr --output DVI-D-0 --brightness .5 && xrandr --output HDMI-0 --brightness .5'
 alias nb='xrandr --output DVI-D-0 --brightness .75 && xrandr --output HDMI-0 --brightness .75'
 alias dlm='youtube-dl --extract-audio --audio-format mp3'
-alias u='ultralist'
-alias ulp='ultralist l group:project priority:true'
-alias ull='ultralist l group:project'
 alias v='vifm -c vifm-v'
 alias vert_screen="xrandr --output DVI-D-0 --primary --pos 0x286 --output HDMI-0 --rotate right"
 alias vi="nvim +PackerSync"
@@ -159,4 +155,4 @@ cd_with_fzf () {
 zle -N cd_with_fzf{,} 
 bindkey ^f cd_with_fzf 
 
-macchina --bar
+macchina 
