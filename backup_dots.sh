@@ -38,7 +38,7 @@ $HOME/.config/nvim/lua/custom/* $HOME/.config/dmenu $HOME/.config/alacritty
 $HOME/.config/qtile $HOME/.config/st $HOME/.config/conky/conky.conf
 $HOME/.config/dunst/dunstrc $HOME/.productive_xinitrc $HOME/.fun_xinitrc"
 
-scriptNprojects="$HOME/scripts/ $HOME/projects/" 
+scriptNprojects="$HOME/scripts/" 
 # projects="$HOME/scripts/"
 # imp_docs="$HOME/docs/res.tex"
 
