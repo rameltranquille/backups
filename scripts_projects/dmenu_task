@@ -1,7 +1,7 @@
 #!/bin/python3
 import json
-import os
-import subprocess
+import subprocess, os
+import datetime
 
 def main():
     with open('/home/ramel/.todoist.cache.json') as file:
@@ -10,20 +10,26 @@ def main():
 
     task_list = []
     ind_list = []
+    today = datetime.datetime.now()
     task = ""
 
+    count = 0;
     for z in js["items"]:
-        ind_list.append(z['id'])
-        content = str(z['content'])
-        due = z['due'] #['date']
-        try:
-            due_date = due['date']
-        except:
-            due_due = ""
-        choice = due_date +  " | " + content 
-        task_list.append(choice)
+        if z['due'] != 'none':
+            ind_list.append(z['id'])
+            content = str(z['content'])
+            due = z['due'] #['date']
+            try:
+                due_date = due['date']
+            except:
+                due_due = ""
+            choice = due_date +  " | " + content 
+            if count < 5:
+                count = count + 1
+                task_list.append(choice)
 
-    x = '\n'.join(task_list)
+    x = '\n'.join(sorted(task_list))
+    print(x)
     dmenu_cmd = "dmenu -g 1 -l 10 -sf '#12100E' -sb '#FB676E' -i -p"
     cmd = "echo \"{0}\" | {1} Task:".format(x, dmenu_cmd)
 
