@@ -6,6 +6,9 @@ Backup files using [rsync](https://wiki.archlinux.org/title/rsync).
 - [ ] Update each of the scripts and dotfiles thoroughly
 - [ ] Important Files to Add to docs (ie. Resume)
 - [ ] Update [notetaker](./scripts_projects/notetaker) script  
+- [ ] Back up configs specifically for alacritty, qtile, dmenu, st, and kitty. Will not 
+backup due to git files in each. Go for specific files, example being ".config/qtile/config.py".
+
 
 ----
 
