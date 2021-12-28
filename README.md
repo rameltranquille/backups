@@ -2,20 +2,28 @@
 Backup files using [rsync](https://wiki.archlinux.org/title/rsync).
 
 ----
+## TODO 
+- [ ] Update each of the scripts and dotfiles thoroughly
+- [ ] Important Files to Add to docs (ie. Resume)
+- [ ] Update [notetaker](./scripts_projects/notetaker) script  
+
+----
 
 ## Highlights
-- [vimrc](./dotfiles/.vimrc)
-- [zshrc](./dotfiles/.zshrc)
-- [productive qtile config](./dotfiles/qtile/productive_config.py)   
-![Productive Config](PC_productive_screen1.png) 
-![Productive Config](PC_productive_screen2.png)    
-<!-- ![Productive Config](PC_productive_screen2.png =250x)     -->
+- [Main Qtile Config](./dotfiles/qtile/productive_config.py)   
+- [Xinitrc](./dotfiles/.xinitrc)
+- [Dmenu](./dotfiles/dmenu)
+- [Kitty](./dotfiles/kitty)
+- [NvChad Custom](./dotfiles/nvim/custom/)
+    - [Original NvChad](https://github.com/NvChad/NvChad)
+- [Scripts/Projects](./scripts_projects/)
+    - Mostly Dmenu scripts for notetaking, opening apps, opening files, and managing tasks
+    - [Notetaker](./scripts_projects/notetaker)
+    - [Dmenu Notetaker](./scripts_projects/dmenu_notetaker)
+    - [Dmenu Launch](./scripts_projects/notetaker)
+    - [Dmenu Task (w/ Todoist)](./scripts_projects/notetaker)
 
-- [normal qtile config](./dotfiles/qtile/fun_config.py)
-- [xinitrc](./dotfiles/.xinitrc)
-- Dmenu scripts for notetaking, opening apps, opening files, and managing tasks
 
----
 
 
 

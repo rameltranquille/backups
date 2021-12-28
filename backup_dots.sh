@@ -36,7 +36,7 @@ HOME="/home/ramel"
 dotfiles="$HOME/.bashrc $HOME/.zshrc $HOME/.vimrc 
 $HOME/.config/nvim/lua/custom/* $HOME/.config/dmenu $HOME/.config/alacritty 
 $HOME/.config/qtile $HOME/.config/st $HOME/.config/conky/conky.conf
-$HOME/.config/dunst/dunstrc $HOME/.productive_xinitrc $HOME/.fun_xinitrc"
+$HOME/.config/dunst/dunstrc $HOME/.xinitrc $HOME/.config/kitty"
 
 scriptNprojects="$HOME/scripts/" 
 # projects="$HOME/scripts/"

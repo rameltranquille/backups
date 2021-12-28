@@ -121,7 +121,7 @@ alias cppro="cp -f /home/ramel/.productive_xinitrc /home/ramel/.xinitrc"
 alias index="code ./index.md"
 alias p='pomodoro 90 20 --notif=True --timer=True'
 alias ls='ls --color=auto'
-alias la='ls -A'
+alias la='ls -Al'
 alias l='ls -CF'
 alias sps='sudo pacman -S'
 alias ll='ls -l'

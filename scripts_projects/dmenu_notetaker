@@ -2,9 +2,10 @@
 import time
 import os, subprocess
 
-noteDir = "/home/ramel/Dropbox/quickNote/"
-date = time.strftime("%m-%d-%Y")
-date_time = date + time.strftime("%H:%M")
+noteDir = "/home/ramel/Dropbox/Notebook/DailyNotes/"
+altNoteDir = "/home/ramel/Dropbox/Notebook/DailyNotes/"
+date = time.strftime("%Y-%b-%d")
+date_time = time.strftime("%H:%M")
 title = "note-" + date + ".md"
 os.system("touch " + noteDir + title)
 
@@ -12,8 +13,9 @@ ls = subprocess.check_output("ls " + noteDir, shell=True).decode('utf-8')
 cmd = "ls " + noteDir + " | dmenu -shf '#3db39d' -shb '#db9ce3' -sb '#db9ce3' -p 'Prompt' -g 3"
 entry = subprocess.check_output(cmd, shell=True).decode('utf-8')
 
+# print(noteDir+title)
 if entry not in ls:
-    with open(noteDir + title, 'a') as file:
+    with open(altNoteDir + title, 'a') as file:
         file.write("# "+date_time+"\n")
         file.write(entry)
 else:
