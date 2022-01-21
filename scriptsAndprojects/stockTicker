@@ -1,0 +1,49 @@
+#!/bin/python3
+import requests
+from datetime import date
+# STOCK TICKER
+# AlphaVantage API Key: KB82QXMSE1OV29G4
+
+## Stock List: S&P500, NASDAQ, DOW, Brent, WTI
+def getSymbols():
+    # Return a list of strings, including each of the stock symbols
+    symbolList = [
+            # ".INX",
+            # ".IXIC",
+            "XOM",
+            "JNJ",
+            ]
+    return symbolList
+
+def formatDate():
+    # return's yesterday's date formatted into a string
+    unformatted = date.today() 
+    fDate = str(date(unformatted.year, unformatted.month, unformatted.day-1))
+    return fDate
+
+def getData(symbol):
+    # calls API to get stock symbol data from yesterday
+    url = 'https://www.alphavantage.co/query?function=TIME_SERIES_DAILY_ADJUSTED&symbol=' + symbol + '&apikey=KB82QXMSE1OV29G4'
+    req = requests.get(url)
+    data = req.json()
+    yesterdayDate = formatDate()
+    recentData = data['Time Series (Daily)'][yesterdayDate] 
+    return recentData
+
+def formatData(symbol):
+    data = getData(symbol)
+    return (symbol + " - Open:       " + data['1. open'] +
+                "\n    - Adj. Close: " + data['5. adjusted close'] +
+                "\n")
+                # "\n ---------------------------")
+
+def main():
+    print("Date: " + formatDate())
+    for symbol in getSymbols():
+        print(formatData(symbol))
+    return True
+
+main()
+
+
+    

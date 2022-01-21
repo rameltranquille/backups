@@ -84,7 +84,7 @@
     frame_width = 1
 
     # Defines color of the frame around the notification window.
-    frame_color = "#a29ac3"
+    frame_color = "#c1ffff"
 
     # Define a color for the separator.
     # possible values are:
@@ -195,7 +195,8 @@
     max_icon_size = 32
 
     # Paths to default icons.
-    icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    # icon_path = /usr/share/icons/gnome/16x16/status/:/usr/share/icons/gnome/16x16/devices/
+    icon_path = /usr/share/icons/Arc:/usr/share/icons/gnome/16x16/status
 
     ### History ###
 
@@ -327,22 +328,22 @@
 [urgency_low]
     # IMPORTANT: colors have to be defined in quotation marks.
     # Otherwise the "#" and following would be interpreted as a comment.
-    background = "#1b252b"
-    foreground = "#9ece6a"
+    background = "#0a0f3f"
+    foreground = "#fa6768"
     timeout = 2
     # Icon for notifications with low urgency, uncomment to enable
     icon = /home/ramel/pics/normal_notif.png
 
 [urgency_normal]
-    background = "#1b252b"
-    foreground = "#ff1f2c"
+    background =  "#0a0f3f"
+    foreground =  "#fa6768"
     timeout = 10
     # Icon for notifications with normal urgency, uncomment to enable
     icon = /home/ramel/pics/normal_notif.png
 
 
 [urgency_critical]
-    background = "#ff1f2c"
+    background = "#0a0f3f"
     foreground = "#000009"
     frame_color = "#ff0000"
     timeout = 30

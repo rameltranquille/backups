@@ -1,0 +1,14 @@
+#!/bin/sh
+
+latestNotefile="$HOME/Dropbox/quickNote/note-$(date +%m-%d-%Y).md"
+
+if [ ! -f $latestNotefile ]; then
+	echo "# Notes for $(date +%m-%d-%Y)" > $latestNotefile
+fi
+
+vim -c "norm Go## $(date +%H:%M)" \
+	-c "norm Go" \
+	-c "startinsert" $latestNotefile
+
+
+

@@ -16,32 +16,24 @@ if [ -x /usr/bin/dircolors ]; then
     alias egrep='egrep --color=auto'
 fi
 
-bind '"\C-f":"cd_with_fzf\n"'
-bind '"\C-v":"vim\n"'
-
 alias la='ls -A'
 alias l='ls -CF'
 alias sps='sudo pacman -S'
 alias ex='exit'
-alias ll='ls -l'
-alias lutris_perms="sudo sh -c 'sysctl -w abi.vsyscall32=0'"
+alias ll='ls -la'
+alias lp="sudo sh -c 'sysctl -w abi.vsyscall32=0'"
 alias py='python'
-alias stonk='bash ~/scripts/ticker.sh BTC-USD ^GSPC DOW GC=F CL=F ^IXIC'
 alias smi='sudo make install'
 alias pat='patch -p1 <'
-alias mb='xrandr --output DVI-D-0 --brightness 1 && xrandr --output HDMI-0 --brightness 1'
-alias lb='xrandr --output DVI-D-0 --brightness .5 && xrandr --output HDMI-0 --brightness .5'
-alias nb='xrandr --output DVI-D-0 --brightness .75 && xrandr --output HDMI-0 --brightness .75'
 alias comp='cp -f /home/ramel/notebook/competitiveprogramming/template.cpp challenge.cpp && vim -n challenge.cpp'
 alias compy='cp -f ~/notebook/competitiveprogramming/template.py challenge.py && vim -n challenge.py'
-alias sex='./test'
-alias tda='python3 /usr/local/bin/todo -a'
 alias dlm='youtube-dl --extract-audio --audio-format mp3'
-alias u='ultralist'
-alias ull='ultralist l group:project'
 
-cd_with_fzf() {
-	    cd $HOME && cd "$(fd -t d | fzf --preview="tree -L 1 {}" --bind="space:toggle-preview" --preview-window=:hidden)"
-	    
-}
-
+alias cdi3='cd /home/ramel/.config/i3/'
+alias ni3="nvim /home/ramel/.config/i3/config"
+alias ncon="nvim /home/ramel/.config/conky/conky.conf"
+alias nbar="nvim /home/ramel/.config/polybar/config"
+alias nzsh="nvim /home/ramel/.zshrc"
+alias update="sudo pacman -Syyu"
+alias updateYay="yay -Syu"
+alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"

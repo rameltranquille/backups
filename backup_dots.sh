@@ -3,7 +3,7 @@
 init () {
 	echo "Making directories"
 	mkdir -p $HOME/.backup
-	mkdir -p $HOME/.backup/dotfiles $HOME/.backup/doc $HOME/.backup/scripts_projects
+	mkdir -p $HOME/.backup/dotfiles $HOME/.backup/doc $HOME/.backup/scriptsAndprojects
 }
 
 copy_dots () {
@@ -14,9 +14,9 @@ copy_dots () {
 
 copy_projects_scripts () {
 	for dir in $scriptNprojects; do
-		rsync -avz $dir $HOME/.backup/scripts_projects/
+		rsync -avz $dir $HOME/.backup/scriptsAndprojects/
 	done
-	ls $HOME/.backup/scripts_projects
+	ls $HOME/.backup/scriptsAndprojects
 }
 
 copy_imp_docs () {
@@ -34,9 +34,10 @@ git_update () {
 HOME="/home/ramel"
 
 dotfiles="$HOME/.bashrc $HOME/.zshrc $HOME/.vimrc 
-$HOME/.config/nvim/lua/custom/* $HOME/.config/dmenu $HOME/.config/alacritty 
-$HOME/.config/qtile $HOME/.config/st $HOME/.config/conky/conky.conf
-$HOME/.config/dunst/dunstrc $HOME/.xinitrc $HOME/.config/kitty"
+$HOME/.config/nvim/lua/custom/* $HOME/.config/alacritty 
+$HOME/.config/qtile $HOME/.config/conky/conky.conf
+$HOME/.config/dunst/dunstrc $HOME/.xinitrc $HOME/.config/kitty
+$HOME/.config/polybar $HOME/.config/i3 $HOME/.config/fish/config.fish"
 
 scriptNprojects="$HOME/scripts/" 
 # projects="$HOME/scripts/"

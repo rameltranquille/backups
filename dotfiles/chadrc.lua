@@ -34,7 +34,7 @@ M.options = {
 }
 
 M.ui = {
-  theme = "tokyonight"
+  theme = "onedark-deep"
 }
 
 -- NvChad included plugin options & overrides
