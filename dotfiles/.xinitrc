@@ -13,4 +13,4 @@ LC_ALL=en_US.utf8 conky -c .config/conky/conky.conf -o
 #feh --bg-scale --no-xinerama --randomize .config/qtile/largeWallpapers/the-shooting-star-3840x2160.jpg
 
 #qtile start -c .config/qtile/config.py
-exec i3
+exec i3 -c /home/ramel/.config/i3/i3config

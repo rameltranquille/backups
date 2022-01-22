@@ -13,14 +13,32 @@ Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
-Plug 'ghifarit53/tokyonight-vim'
 Plug 'dense-analysis/ale'
 Plug 'ackyshake/VimCompletesMe'
+Plug 'lervag/vimtex'
+Plug 'plasticboy/vim-markdown'
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+
+Plug 'ghifarit53/tokyonight-vim'
+Plug 'mangeshrex/uwu.vim'
+Plug 'arcticicestudio/nord-vim'
 
 call plug#end()
 
-colorscheme tokyonight
-let g:tokyonight_enable_italic = 1
+" Vim-Markdown
+nmap <leader>mp <Plug>MarkdownPreview
+nmap <leader>ms <Plug>MarkdownPreviewStop
+nmap <leader>mt <Plug>MarkdownPreviewToggle
+
+
+" Vimtex
+let g:vimtex_view_method = 'zathura'
+
+set background=dark
+colorscheme nord
+" colorscheme uwu
+" colorscheme tokyonight
+" let g:tokyonight_enable_italic = 1
 
 " fzf
 let g:fzf_preview_window = ['right:40%', 'ctrl-/']
@@ -83,6 +101,7 @@ nnoremap 'i :e ./index.md<CR>
 nnoremap 'q :vimgrep /\*\*Q\*\*/ %<CR>
 nmap ; :
 imap jj <Esc>
+imap jk <Esc>
 " nnoremap <C-b> i****<ESC>hi
 " nnoremap <C-i> i**<ESC>i
 nnoremap <leader>a ea

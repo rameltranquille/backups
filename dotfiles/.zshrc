@@ -55,19 +55,30 @@ alias smi='sudo make install'
 alias pat='patch -p1 <'
 alias mb='xrandr --output DVI-D-0 --brightness 1 && xrandr --output HDMI-0 --brightness 1'
 alias dlm='youtube-dl --extract-audio --audio-format mp3'
-alias nv="nvim +PackerSync"
-alias cdi3='cd /home/ramel/.config/i3/'
 alias due="todoist list --filter '(today|overdue|tomorrow)'"
+alias updateYay="yay -Syu"
+alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"
+alias cdi3='cd /home/ramel/.config/i3/'
+
+############ EDITOR: Nvim
+alias nv="nvim +PackerSync"
 alias ni3="nvim /home/ramel/.config/i3/config"
 alias ncon="nvim /home/ramel/.config/conky/conky.conf"
 alias nbar="nvim /home/ramel/.config/polybar/config"
 alias nzsh="nvim /home/ramel/.zshrc"
 alias update="sudo pacman -Syyu"
-alias updateYay="yay -Syu"
-alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"
 alias nnvim='nvim /home/ramel/.config/nvim/lua/custom/init.lua'
 alias nchad='nvim /home/ramel/.config/nvim/lua/custom/chadrc.lua'
 
+############ EDITOR: Vanilla Vim
+alias v="vim"
+alias vi3="vim /home/ramel/.config/i3/config"
+alias vcon="vim /home/ramel/.config/conky/conky.conf"
+alias vbar="vim /home/ramel/.config/polybar/config"
+alias vzsh="vim /home/ramel/.zshrc"
+alias vrc="vim /home/ramel/.vimrc"
+alias vnvim='vim /home/ramel/.config/nvim/lua/custom/init.lua'
+alias vchad='vim /home/ramel/.config/nvim/lua/custom/chadrc.lua'
 ###############################################################
 #------------FZF
 ###############################################################
