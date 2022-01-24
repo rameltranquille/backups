@@ -1,43 +1,6 @@
 local customPlugins = require "core.customPlugins"
 
 customPlugins.add(function(use)
-  use {
-     "folke/which-key.nvim",
-     config = function()
-         require("which-key").setup {
-             plugins = {
-                 spelling = {
-                     enabled = false,
-                     suggestions = 10,
-                 }
-             }
-         }
- end
-   }
-end)
-
-customPlugins.add(function(use)
-    use {"jdhao/better-escape.vim",
-        event = "InsertEnter"
-    }
-end)
-
-customPlugins.add(function(use)
-    use "terrortylor/nvim-comment",
-        require('nvim_comment').setup({
-            create_mappings = true,
-            comment_empty = false,
-            line_mapping = "gcc",
-            operator_mapping = "gc",
-            hook = nil,
-        })
-end)
-
-customPlugins.add(function(use)
-    use "tpope/vim-repeat"
-end)
-
-customPlugins.add(function(use)
     use {"lervag/vimtex", ft = 'tex'}
 end)
 
@@ -56,6 +19,7 @@ customPlugins.add(function(use)
         after = "vim-markdown",
         event = "BufRead"}
 end)
+
 customPlugins.add(function(use)
     use {"chrisbra/Colorizer",
         cmd = "ColorHighlight"}
