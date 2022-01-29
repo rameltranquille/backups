@@ -1,6 +1,0 @@
-#!/bin/bash
-
-cp -f $HOME/.productive_xinitrc $HOME/.xinitrc &&
-startx &&
-cp -f $HOME/.fun_xinitrc $HOME/.xinitrc
-

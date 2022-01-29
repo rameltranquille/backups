@@ -1,6 +1,0 @@
-#!/bin/sh
-
-
-echo "$(date +%m-%d-%Y) $(date +%H:%M) $(cat /proc/$(xdotool getwindowpid $(xdotool getwindowfocus))/comm)" >> /home/ramel/.tracker
-
-

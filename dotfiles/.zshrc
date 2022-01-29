@@ -37,7 +37,7 @@ else
   export EDITOR='vim'
 fi
 
-source .zshAliases
+source ~/.zshAliases
 
 cd_with_fzf () {
 	cd $HOME && cd "$(fd -t d | fzf --bind="space:toggle-preview" --preview-window=:hidden)"

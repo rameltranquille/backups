@@ -1,7 +1,0 @@
-#!/bin/bash
-
-i=10
-while(( $i==10 )); do
-	echo "$(date +%m-%d-%Y) $(date +%H:%M:%S) $(cat /proc/$(xdotool getwindowpid $(xdotool getwindowfocus))/comm)" >> /home/ramel/.tracker
-	sleep 10
-done

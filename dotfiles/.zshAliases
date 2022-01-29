@@ -19,6 +19,8 @@ alias updateYay="yay -Syu"
 alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"
 alias cdi3='cd /home/ramel/.config/i3/'
 alias task="echo '$1' >> currTask"
+alias work="vim -c VimwikiIndex"
+
 
 ############ EDITOR: Nvim
 alias nv="nvim +PackerSync"
