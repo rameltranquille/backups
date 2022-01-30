@@ -1,44 +1,44 @@
 let mapleader=" "
 
 " =================================
-" Plugins
+" Vim Plugged
 " =================================
 
 call plug#begin('~/.vim/plugged')
 
-Plug 'vimwiki/vimwiki' ", { 'for': ['markdown', 'tex'] }
-Plug 'michal-h21/vim-zettel' "", { 'for': ['markdown', 'tex'] }
-Plug 'alok/notational-fzf-vim' "", { 'for': ['markdown', 'tex'] }
-Plug 'plasticboy/vim-markdown' "", { 'for': ['markdown', 'tex'] }
-
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
+" Zettel
+Plug 'vimwiki/vimwiki', { 'on': 'VimwikiIndex' }
+Plug 'michal-h21/vim-zettel', { 'on' : 'VimwikiIndex', 'for' : 'vimwiki' }
+Plug 'alok/notational-fzf-vim', { 'on': 'NV' }
+Plug 'plasticboy/vim-markdown',{ 'on': 'VimwikiIndex', 'for' : 'vimwiki' }
 
 " General
-Plug 'mangeshrex/uwu.vim'
 Plug 'preservim/tagbar'
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
-Plug 'junegunn/vim-easy-align'
 Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich'
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'ycm-core/YouCompleteMe'
 
-" Lazy
-Plug 'lervag/vimtex', { 'for': 'tex' }
+" VimTex
+Plug 'lervag/vimtex', { 'for': 'tex'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
 
-" Unused
-" Plug 'ghifarit53/tokyonight-vim'
+" Theme & Airline
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+" Plug 'mangeshrex/uwu.vim'
+Plug 'ghifarit53/tokyonight-vim'
 " Plug 'arcticicestudio/nord-vim'
-" Plug 'dense-analysis/ale'
-" Plug 'ackyshake/VimCompletesMe'
-
 
 call plug#end()
+
+" =================================
+" Plugin Settings
+" =================================
 
 nmap <leader>tt :TagbarToggle<CR>
 
@@ -47,15 +47,12 @@ let g:ycm_min_num_of_chars_for_completion = 3
 let g:ycm_auto_trigger = 1
 let g:ycm_complete_in_comments = 1
 let g:ycm_complete_in_strings = 1
-" let g:ycm_use_ultisnips_completer = 1
 nmap <leader>yt <plug>(YCMHover)
+" let g:ycm_use_ultisnips_completer = 1
 
 nmap <leader>o :TagbarToggle<CR>
-colorscheme uwu
-set background=dark
-" colorscheme nord
-" colorscheme tokyonight
-" let g:tokyonight_enable_italic = 1
+colorscheme tokyonight
+let g:tokyonight_enable_italic = 1
 
 " Airline
 " let g:airline_theme='wombat'
@@ -69,7 +66,6 @@ let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
 let g:airline_right_alt_sep = ''
-" let g:airline_symbols.branch = ''
 let g:airline_section_z= 'X: %-4lTot: %-4L | Y: %c'
 let g:airline_mode_map = {
     \ '__'     : '-',
@@ -97,14 +93,14 @@ nmap <leader>mp <Plug>MarkdownPreview
 nmap <leader>ms <Plug>MarkdownPreviewStop
 nmap <leader>mt <Plug>MarkdownPreviewToggle
 let g:vim_markdown_folding_disabled = 1
-let g:vim_markdown_folding_style_pythonic = 1
+" let g:vim_markdown_math = 1
 
-" notational-fzf
+" Notational-fzf
 let g:nv_search_paths = ['~/Dropbox/Notebook', '~/Dropbox/foundations', '~/Dropbox/orgComm', '~/Dropbox/Calc2', '~/Dropbox/DS']
-nnoremap <silent> <leader>nv :NV<CR>
 let g:nv_default_extension = '.md'
+nnoremap <silent> <leader>nv :NV<CR>
 
-" Settings for Vimwiki
+" Vimwiki
 let g:vimwiki_list = [
 	\ {'path':'~/Dropbox/workbench/','ext':'.md','syntax':'markdown'}, 
 	\ {'path':'~/Dropbox/foundations/','ext':'.md','syntax':'markdown'}, 
@@ -125,6 +121,7 @@ endfunction
 
 nmap <Leader>wa :call VimwikiFindAllIncompleteTasks()<CR>
 nmap <Leader>wx :call VimwikiFindIncompleteTasks()<CR>
+nmap <Leader>wc :VimwikiToggleListItem<CR>
 
 " Zettel
 let g:zettel_format = "%y%m%d-%H%M-%title"
@@ -132,6 +129,7 @@ nnoremap <leader>zn :ZettleNew<CR>
 nnoremap <leader>zo :ZettleOpen<CR>
 nnoremap <leader>zc :ZettleCapture<CR>
 nnoremap <leader>zs :ZettleSearch<CR>
+set completeopt=longest,menuone
 
 
 " Vimtex
@@ -168,8 +166,10 @@ au Filetype python set
 
 
 " =================================
-" Basics
+" General
 " =================================
+" colorscheme uwu
+set background=dark
 set title
 set clipboard+=unnamedplus
 set encoding=UTF-8
@@ -212,3 +212,5 @@ hi Normal guibg=NONE ctermbg=NONE
 highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
 set cursorline
 hi CursorLineNR cterm=bold guifg=pink 
+set conceallevel=2
+

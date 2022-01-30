@@ -7,7 +7,7 @@ alias ls='ls --color=auto'
 alias la='ls -Al'
 alias l='ls -CF'
 alias sps='sudo pacman -S'
-alias ll='ls -l'
+alias ll='ls -l --sort=extension'
 alias lp="sudo sh -c 'sysctl -w abi.vsyscall32=0'"
 alias py='python'
 alias smi='sudo make install'
@@ -18,8 +18,10 @@ alias due="todoist list --filter '(today|overdue|tomorrow)'"
 alias updateYay="yay -Syu"
 alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"
 alias cdi3='cd /home/ramel/.config/i3/'
-alias task="echo '$1' >> currTask"
 alias work="vim -c VimwikiIndex"
+alias nwork="nvim -c VimwikiIndex"
+alias cwork="cd /home/ramel/Dropbox/workbench/"
+alias logWorkout="xdg-open /home/ramel/Dropbox/workbench/workoutLog.xlsx"
 
 
 ############ EDITOR: Nvim
@@ -42,6 +44,21 @@ alias vrc="vim /home/ramel/.vimrc"
 alias vnvim='vim /home/ramel/.config/nvim/lua/custom/init.lua'
 alias vchad='vim /home/ramel/.config/nvim/lua/custom/chadrc.lua'
 ###############################################################
-#------------FZF
+#------------CLASS
 ###############################################################
+alias wfound="vim /home/ramel/Dropbox/foundations/Workbench.md"
+alias nfound="nvim /home/ramel/Dropbox/foundations/Workbench.md"
+alias cfound="cd /home/ramel/Dropbox/foundations/"
+
+alias wcalc="vim /home/ramel/Dropbox/Calc2/Workbench.md"
+alias ncalc="nvim /home/ramel/Dropbox/Calc2/Workbench.md"
+alias ccalc="cd /home/ramel/Dropbox/Calc2/"
+
+alias wds="vim /home/ramel/Dropbox/DS/Workbench.md"
+alias nds="nvim /home/ramel/Dropbox/DS/Workbench.md"
+alias cds="cd /home/ramel/Dropbox/DS/"
+
+alias worgcomm="vim /home/ramel/Dropbox/orgComm/Workbench.md"
+alias norgcomm="nvim /home/ramel/Dropbox/orgComm/Workbench.md"
+alias corgcomm="cd /home/ramel/Dropbox/orgComm/"
 
