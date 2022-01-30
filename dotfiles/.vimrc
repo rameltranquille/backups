@@ -11,28 +11,27 @@ Plug 'vimwiki/vimwiki', { 'on': 'VimwikiIndex' }
 Plug 'michal-h21/vim-zettel', { 'on' : 'VimwikiIndex', 'for' : 'vimwiki' }
 Plug 'alok/notational-fzf-vim', { 'on': 'NV' }
 Plug 'plasticboy/vim-markdown',{ 'on': 'VimwikiIndex', 'for' : 'vimwiki' }
+Plug 'itchyny/lightline.vim'
 
 " General
-Plug 'preservim/tagbar'
+Plug 'preservim/tagbar', { 'on': 'TagbarToggle' }
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 Plug 'jiangmiao/auto-pairs'
-Plug 'machakann/vim-sandwich'
+Plug 'machakann/vim-sandwich' " change? 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
 Plug 'ycm-core/YouCompleteMe'
 
 " VimTex
 Plug 'lervag/vimtex', { 'for': 'tex'}
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'for': ['markdown', 'vim-plug']}
+Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'on': 'MarkdownPreview'}
 
-" Theme & Airline
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
-" Plug 'mangeshrex/uwu.vim'
+Plug 'drmingdrmer/vim-tabbar'
 Plug 'ghifarit53/tokyonight-vim'
 " Plug 'arcticicestudio/nord-vim'
+" Plug 'mangeshrex/uwu.vim'
 
 call plug#end()
 
@@ -41,6 +40,16 @@ call plug#end()
 " =================================
 
 nmap <leader>tt :TagbarToggle<CR>
+colorscheme tokyonight
+
+" Vim-Sandwich
+let g:sandwich#recipes = deepcopy(g:sandwich#default_recipes)
+
+" Vim Lightline
+set laststatus=2
+let g:lightline = {
+      \ 'colorscheme': 'wombat',
+      \ }
 
 " YouCompleteMe
 let g:ycm_min_num_of_chars_for_completion = 3
@@ -50,43 +59,6 @@ let g:ycm_complete_in_strings = 1
 nmap <leader>yt <plug>(YCMHover)
 " let g:ycm_use_ultisnips_completer = 1
 
-nmap <leader>o :TagbarToggle<CR>
-colorscheme tokyonight
-let g:tokyonight_enable_italic = 1
-
-" Airline
-" let g:airline_theme='wombat'
-let g:airline_theme='bubblegum'
-let g:airline#extensions#ale#enabled='bubblegum'
-let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#formatter = 'unique_tail_improved'
-let g:airline#extensions#tabline#left_sep = '▶'
-let g:airline_powerline_fonts = 1
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_section_z= 'X: %-4lTot: %-4L | Y: %c'
-let g:airline_mode_map = {
-    \ '__'     : '-',
-    \ 'c'      : 'C',
-    \ 'i'      : 'I',
-    \ 'ic'     : 'I',
-    \ 'ix'     : 'I',
-    \ 'n'      : 'N',
-    \ 'multi'  : 'M',
-    \ 'ni'     : 'N',
-    \ 'no'     : 'N',
-    \ 'R'      : 'R',
-    \ 'Rv'     : 'R',
-    \ 's'      : 'S',
-    \ 'S'      : 'S',
-    \ ''     : 'S',
-    \ 't'      : 'T',
-    \ 'v'      : 'V',
-    \ 'V'      : 'V',
-    \ ''     : 'V',
-    \ }
 
 " Vim-Markdown
 nmap <leader>mp <Plug>MarkdownPreview
@@ -129,7 +101,7 @@ nnoremap <leader>zn :ZettleNew<CR>
 nnoremap <leader>zo :ZettleOpen<CR>
 nnoremap <leader>zc :ZettleCapture<CR>
 nnoremap <leader>zs :ZettleSearch<CR>
-set completeopt=longest,menuone
+" set completeopt=longest,menuone
 
 
 " Vimtex
@@ -138,8 +110,10 @@ let g:vimtex_view_method = 'zathura'
 
 " fzf
 let g:fzf_preview_window = ['right:40%', 'ctrl-/']
-nnoremap 'g  :Rg<CR>
-nnoremap <C-f> :FZF<CR>
+" TEXT IN FILES
+nnoremap fr  :Rg<CR>
+" FILES
+nnoremap <leader>fz :FZF<CR>
 
 " Nerdtree
 let NERDTreeShowHidden=1
@@ -209,8 +183,9 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 hi Normal guibg=NONE ctermbg=NONE
-highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-set cursorline
-hi CursorLineNR cterm=bold guifg=pink 
+" set cursorline
+" highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
+" hi CursorLineNR cterm=bold guifg=pink 
 set conceallevel=2
+set noshowmode
 
