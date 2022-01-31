@@ -11,13 +11,20 @@ Plug 'vimwiki/vimwiki', { 'on': 'VimwikiIndex' }
 Plug 'michal-h21/vim-zettel', { 'on' : 'VimwikiIndex', 'for' : 'vimwiki' }
 Plug 'alok/notational-fzf-vim', { 'on': 'NV' }
 Plug 'plasticboy/vim-markdown',{ 'on': 'VimwikiIndex', 'for' : 'vimwiki' }
-Plug 'itchyny/lightline.vim'
+Plug 'vim-airline/vim-airline', { 'for' : 'vimwiki' }
+Plug 'vim-airline/vim-airline-themes', { 'for' : 'vimwiki' }
+
+if !has("vim-airline")
+	Plug 'itchyny/lightline.vim'
+endif
 
 " General
 Plug 'preservim/tagbar', { 'on': 'TagbarToggle' }
 Plug 'preservim/nerdtree', { 'on': 'NERDTreeToggle' }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
+
+
 Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich' " change? 
 Plug 'tpope/vim-commentary'
@@ -28,7 +35,7 @@ Plug 'ycm-core/YouCompleteMe'
 Plug 'lervag/vimtex', { 'for': 'tex'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() }, 'on': 'MarkdownPreview'}
 
-Plug 'drmingdrmer/vim-tabbar'
+" Plug 'drmingdrmer/vim-tabbar'
 Plug 'ghifarit53/tokyonight-vim'
 " Plug 'arcticicestudio/nord-vim'
 " Plug 'mangeshrex/uwu.vim'
@@ -50,6 +57,38 @@ set laststatus=2
 let g:lightline = {
       \ 'colorscheme': 'wombat',
       \ }
+
+" Vim Airline
+let g:airline#extensions#tabline#enabled = 1
+" Airline
+let g:airline_theme='bubblegum'
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+" let g:airline_symbols.branch = ''
+let g:airline_section_z= 'X: %-4lTot: %-4L | Y: %c'
+let g:airline_mode_map = {
+    \ '__'     : '-',
+    \ 'c'      : 'C',
+    \ 'i'      : 'I',
+    \ 'ic'     : 'I',
+    \ 'ix'     : 'I',
+    \ 'n'      : 'N',
+    \ 'multi'  : 'M',
+    \ 'ni'     : 'N',
+    \ 'no'     : 'N',
+    \ 'R'      : 'R',
+    \ 'Rv'     : 'R',
+    \ 's'      : 'S',
+    \ 'S'      : 'S',
+    \ ''     : 'S',
+    \ 't'      : 'T',
+    \ 'v'      : 'V',
+    \ 'V'      : 'V',
+    \ ''     : 'V',
+    \ }
+
 
 " YouCompleteMe
 let g:ycm_min_num_of_chars_for_completion = 3
