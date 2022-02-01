@@ -342,7 +342,7 @@ draw_bold_text_with_bright_colors: true
 #
 # Window opacity as a floating point number from `0.0` to `1.0`.
 # The value `0.0` is completely transparent and `1.0` is opaque.
-background_opacity: 0.5
+background_opacity: 0.9
 
 
 #selection:
@@ -362,7 +362,7 @@ cursor:
     #   - ▇ Block
     #   - _ Underline
     #   - | Beam
-    shape: Beam
+    shape: Block
 
     # Cursor blinking state
     #
@@ -696,7 +696,7 @@ key_bindings:
   - { key: End,       mods: Shift,   mode: ~Alt,        action: ScrollToBottom }
 
   - { key: Space,  mods: Shift|Control, mode: Vi|~Search, action: ScrollToBottom          }
-  - { key: Space,  mods: Shift|Control, mode: ~Search,    action: ToggleViMode            }
+  - { key: Space,  mods: Control, mode: ~Search,    action: ToggleViMode            }
   - { key: Escape,                      mode: Vi|~Search, action: ClearSelection          }
   - { key: I,                           mode: Vi|~Search, action: ScrollToBottom          }
   - { key: I,                           mode: Vi|~Search, action: ToggleViMode            }

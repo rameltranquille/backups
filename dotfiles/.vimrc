@@ -113,11 +113,11 @@ nnoremap <silent> <leader>nv :NV<CR>
 
 " Vimwiki
 let g:vimwiki_list = [
-	\ {'path':'~/Dropbox/workbench/','ext':'.md','syntax':'markdown'}, 
-	\ {'path':'~/Dropbox/foundations/','ext':'.md','syntax':'markdown'}, 
-	\ {'path':'~/Dropbox/Calc2/','ext':'.md','syntax':'markdown'}, 
-	\ {'path':'~/Dropbox/orgComm/','ext':'.md','syntax':'markdown'}, 
-	\ {'path':'~/Dropbox/DS/','ext':'.md','syntax':'markdown'}, 
+	\ {'path':'~/Dropbox/workbench/','ext':'.md','syntax':'markdown', 'index':'home'}, 
+	\ {'path':'~/Dropbox/foundations/','ext':'.md','syntax':'markdown', 'index':'benchF'}, 
+	\ {'path':'~/Dropbox/AsianEcon/','ext':'.md','syntax':'markdown', 'index':'benchA'}, 
+	\ {'path':'~/Dropbox/orgComm/','ext':'.md','syntax':'markdown', 'index':'benchOC'}, 
+	\ {'path':'~/Dropbox/DS/','ext':'.md','syntax':'markdown', 'index':'benchDS'}, 
 	\ ]
 
 function! VimwikiFindIncompleteTasks()
@@ -136,10 +136,10 @@ nmap <Leader>wc :VimwikiToggleListItem<CR>
 
 " Zettel
 let g:zettel_format = "%y%m%d-%H%M-%title"
-nnoremap <leader>zn :ZettleNew<CR>
-nnoremap <leader>zo :ZettleOpen<CR>
-nnoremap <leader>zc :ZettleCapture<CR>
-nnoremap <leader>zs :ZettleSearch<CR>
+nnoremap <leader>zn :ZettelNew<CR>
+nnoremap <leader>zo :ZettelOpen<CR>
+nnoremap <leader>zc :ZettelCapture<CR>
+nnoremap <leader>zs :ZettelSearch<CR>
 " set completeopt=longest,menuone
 
 
@@ -157,7 +157,7 @@ nnoremap <leader>fz :FZF<CR>
 " Nerdtree
 let NERDTreeShowHidden=1
 nnoremap <C-n> :NERDTreeToggle<CR>
-nnoremap <leader>nt :NERDTreeFocus<CR>
+nnoremap <leader>nf :NERDTreeFocus<CR>
 " autocmd VimEnter * NERDTree | wincmd p
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
     \ quit | endif
@@ -172,10 +172,10 @@ au Filetype python set
     \ shiftwidth=4
     \ textwidth=79
 
-" au Filetype html set
-"     \ tabstop=2
-"     \ softtabstop=4
-"     \ shiftwidth=2
+au Filetype Markdown set
+    \ tabstop=4
+    \ softtabstop=4
+    \ shiftwidth=2
 
 
 " =================================

@@ -64,5 +64,3 @@ alias v='vifm -c vifm-v'
 alias vi="nvim +PackerSync"
 alias timer="alarm-clocl-applet"
 alias due="todoist list --filter '(today|overdue|tomorrow)'"
-
-colorscript -r

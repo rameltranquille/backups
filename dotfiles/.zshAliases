@@ -43,6 +43,7 @@ alias vzsh="vim /home/ramel/.zshrc"
 alias vrc="vim /home/ramel/.vimrc"
 alias vnvim='vim /home/ramel/.config/nvim/lua/custom/init.lua'
 alias vchad='vim /home/ramel/.config/nvim/lua/custom/chadrc.lua'
+
 ###############################################################
 #------------CLASS
 ###############################################################
@@ -62,3 +63,15 @@ alias worgcomm="vim /home/ramel/Dropbox/orgComm/Workbench.md"
 alias norgcomm="nvim /home/ramel/Dropbox/orgComm/Workbench.md"
 alias corgcomm="cd /home/ramel/Dropbox/orgComm/"
 
+
+
+###############################################################
+#------------TMUX
+###############################################################
+
+alias tm="tmux"
+alias tsl="tmux list-sessions"
+alias tsn="tmux new-session -d -s"
+alias tsw="tmux switch-client -s"
+alias tkill="tmux kill-server"
+alias tmw="tmux neww" 
