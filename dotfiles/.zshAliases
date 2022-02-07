@@ -19,14 +19,14 @@ alias updateYay="yay -Syu"
 alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"
 alias cdi3='cd /home/ramel/.config/i3/'
 alias work="vim -c VimwikiIndex"
-alias nwork="nvim -c VimwikiIndex"
+alias nwork="cd /home/ramel/Dropbox/ & nvim -c VimwikiIndex"
 alias cwork="cd /home/ramel/Dropbox/workbench/"
 alias logWorkout="xdg-open /home/ramel/Dropbox/workbench/workoutLog.xlsx"
 
 
 ############ EDITOR: Nvim
 alias nv="nvim +PackerSync"
-alias ni3="nvim /home/ramel/.config/i3/config"
+alias ni3="nvim /home/ramel/.config/i3/i3config"
 alias ncon="nvim /home/ramel/.config/conky/conky.conf"
 alias nbar="nvim /home/ramel/.config/polybar/config"
 alias nzsh="nvim /home/ramel/.zshrc"
@@ -47,31 +47,29 @@ alias vchad='vim /home/ramel/.config/nvim/lua/custom/chadrc.lua'
 ###############################################################
 #------------CLASS
 ###############################################################
-alias wfound="vim /home/ramel/Dropbox/foundations/Workbench.md"
-alias nfound="nvim /home/ramel/Dropbox/foundations/Workbench.md"
+alias wfound="cd /home/ramel/Dropbox/foundations & vim -c 'Vimwiki 1'"
+alias nfound="cd /home/ramel/Dropbox/foundations & nvim -c 'Vimwiki 1'"
 alias cfound="cd /home/ramel/Dropbox/foundations/"
 
-alias wcalc="vim /home/ramel/Dropbox/Calc2/Workbench.md"
-alias ncalc="nvim /home/ramel/Dropbox/Calc2/Workbench.md"
-alias ccalc="cd /home/ramel/Dropbox/Calc2/"
+alias wae="cd /home/ramel/Dropbox/AsianEcon & vim -c 'Vimwiki 2'"
+alias nae="cd /home/ramel/Dropbox/AsianEcon & nvim -c 'Vimwiki 2'"
+alias cae="cd /home/ramel/Dropbox/AsianEcon/"
 
-alias wds="vim /home/ramel/Dropbox/DS/Workbench.md"
-alias nds="nvim /home/ramel/Dropbox/DS/Workbench.md"
+alias wds="cd /home/ramel/Dropbox/DS & vim -c 'Vimwiki 3'"
+alias nds="cd /home/ramel/Dropbox/DS & nvim -c 'Vimwiki 3'"
 alias cds="cd /home/ramel/Dropbox/DS/"
 
-alias worgcomm="vim /home/ramel/Dropbox/orgComm/Workbench.md"
-alias norgcomm="nvim /home/ramel/Dropbox/orgComm/Workbench.md"
-alias corgcomm="cd /home/ramel/Dropbox/orgComm/"
+alias woc="cd /home/ramel/Dropbox/orgComm & vim -c 'Vimwiki 4'"
+alias noc="cd /home/ramel/Dropbox/orgComm & nvim -c 'Vimwiki 4'"
+alias coc="cd /home/ramel/Dropbox/orgComm/"
 
 
 
 ###############################################################
-#------------TMUX
+#------------i3-Layouts
 ###############################################################
+alias lo-notes="i3-msg 'workspace 2; append_layout /home/ramel/.config/i3/customWorkspaces/ws-notes1.json'"
+# alias layout-notes-ws1="i3-msg 'workspace 1; append_layout /home/ramel/.config/i3/customWorkspaces/ws-notes1.json'"
 
-alias tm="tmux"
-alias tsl="tmux list-sessions"
-alias tsn="tmux new-session -d -s"
-alias tsw="tmux switch-client -s"
-alias tkill="tmux kill-server"
-alias tmw="tmux neww" 
+
+

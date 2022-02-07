@@ -1,6 +1,10 @@
 local customPlugins = require "core.customPlugins"
 
 customPlugins.add(function(use)
+    use {"ThePrimeagen/vim-be-good", cmd = 'VimBeGood'}
+end)
+
+customPlugins.add(function(use)
     use {"lervag/vimtex", ft = 'tex'}
 end)
 
@@ -32,8 +36,12 @@ customPlugins.add(function(use)
 end)
 
 customPlugins.add(function(use)
-    use {"iamcco/markdown-preview.nvim", 
-        after = 'vim-markdown'} 
+    use {
+        'iamcco/markdown-preview.nvim',
+        ft = {'markdown'},
+        run = 'cd app && yarn install'
+
+    }
 end)
 
 customPlugins.add(function(use)
@@ -84,44 +92,31 @@ map("n", "<leader>zs", ":ZettleSearch<CR>")
 map("n", "<leader>wc", ":VimwikiToggleListItem<CR>")
 
 
--- function VimwikiFindIncompleteTasks()
-    -- lvimgrep=/- \[ \]/ %=p
-    -- lopen
--- end
-
-
--- function VimwikiFindAllInompleteTasks()
-    -- VimwikiSearch /- \[ \]/
-    -- lopen
--- end
-
--- map("n", "<leader>wa", ":call VimwikiFindIncompleteTasks<CR>")
--- map("n", "<leader>wx", ":call VimwikiFindAllInompleteTasks<CR>")
-
-
 --==========================================
 -- Settings
 --==========================================
-vim.g.nv_search_paths = {'~/Dropbox/Notebook', '~/Dropbox/foundations', '~/Dropbox/orgComm', '~/Dropbox/Calc2', '~/Dropbox/DS'}
+vim.g.nv_search_paths = {'~/Dropbox/workbench', '~/Dropbox/foundations', '~/Dropbox/orgComm', '~/Dropbox/AsianEcon', '~/Dropbox/DS'}
 vim.g.nv_default_extension = '.md'
 vim.g.vimwiki_list = {
-         {path='~/Dropbox/workbench/',ext='.md',syntax='markdown'}, 
-         {path='~/Dropbox/foundations/',ext='.md',syntax='markdown'}, 
-         {path='~/Dropbox/Calc2/',ext='.md',syntax='markdown'}, 
-         {path='~/Dropbox/orgComm/',ext='.md',syntax='markdown'}, 
-         {path='~/Dropbox/DS/',ext='.md',syntax='markdown'} 
-     }
+          {path='/home/ramel/Dropbox/workbench/',ext='.md',syntax='markdown', index='home'}, 
+          {path='/home/ramel/Dropbox/foundations/',ext='.md',syntax='markdown', index='benchF'}, 
+          {path='/home/ramel/Dropbox/AsianEcon/',ext='.md',syntax='markdown', index='benchA'}, 
+          {path='/home/ramel/Dropbox/orgComm/',ext='.md',syntax='markdown', index='benchOC'}, 
+          {path='/home/ramel/Dropbox/DS/',ext='.md',syntax='markdown', index='benchDS'}, 
+      } 
+     
 vim.g.zettel_format = "%y%m%d-%H%M-%title"
 
     
 vim.g.vim_markdown_folding_disabled = 1
+vim.g.mkdp_auto_start = 1
 vim.g.vim_markdown_conceal_code_blocks = 0
 vim.g.vim_markdown_math = 1
 vim.opt.conceallevel = 2
 vim.g.vimtex_view_method = 'zathura'
 vim.g.maplocalleader = " "
--- vim.g.nvim_tree_disble_netrw = 0
--- vim.g.nvim_tree_hijack_netrw = 0
+vim.g.vimwiki_global_ext = 0
+
 
 
 

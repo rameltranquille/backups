@@ -1,3 +1,4 @@
+#
 ######################################################################
 #   General
 ######################################################################
@@ -10,6 +11,8 @@ exec_always --no-startup-id feh --bg-scale --no-xinerama /home/ramel/.config/i3/
 exec_always --no-startup-id xrandr --output DVI-D-0 --primary --mode 1920x1080 --pos 0x1080 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --mode 1366x768 --pos 1920x508 --rotate left &
 exec_always --no-startup-id /home/ramel/.config/polybar/launch.sh &
 exec_always --no-startup-id autotiling
+exec --no-startup-id kitty vim -c VimwikiIndex &
+exec_always --no-startup-id split v
 # exec --no-startup-id xrandr --output DVI-D-0 --primary --mode 1920x1080 --pos 1848x554 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 768x0 --rotate left --output DP-0 --mode 1366x768 --pos 0x277 --rotate right
 
 
@@ -173,35 +176,37 @@ bindsym $mod+Ctrl+$left resize grow width 1 px or 1 ppt
 bindsym $mod+Return exec kitty
 bindsym $mod+Shift+Return exec alacritty
 
-# Assignments
 assign [class="thunar"]               → 2
 assign [class="Firefox|chromium|google-chrome-stable"]               → 2
 assign [class="tastyworks"]               → 2
 assign [class="obsidian"]               → 4
 assign [class="discord"]               → 6
+assign [class="Steam"]               → 2
 # assign [class="Spotify|spotify"]            → 6
 for_window [class="Spotify"] move to workspace $ws6
-for_window [class="League of Legends"] move to workspace $ws1
+for_window [class="Steam"] move to workspace $ws2
+for_window [class="League of Legends"] move to workspace $ws2
 
 
-bindsym $mod+b exec --no-startup-id dmenu_task;focus
 bindsym $mod+z exec --no-startup-id thunar;focus
 bindsym $mod+x exec --no-startup-id firefox;focus
 bindsym $mod+Shift+x exec --no-startup-id google-chrome-stable;focus
-bindsym $mod+c exec --no-startup-id bmks;focus
-bindsym $mod+v exec --no-startup-id dmenu_launch --notes;focus
 bindsym $mod+shift+v exec --no-startup-id dmenu_launch --search;focus
-bindsym $mod+n exec --no-startup-id dmenu_notetaker;focus
+
+bindsym $mod+v exec --no-startup-id bmks;focus
+bindsym $mod+b exec --no-startup-id dmenu_launch --notes;focus
+bindsym $mod+n exec kitty vim -c VimwikiIndex &
 bindsym $mod+m exec --no-startup-id dmenu_run_i;focus
+bindsym $mod+Shift+m exec --no-startup-id xfce4-terminal --drop-down;focus
+bindsym $mod+Shift+p exec --no-startup-id passmenu;focus
 
 # F Keys
-bindsym F1 exec --no-startup-id dmenu_task;focus
-bindsym F2 exec --no-startup-id dmenu_launch --notes;focus
-bindsym F3 exec --no-startup-id dmenu_launch --search;focus
-bindsym F4 exec --no-startup-id dmenu_notetaker;focus
-bindsym F5 exec --no-startup-id dmenu_run_i;focus
-bindsym F6 exec --no-startup-id bmks;focus
-bindsym F7 exec --no-startup-id passmenu;focus
+#bindsym F1 exec --no-startup-id dmenu_task;focus
+##bindsym F2 exec --no-startup-id dmenu_launch --notes;focus
+#bindsym F3 exec --no-startup-id dmenu_launch --search;focus
+#bindsym F4 exec --no-startup-id dmenu_notetaker;focus
+#bindsym F5 exec --no-startup-id dmenu_run_i;focus
+#bindsym F6 exec --no-startup-id bmks;focus
 
 
 popup_during_fullscreen smart

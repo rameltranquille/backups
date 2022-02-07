@@ -3,11 +3,7 @@ Backup files using [rsync](https://wiki.archlinux.org/title/rsync).
 
 ----
 ## TODO 
-- [x] Update each of the scripts and dotfiles 
-- [x] Update [notetaker](./scripts_projects/dmenu_note) script  
-- [x] Back up configs specifically for alacritty, qtile, dmenu, st, and kitty. Will not 
-backup due to git files in each. Go for specific files, example being ".config/qtile/config.py".
-
+- [ ] Create branch for laptop
 
 ----
 
