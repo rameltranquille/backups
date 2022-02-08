@@ -147,6 +147,7 @@ nmap <Leader>wa :call VimwikiFindAllIncompleteTasks()<CR>
 nmap <Leader>wx :call VimwikiFindIncompleteTasks()<CR>
 nmap <Leader>wov :VimwikiToggleVSplitLink<CR>
 nmap <Leader>wos :VimwikiSplitLink<CR>
+nmap <Leader>wc :VimwikiToggleListItem<CR>
 
 " Zettel
 let g:zettel_format = "%y%m%d-%H%M-%title"
@@ -164,7 +165,7 @@ let g:vimtex_view_method = 'zathura'
 " fzf
 let g:fzf_preview_window = ['right:40%', 'ctrl-/']
 " TEXT IN FILES
-nnoremap fr  :Rg<CR>
+nnoremap <leader>fr  :Rg<CR>
 " FILES
 nnoremap <leader>fz :FZF<CR>
 

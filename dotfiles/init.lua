@@ -1,60 +1,3 @@
-local customPlugins = require "core.customPlugins"
-
-customPlugins.add(function(use)
-    use {"ThePrimeagen/vim-be-good", cmd = 'VimBeGood'}
-end)
-
-customPlugins.add(function(use)
-    use {"lervag/vimtex", ft = 'tex'}
-end)
-
-customPlugins.add(function(use)
-    use {
-        "vimwiki/vimwiki", 
-        cmd = "VimwikiIndex"
-    }
-end)
-
-customPlugins.add(function(use)
-    use {
-      "michal-h21/vim-zettel",
-        ft = "markdown",
-        after = "vimwiki"
-      }
-end)
-
-customPlugins.add(function(use)
-    use {
-      "alok/notational-fzf-vim",
-        after = "vimwiki"
-      }
-end)
-
-customPlugins.add(function(use)
-    use {"plasticboy/vim-markdown",
-        ft = "markdown"}
-end)
-
-customPlugins.add(function(use)
-    use {
-        'iamcco/markdown-preview.nvim',
-        ft = {'markdown'},
-        run = 'cd app && yarn install'
-
-    }
-end)
-
-customPlugins.add(function(use)
-    use {"godlygeek/tabular",
-        after = "vim-markdown",
-        event = "BufRead"}
-end)
-
-customPlugins.add(function(use)
-    use {"chrisbra/Colorizer",
-        cmd = "ColorHighlight"}
-end)
-
 --==========================================
 -- Mappings
 --==========================================
@@ -90,6 +33,7 @@ map("n", "<leader>zo", ":ZettleOpen<CR>")
 map("n", "<leader>zc", ":ZettleCapture<CR>")
 map("n", "<leader>zs", ":ZettleSearch<CR>")
 map("n", "<leader>wc", ":VimwikiToggleListItem<CR>")
+map("n", "<Plug>", "<Plug>Markdown_OpenUrlUnderCursor")
 
 
 --==========================================
@@ -109,7 +53,7 @@ vim.g.zettel_format = "%y%m%d-%H%M-%title"
 
     
 vim.g.vim_markdown_folding_disabled = 1
-vim.g.mkdp_auto_start = 1
+-- vim.g.mkdp_auto_start = 1
 vim.g.vim_markdown_conceal_code_blocks = 0
 vim.g.vim_markdown_math = 1
 vim.opt.conceallevel = 2
