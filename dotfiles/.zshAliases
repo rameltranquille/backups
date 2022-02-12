@@ -18,10 +18,6 @@ alias due="todoist list --filter '(today|overdue|tomorrow)'"
 alias updateYay="yay -Syu"
 alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"
 alias cdi3='cd /home/ramel/.config/i3/'
-alias work="cd /home/ramel/Dropbox/; vim -c VimwikiIndex"
-alias nwork="cd /home/ramel/Dropbox/; nvim -c VimwikiIndex"
-alias cwork="cd /home/ramel/Dropbox/workbench/"
-alias logWorkout="xdg-open /home/ramel/Dropbox/workbench/workoutLog.xlsx"
 
 
 ############ EDITOR: Nvim
@@ -63,6 +59,12 @@ alias woc="cd /home/ramel/Dropbox/orgComm; vim -c 'Vimwiki 5'"
 alias noc="cd /home/ramel/Dropbox/orgComm; nvim -c 'Vimwiki 5'"
 alias coc="cd /home/ramel/Dropbox/orgComm/"
 
+## MORE VIMWIKI
+alias work="cd /home/ramel/Dropbox/workbench; vim -c VimwikiIndex"
+alias nwork="cd /home/ramel/Dropbox/; nvim -c VimwikiIndex"
+alias cwork="cd /home/ramel/Dropbox/workbench/"
+alias logWorkout="xdg-open /home/ramel/Dropbox/workbench/workoutLog.xlsx"
+alias cheat="cd /home/ramel/Dropbox/workbench; vim cheatsheet.md"
 
 
 ###############################################################

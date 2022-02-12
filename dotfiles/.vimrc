@@ -145,9 +145,14 @@ endfunction
 
 nmap <Leader>wa :call VimwikiFindAllIncompleteTasks()<CR>
 nmap <Leader>wx :call VimwikiFindIncompleteTasks()<CR>
+nmap <Leader>glc :VimwikiToggleListItem<CR>
+nmap glc :VimwikiToggleListItem<CR>
+
 nmap <Leader>wov :VimwikiToggleVSplitLink<CR>
 nmap <Leader>wos :VimwikiSplitLink<CR>
-nmap <Leader>wc :VimwikiToggleListItem<CR>
+let g:vimwiki_hl_cb_checked = 2
+
+
 
 " Zettel
 let g:zettel_format = "%y%m%d-%H%M-%title"
@@ -172,13 +177,16 @@ nnoremap <leader>fz :FZF<CR>
 " Nerdtree
 let NERDTreeShowHidden=0
 " let NERDTreeBookmarksFile='/home/ramel/Dropbox/.bookmarks'
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeFind<CR>
+nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nc :NERDTreeCWD<CR>
 nnoremap <leader>nb :NERDTreeShowBookmarks<CR>
 nnoremap <leader>nf :NERDTreeFocus<CR>
-" autocmd VimEnter * NERDTree | wincmd p
-autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() |
-    \ quit | endif
+
+" Exit Vim if NERDTree is the only window remaining in the only tab.
+autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
+" Close the tab if NERDTree is the only window remaining in it.
+autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
 
 " =================================

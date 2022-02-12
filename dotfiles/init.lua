@@ -32,13 +32,16 @@ map("n", "<leader>zn", ":ZettleNew<CR>")
 map("n", "<leader>zo", ":ZettleOpen<CR>")
 map("n", "<leader>zc", ":ZettleCapture<CR>")
 map("n", "<leader>zs", ":ZettleSearch<CR>")
-map("n", "<leader>wc", ":VimwikiToggleListItem<CR>")
+map("n", "<leader>glc", ":VimwikiToggleListItem<CR>")
+map("n", "glc", ":VimwikiToggleListItem<CR>")
 map("n", "<Plug>", "<Plug>Markdown_OpenUrlUnderCursor")
 
 
 --==========================================
 -- Settings
 --==========================================
+--
+vim.g.vimwiki_hl_cb_checked = 2
 vim.g.nv_search_paths = {'~/Dropbox/workbench', '~/Dropbox/foundations', '~/Dropbox/orgComm', '~/Dropbox/AsianEcon', '~/Dropbox/DS'}
 vim.g.nv_default_extension = '.md'
 vim.g.vimwiki_list = {
