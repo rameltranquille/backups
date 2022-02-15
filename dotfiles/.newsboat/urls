@@ -1,0 +1,60 @@
+-------------------WallStreetJournal-------------------
+file:///home/ramel/.newsboat/RSSWSJD.xml "~WSJ Tech" tech wsj
+file:///home/ramel/.newsboat/RSSOpinion.xml "~WSJ Opinion" opinion wsj
+file:///home/ramel/.newsboat/RSSLifestyle.xml "~WSJ Lifestyle" life wsj
+file:///home/ramel/.newsboat/RSSWorldNews.xml "~WSJ World News" international wsj gen
+file:///home/ramel/.newsboat/RSSMarketsMain.xml "~WSJ Markets" Fin wsj
+file:///home/ramel/.newsboat/WSJcomUSBusiness.xml "~WSJ US Business" Fin NA wsj
+
+
+-------------------REUTERS-------------------
+file:///home/ramel/.newsboat/reutersAllSectors.rss "~Reuters All Sectors" reuters gen
+file:///home/ramel/.newsboat/reutersNA.rss "~Reuters NA" reuters NA
+file:///home/ramel/.newsboat/reutersAsia.rss "~Reuters Asia" reuters Asia
+file:///home/ramel/.newsboat/reutersTech.rss "~Reuters Tech" reuters tech
+file:///home/ramel/.newsboat/reutersDeals.rss "~Reuters Deals" reuters Fin
+file:///home/ramel/.newsboat/reutersFinance.rss "~Reuters Finance" reuters Fin
+file:///home/ramel/.newsboat/reutersPolitics.rss "~Reuters Politics" reuters politics
+file:///home/ramel/.newsboat/reutersImpacts.rss "~Reuters Impacts"  reuters
+
+-------------------ECONOMIST-------------------
+https://www.economist.com/briefing/rss.xml "~Economist - Briefing" economist gen
+https://www.economist.com/special-report/rss.xml "~Economist - Special Report" economist gen
+https://www.economist.com/united-states/rss.xml "~Economist - US" economist NA
+https://www.economist.com/asia/rss.xml "~Economist - Asia" economist Asia
+https://www.economist.com/business/rss.xml "~Economist - Business" economist Fin
+https://www.economist.com/international/rss.xml "~Economist - International" economist international
+https://www.economist.com/china/rss.xml "~Economist - China" economist Asia
+https://www.economist.com/finance-and-economics/rss.xml "~Economist - Finance and Economics" economist Fin econ
+https://www.economist.com/science-and-technology/rss.xml "~Economist - Science and Tech" economist tech science
+https://www.economist.com/the-world-this-week/rss.xml "~Economist - The World This Week" economist international
+
+-------------------538-------------------
+file:///home/ramel/.newsboat/538Econ.rss "~FiveThirtyEight Economics" 538 econ
+file:///home/ramel/.newsboat/538Sports.rss "~FiveThirtyEight Sports" 538 sports
+file:///home/ramel/.newsboat/538Features.rss "~FiveThirtyEight Features" 538 gen
+file:///home/ramel/.newsboat/538Politics.rss "~FiveThirtyEight Politics" 538 politics
+
+-------------------SIFT-------------------
+https://www.ft.com/myft/following/4c777127-49b3-4121-8d82-a52246972d88.rss "~Financial Times" Fin gen econ
+https://www.lesswrong.com/feed.xml?view=curated-rss "~LW Curated" LW 
+https://www.lesswrong.com/feed.xml?view=frontpage-rss&karmaThreshold=30 "~LW Frontpage" LW 
+file:///home/ramel/.newsboat/quantaMag.rss "~Quanta Magazine" science 
+https://blog.cleancoder.com/atom.xml "~Uncle Bob Clean Code Blog" blog
+http://feeds.hbr.org/harvardbusiness/ "~Harvard Business Review" gen
+http://feeds.feedburner.com/blogspot/gJZg "~Google AI Blog" blog
+
+"query:Push:tags # \"push\""
+https://www.reddit.com/r/BBCSluts/top/.rss "~BbcSluts" ! push
+https://www.reddit.com/user/chaturbot_messenger/m/Top100female/top/.rss "~Top100" ! push
+https://www.reddit.com/r/anal/top/.rss "~Anal" ! push
+https://www.reddit.com/r/damngoodinterracial/top/.rss "~DamnGoodInterracial" ! push
+https://www.reddit.com/r/altgonewild/top/.rss  "~AltGoneWild" ! push
+https://www.reddit.com/r/amateurcumsluts/top/.rss "~AmateurCumSluts" ! push
+https://www.reddit.com/r/BBCparadise/top/.rss "~BBCparadise" ! push
+https://www.reddit.com/r/ircuckold/top/.rss "~ircuckold" ! push
+https://www.reddit.com/r/nsfwhardcore/top/.rss "~NSFW Hardcore" ! push
+https://www.reddit.com/r/BlackWorldOrder/top/.rss "~BlackWorldOrder" ! push
+https://www.reddit.com/r/deepthroat/top/.rss "~deepthroat" ! push
+https://www.reddit.com/r/postorgasm/top/.rss "~post orgasm" ! push
+

@@ -8,7 +8,7 @@ init () {
 
 copy_dots () {
 	for dir in $dotfiles; do
-		rsync -dzv $dir $HOME/.backup/dotfiles/
+		rsync -drzv $dir $HOME/.backup/dotfiles/
 	done
 }
 
