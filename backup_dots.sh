@@ -8,7 +8,7 @@ init () {
 
 copy_dots () {
 	for dir in $dotfiles; do
-		rsync -dPzv $dir $HOME/.backup/dotfiles/
+		rsync -dzv $dir $HOME/.backup/dotfiles/
 	done
 }
 
@@ -38,7 +38,7 @@ $HOME/.config/nvim/lua/custom/* $HOME/.config/alacritty/alacritty.yml
 $HOME/.config/qtile/config.py $HOME/.config/conky/conky.conf
 $HOME/.config/dunst/dunstrc $HOME/.xinitrc $HOME/.config/kitty/kitty.conf
 $HOME/.config/polybar/ $HOME/.config/fish/config.fish
-$HOME/.config/i3/i3config $HOME/.newsboat/"
+$HOME/.config/i3/i3config $HOME/.newsboat"
 
 scripts="$HOME/Scripts/" 
 
