@@ -38,7 +38,7 @@ $HOME/.config/nvim/lua/custom/* $HOME/.config/alacritty/alacritty.yml
 $HOME/.config/qtile/config.py $HOME/.config/conky/conky.conf
 $HOME/.config/dunst/dunstrc $HOME/.xinitrc $HOME/.config/kitty/kitty.conf
 $HOME/.config/polybar/ $HOME/.config/fish/config.fish
-$HOME/.config/i3/i3config"
+$HOME/.config/i3/i3config $HOME/.newsboat/"
 
 scriptNprojects="$HOME/scripts/" 
 # projects="$HOME/scripts/"

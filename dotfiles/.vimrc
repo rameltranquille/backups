@@ -46,6 +46,7 @@ call plug#end()
 " =================================
 " Plugin Settings
 " =================================
+
 nnoremap <Plug> <Plug>Markdown_OpenUrlUnderCursor
 " Tabs
 nmap <leader>qt :tabclose<CR>
@@ -55,6 +56,7 @@ nmap <leader>tt :TagbarToggle<CR>
 nnoremap <leader>ml :<C-u>marks<CR>:normal!
 " Colorscheme
 colorscheme tokyonight
+let g:tokyonight_style = 'storm'
 
 " Vim-Sandwich
 let g:sandwich#recipes = deepcopy(g:sandwich#default_recipes)
@@ -96,6 +98,7 @@ let g:airline_mode_map = {
     \ ''     : 'V',
     \ }
 
+au BufEnter *.md setl syntax=markdown
 
 " YouCompleteMe
 " let g:ycm_min_num_of_chars_for_completion = 2
@@ -110,8 +113,7 @@ let g:airline_mode_map = {
 nmap <leader>mp <Plug>MarkdownPreview
 nmap <leader>ms <Plug>MarkdownPreviewStop
 nmap <leader>mt <Plug>MarkdownPreviewToggle
-let g:vim_markdown_fold = 0
-" let g:vim_markdown_folding_level = 0
+let g:vim_markdown_folding_disabled = 1
 " let g:vim_markdown_math = 1
 " let g:vim_markdown_auto_extension_ext = ['md', 'txt', 'vimwiki']
 " let g:vim_markdown_no_extensions_in_markdown = 1
@@ -143,13 +145,14 @@ function! VimwikiFindAllIncompleteTasks()
   lopen
 endfunction
 
-nmap <Leader>wa :call VimwikiFindAllIncompleteTasks()<CR>
-nmap <Leader>wx :call VimwikiFindIncompleteTasks()<CR>
-nmap <Leader>glc :VimwikiToggleListItem<CR>
-nmap glc :VimwikiToggleListItem<CR>
+nmap <leader>wa :call VimwikiFindAllIncompleteTasks()<CR>
+nmap <leader>wx :call VimwikiFindIncompleteTasks()<CR>
+nmap <leader>glc <Plug>VimwikiToggleListItem<CR>
+nmap glc <Plug>VimwikiToggleListItem<CR>
 
-nmap <Leader>wov :VimwikiToggleVSplitLink<CR>
-nmap <Leader>wos :VimwikiSplitLink<CR>
+nmap <leader>vs <Plug>VimwikiVSplitLink<CR>
+nmap <leader>vv <Plug>VimwikiSplitLink<CR>
+nmap <leader>vt <Plug>VimwikiTabnewLink<CR>
 let g:vimwiki_hl_cb_checked = 2
 
 
@@ -177,11 +180,11 @@ nnoremap <leader>fz :FZF<CR>
 " Nerdtree
 let NERDTreeShowHidden=0
 " let NERDTreeBookmarksFile='/home/ramel/Dropbox/.bookmarks'
-nnoremap <C-n> :NERDTreeFind<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nc :NERDTreeCWD<CR>
 nnoremap <leader>nb :NERDTreeShowBookmarks<CR>
-nnoremap <leader>nf :NERDTreeFocus<CR>
+nnoremap <leader>nf :NERDTreeFind<CR>
 
 " Exit Vim if NERDTree is the only window remaining in the only tab.
 autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
@@ -228,14 +231,16 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Mappings
 " =================================
 
+nnoremap <leader>sq i*Q* 
+imap <C-b> ****<Esc>2ha
+imap <C-i> **<Esc>ha
 nnoremap Y y$
 nnoremap 'q :vimgrep /\*\*Q\*\*/ %<CR>
 nmap ; :
 imap jj <Esc>
 imap jk <Esc>
-" nnoremap <C-b> i****<ESC>hi
-" nnoremap <C-i> i**<ESC>i
-nnoremap <leader>a ea
+nnoremap <leader>sb i****<ESC>hi
+nnoremap <leader>si i**<ESC>i
 
 map <C-h> <C-w>h
 map <C-j> <C-w>j

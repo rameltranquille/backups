@@ -51,12 +51,12 @@ alias wae="cd /home/ramel/Dropbox/AsianEcon; vim -c 'Vimwiki 3'"
 alias nae="cd /home/ramel/Dropbox/AsianEcon; nvim -c 'Vimwiki 3'"
 alias cae="cd /home/ramel/Dropbox/AsianEcon/"
 
-alias wds="cd /home/ramel/Dropbox/DS; vim -c 'Vimwiki 4'"
-alias nds="cd /home/ramel/Dropbox/DS; nvim -c 'Vimwiki 4'"
+alias wds="cd /home/ramel/Dropbox/DS; vim -c 'Vimwiki 5'"
+alias nds="cd /home/ramel/Dropbox/DS; nvim -c 'Vimwiki 5'"
 alias cds="cd /home/ramel/Dropbox/DS/"
 
-alias woc="cd /home/ramel/Dropbox/orgComm; vim -c 'Vimwiki 5'"
-alias noc="cd /home/ramel/Dropbox/orgComm; nvim -c 'Vimwiki 5'"
+alias woc="cd /home/ramel/Dropbox/orgComm; vim -c 'Vimwiki 4'"
+alias noc="cd /home/ramel/Dropbox/orgComm; nvim -c 'Vimwiki 4'"
 alias coc="cd /home/ramel/Dropbox/orgComm/"
 
 ## MORE VIMWIKI
