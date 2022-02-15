@@ -7,7 +7,7 @@ alias ls='ls --color=auto'
 alias la='ls -Al'
 alias l='ls -CF'
 alias sps='sudo pacman -S'
-alias ll='ls -l --sort=extension'
+alias ll='ls -al --sort=extension'
 alias lp="sudo sh -c 'sysctl -w abi.vsyscall32=0'"
 alias py='python'
 alias smi='sudo make install'
