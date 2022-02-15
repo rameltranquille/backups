@@ -8,7 +8,7 @@ init () {
 
 copy_dots () {
 	for dir in $dotfiles; do
-		rsync --mkpath -lptgoPaA $dir $HOME/.backup/dotfiles/
+		rsync --mkpath -Pa $dir $HOME/.backup/dotfiles/
 	done
 }
 
@@ -16,7 +16,7 @@ copy_scripts () {
 	for dir in $scriptNprojects; do
 		rsync -avz $dir $HOME/.backup/scripts/
 	done
-	ls $HOME/.backup/scriptsAndprojects
+	ls $HOME/.backup/scripts
 }
 
 copy_imp_docs () {
