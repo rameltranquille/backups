@@ -3,18 +3,18 @@
 init () {
 	echo "Making directories"
 	mkdir -p $HOME/.backup
-	mkdir -p $HOME/.backup/dotfiles $HOME/.backup/doc $HOME/.backup/scriptsAndprojects
+	mkdir -p $HOME/.backup/dotfiles $HOME/.backup/doc $HOME/.backup/scripts/
 }
 
 copy_dots () {
 	for dir in $dotfiles; do
-		rsync --mkpath -lptgoP $dir $HOME/.backup/dotfiles/
+		rsync --mkpath -lptgoPaA $dir $HOME/.backup/dotfiles/
 	done
 }
 
-copy_projects_scripts () {
+copy_scripts () {
 	for dir in $scriptNprojects; do
-		rsync -avz $dir $HOME/.backup/scriptsAndprojects/
+		rsync -avz $dir $HOME/.backup/scripts/
 	done
 	ls $HOME/.backup/scriptsAndprojects
 }
@@ -40,13 +40,11 @@ $HOME/.config/dunst/dunstrc $HOME/.xinitrc $HOME/.config/kitty/kitty.conf
 $HOME/.config/polybar/ $HOME/.config/fish/config.fish
 $HOME/.config/i3/i3config $HOME/.newsboat/"
 
-scriptNprojects="$HOME/scripts/" 
-# projects="$HOME/scripts/"
-# imp_docs="$HOME/docs/res.tex"
+scripts="$HOME/Scripts/" 
 
 init
 copy_dots
-copy_projects_scripts
+copy_scripts
 copy_imp_docs
 git_update
 

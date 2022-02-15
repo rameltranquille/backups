@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+	xmlns:content="http://purl.org/rss/1.0/modules/content/"
+	xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+	xmlns:dc="http://purl.org/dc/elements/1.1/"
+	xmlns:atom="http://www.w3.org/2005/Atom"
+	xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+	xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Threatpost</title>
+	<atom:link href="https://threatpost.com/feed/" rel="self" type="application/rss+xml" />
+	<link>https://threatpost.com</link>
+	<description>The First Stop For Security News</description>
+	<lastBuildDate>Mon, 14 Feb 2022 17:44:21 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>
+	hourly	</sy:updatePeriod>
+	<sy:updateFrequency>
+	1	</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=5.8.3</generator>
+<atom:link rel="hub" href="https://pubsubhubbub.appspot.com"/><atom:link rel="hub" href="https://pubsubhubbub.superfeedr.com"/>	<item>
+		<title>&#8216;Cities: Skylines&#8217; Gaming Modder Banned Over Hidden Malware</title>
+		<link>https://threatpost.com/cities-skylines-modder-banned-over-hidden-malware/178403/</link>
+					<comments>https://threatpost.com/cities-skylines-modder-banned-over-hidden-malware/178403/#respond</comments>
+		
+		<dc:creator><![CDATA[Lisa Vaas]]></dc:creator>
+		<pubDate>Mon, 14 Feb 2022 17:23:45 +0000</pubDate>
+				<category><![CDATA[Malware]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=178403</guid>
+
+					<description><![CDATA[35K+ players were exposed to an auto-updater that planted a trojan that choked performance for fellow modders and Colossal Order employees.
+]]></description>
+		
+					<wfw:commentRss>https://threatpost.com/cities-skylines-modder-banned-over-hidden-malware/178403/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/14122005/skyline-scaled-e1644859246177.jpeg" width="800" height="343"><media:keywords>full</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/14122005/skyline-1024x439.jpeg" width="1024" height="439"><media:keywords>large</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/14122005/skyline-300x129.jpeg" width="300" height="129"><media:keywords>medium</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/14122005/skyline-150x150.jpeg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	</item>
+		<item>
+		<title>Adobe: Zero-Day Magento 2 RCE Bug Under Active Attack</title>
+		<link>https://threatpost.com/adobe-zero-day-magento-rce-attack/178407/</link>
+					<comments>https://threatpost.com/adobe-zero-day-magento-rce-attack/178407/#respond</comments>
+		
+		<dc:creator><![CDATA[Tara Seals]]></dc:creator>
+		<pubDate>Mon, 14 Feb 2022 16:48:50 +0000</pubDate>
+				<category><![CDATA[Vulnerabilities]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=178407</guid>
+
+					<description><![CDATA[The vendor issued an emergency fix on Sunday, and eCommerce websites should update ASAP to avoid Magecart card-skimming attacks and other problems.]]></description>
+		
+					<wfw:commentRss>https://threatpost.com/adobe-zero-day-magento-rce-attack/178407/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/04/02090859/ecommerce-e1585832954169.jpg" width="800" height="534"><media:keywords>full</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/04/02090859/ecommerce-e1585832954169.jpg" width="800" height="534"><media:keywords>large</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/04/02090859/ecommerce-300x200.jpg" width="300" height="200"><media:keywords>medium</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/04/02090859/ecommerce-150x150.jpg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	</item>
+		<item>
+		<title>Critical MQTT-Related Bugs Open Industrial Networks to RCE Via Moxa</title>
+		<link>https://threatpost.com/critical-mqtt-bugs-industrial-rce-moxa/178399/</link>
+					<comments>https://threatpost.com/critical-mqtt-bugs-industrial-rce-moxa/178399/#comments</comments>
+		
+		<dc:creator><![CDATA[Tara Seals]]></dc:creator>
+		<pubDate>Fri, 11 Feb 2022 21:51:28 +0000</pubDate>
+				<category><![CDATA[Critical Infrastructure]]></category>
+		<category><![CDATA[Vulnerabilities]]></category>
+		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=178399</guid>
+
+					<description><![CDATA[A collection of five security vulnerabilities with a collective CVSS score of 10 out of 10 threaten critical infrastructure environments that use Moxa MXview.]]></description>
+		
+					<wfw:commentRss>https://threatpost.com/critical-mqtt-bugs-industrial-rce-moxa/178399/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/09/03102603/Software-Patch.jpg" width="800" height="487"><media:keywords>full</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/09/03102603/Software-Patch.jpg" width="800" height="487"><media:keywords>large</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/09/03102603/Software-Patch-300x183.jpg" width="300" height="183"><media:keywords>medium</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/09/03102603/Software-Patch-150x150.jpg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	</item>
+		<item>
+		<title>Cybercrooks Frame Targets by Planting Fabricated Digital Evidence</title>
+		<link>https://threatpost.com/cybercrooks-frame-targets-plant-incriminating-evidence/178384/</link>
+					<comments>https://threatpost.com/cybercrooks-frame-targets-plant-incriminating-evidence/178384/#respond</comments>
+		
+		<dc:creator><![CDATA[Lisa Vaas]]></dc:creator>
+		<pubDate>Fri, 11 Feb 2022 19:57:34 +0000</pubDate>
+				<category><![CDATA[Hacks]]></category>
+		<category><![CDATA[Malware]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=178384</guid>
+
+					<description><![CDATA[The ‘ModifiedElephant’ threat actors are technically unimpressive, but they’ve evaded detection for a decade, hacking human rights advocates' systems with dusty old keyloggers and off-the-shelf RATs. 
+]]></description>
+		
+					<wfw:commentRss>https://threatpost.com/cybercrooks-frame-targets-plant-incriminating-evidence/178384/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/11143537/elephant-scaled-e1644608152556.jpeg" width="800" height="525"><media:keywords>full</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/11143537/elephant-1024x672.jpeg" width="1024" height="672"><media:keywords>large</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/11143537/elephant-300x197.jpeg" width="300" height="197"><media:keywords>medium</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/11143537/elephant-150x150.jpeg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	</item>
+		<item>
+		<title>Apple Patches Actively Exploited WebKit Zero Day</title>
+		<link>https://threatpost.com/apple-patches-actively-exploited-webkit-zero-day/178370/</link>
+					<comments>https://threatpost.com/apple-patches-actively-exploited-webkit-zero-day/178370/#comments</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Montalbano]]></dc:creator>
+		<pubDate>Fri, 11 Feb 2022 13:45:45 +0000</pubDate>
+				<category><![CDATA[Hacks]]></category>
+		<category><![CDATA[Vulnerabilities]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=178370</guid>
+
+					<description><![CDATA[A memory issue affects myriad iPhone, iPad and MacOS devices and allows attackers to execute arbitrary code after processing malicious web content.
+]]></description>
+		
+					<wfw:commentRss>https://threatpost.com/apple-patches-actively-exploited-webkit-zero-day/178370/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/06103714/0day.jpg" width="800" height="533"><media:keywords>full</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/06103714/0day.jpg" width="800" height="533"><media:keywords>large</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/06103714/0day-300x200.jpg" width="300" height="200"><media:keywords>medium</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2020/03/06103714/0day-150x150.jpg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	</item>
+		<item>
+		<title>Decryptor Keys Published for Maze, Egregor, Sekhmet Ransomwares</title>
+		<link>https://threatpost.com/decryptor-keys-maze-egregor-sekhmet-ransomwares/178363/</link>
+					<comments>https://threatpost.com/decryptor-keys-maze-egregor-sekhmet-ransomwares/178363/#respond</comments>
+		
+		<dc:creator><![CDATA[Lisa Vaas]]></dc:creator>
+		<pubDate>Thu, 10 Feb 2022 23:16:44 +0000</pubDate>
+				<category><![CDATA[Malware]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=178363</guid>
+
+					<description><![CDATA[The Maze gang are purportedly never going back to ransomware and have destroyed all of their ransomware source code, said somebody claiming to be the developer.]]></description>
+		
+					<wfw:commentRss>https://threatpost.com/decryptor-keys-maze-egregor-sekhmet-ransomwares/178363/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/10181321/maze-scaled-e1644534824618.jpeg" width="800" height="481"><media:keywords>full</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/10181321/maze-1024x615.jpeg" width="1024" height="615"><media:keywords>large</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/10181321/maze-300x180.jpeg" width="300" height="180"><media:keywords>medium</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2022/02/10181321/maze-150x150.jpeg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	</item>
+		<item>
+		<title>Sharp SIM-Swapping Spike Causes $68M in Losses</title>
+		<link>https://threatpost.com/sharp-sim-swapping-spike-losses/178358/</link>
+					<comments>https://threatpost.com/sharp-sim-swapping-spike-losses/178358/#comments</comments>
+		
+		<dc:creator><![CDATA[Tara Seals]]></dc:creator>
+		<pubDate>Thu, 10 Feb 2022 22:13:33 +0000</pubDate>
+				<category><![CDATA[Breach]]></category>
+		<category><![CDATA[Hacks]]></category>
+		<category><![CDATA[Mobile Security]]></category>
+		<category><![CDATA[Privacy]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=178358</guid>
+
+					<description><![CDATA[The attacks, which lead to 2FA defeat and account takeover, have accelerated by several hundred percent in one year, leading to thousands of drained bank accounts.]]></description>
+		
+					<wfw:commentRss>https://threatpost.com/sharp-sim-swapping-spike-losses/178358/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/08/28144011/abstract-mobile-sim-card.jpg" width="1200" height="800"><media:keywords>full</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/08/28144011/abstract-mobile-sim-card-1024x683.jpg" width="1024" height="683"><media:keywords>large</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/08/28144011/abstract-mobile-sim-card-300x200.jpg" width="300" height="200"><media:keywords>medium</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/08/28144011/abstract-mobile-sim-card-150x150.jpg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	</item>
+		<item>
+		<title>SAP Patches Severe &#8216;ICMAD&#8217; Bugs</title>
+		<link>https://threatpost.com/sap-patches-severe-icmad-bugs/178344/</link>
+					<comments>https://threatpost.com/sap-patches-severe-icmad-bugs/178344/#comments</comments>
+		
+		<dc:creator><![CDATA[Lisa Vaas]]></dc:creator>
+		<pubDate>Thu, 10 Feb 2022 16:39:04 +0000</pubDate>
+				<category><![CDATA[Vulnerabilities]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=178344</guid>
+
+					<description><![CDATA[SAP’s Patch Tuesday brought fixes for a trio of flaws in the ubiquitous ICM component in internet-exposed apps. One of them, with a risk score of 10, could allow attackers to hijack identities, steal data and more. 
+]]></description>
+		
+					<wfw:commentRss>https://threatpost.com/sap-patches-severe-icmad-bugs/178344/feed/</wfw:commentRss>
+			<slash:comments>1</slash:comments>
+		
+		
+		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2021/04/06142606/SAP2-e1617733579541.jpg" width="800" height="535"><media:keywords>full</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2021/04/06142606/SAP2-1024x685.jpg" width="1024" height="685"><media:keywords>large</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2021/04/06142606/SAP2-300x201.jpg" width="300" height="201"><media:keywords>medium</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2021/04/06142606/SAP2-150x150.jpg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	</item>
+		<item>
+		<title>PHP Everywhere Bugs Put 30K+ WordPress Sites at Risk of RCE</title>
+		<link>https://threatpost.com/php-everywhere-bugs-wordpress-rce/178338/</link>
+					<comments>https://threatpost.com/php-everywhere-bugs-wordpress-rce/178338/#respond</comments>
+		
+		<dc:creator><![CDATA[Elizabeth Montalbano]]></dc:creator>
+		<pubDate>Thu, 10 Feb 2022 13:58:07 +0000</pubDate>
+				<category><![CDATA[Vulnerabilities]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=178338</guid>
+
+					<description><![CDATA[The plug-in’s default settings spawned flaws that could allow for full site takeover but have since been fixed in an update that users should immediately install, Wordfence researchers said.
+]]></description>
+		
+					<wfw:commentRss>https://threatpost.com/php-everywhere-bugs-wordpress-rce/178338/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/04/23131246/WordPress-plugin-exploit.jpg" width="700" height="400"><media:keywords>full</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/04/23131246/WordPress-plugin-exploit.jpg" width="700" height="400"><media:keywords>large</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/04/23131246/WordPress-plugin-exploit-300x171.jpg" width="300" height="171"><media:keywords>medium</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2019/04/23131246/WordPress-plugin-exploit-150x150.jpg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	</item>
+		<item>
+		<title>Cybercriminals Swarm Windows Utility Regsvr32 to Spread Malware</title>
+		<link>https://threatpost.com/cybercriminals-windows-utility-regsvr32-malware/178333/</link>
+					<comments>https://threatpost.com/cybercriminals-windows-utility-regsvr32-malware/178333/#respond</comments>
+		
+		<dc:creator><![CDATA[Tara Seals]]></dc:creator>
+		<pubDate>Wed, 09 Feb 2022 21:56:49 +0000</pubDate>
+				<category><![CDATA[Malware]]></category>
+		<category><![CDATA[Web Security]]></category>
+		<guid isPermaLink="false">https://kasperskycontenthub.com/threatpost-global/?p=178333</guid>
+
+					<description><![CDATA[The living-off-the-land binary (LOLBin) is anchoring a rash of cyberattacks bent on evading security detection to drop Qbot and Lokibot.]]></description>
+		
+					<wfw:commentRss>https://threatpost.com/cybercriminals-windows-utility-regsvr32-malware/178333/feed/</wfw:commentRss>
+			<slash:comments>0</slash:comments>
+		
+		
+		<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2018/08/27135157/botnet_swarm.jpg" width="700" height="525"><media:keywords>full</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2018/08/27135157/botnet_swarm.jpg" width="700" height="525"><media:keywords>large</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2018/08/27135157/botnet_swarm-300x225.jpg" width="300" height="225"><media:keywords>medium</media:keywords></media:content>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://media.threatpost.com/wp-content/uploads/sites/103/2018/08/27135157/botnet_swarm-150x150.jpg" width="150" height="150"><media:keywords>thumbnail</media:keywords></media:content>
+	</item>
+	</channel>
+</rss>

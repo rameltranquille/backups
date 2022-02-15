@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="UTF-8"?>
+		<rss xmlns:wsj="http://dowjones.net/rss/" xmlns:dj="http://dowjones.net/rss/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+<channel>
+<title>WSJ.com: US Business</title>
+<link>http://online.wsj.com</link>
+<atom:link type="application/rss+xml" rel="self" href="http://online.wsj.com"/>
+<description>US Business</description>
+<language>en-us</language>
+<pubDate>Mon, 14 Feb 2022 13:42:07 -0500</pubDate>
+<lastBuildDate>Mon, 14 Feb 2022 13:42:07 -0500</lastBuildDate>
+<copyright>Dow Jones &amp; Company, Inc.</copyright>
+<generator>http://online.wsj.com</generator>
+<docs>http://cyber.law.harvard.edu/rss/rss.html</docs>
+<image>
+<title>WSJ.com: US Business</title>
+<link>http://online.wsj.com</link>
+<url>http://online.wsj.com/img/wsj_sm_logo.gif</url>
+</image>
+<item>
+<title>Texas Sues Meta Over Facebook's Facial-Recognition Practices</title>
+<link>https://www.wsj.com/articles/texas-sues-meta-over-facebooks-facial-recognition-practices-11644854794?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[State says the social-media giant violated privacy protections in lawsuit, seeking civil penalties that a person familiar with the matter says range in the hundreds of billions of dollars.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 13:32:00 -0500</pubDate>
+<guid isPermaLink="false">SB11971267361088594036304588361323223779826</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-485400/medium" type="image/jpeg" medium="image">
+<media:credit>Justin Sullivan/Getty Images</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Technology</wsj:articletype>
+</item>
+<item>
+<title>3M Sees Falling Mask Demand Slowing Sales Growth</title>
+<link>https://www.wsj.com/articles/3m-sees-falling-mask-demand-slowing-sales-growth-11644850483?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[As the latest U.S. surge caused by the Omicron variant fades, 3M said slowing mask sales will probably reduce its organic growth by about 2 percentage points this year.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 12:48:00 -0500</pubDate>
+<guid isPermaLink="false">SB11971267361088594036304588362582382803800</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-485613/medium" type="image/jpeg" medium="image">
+<media:credit>nicholas pfosi/Reuters</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Business</wsj:articletype>
+</item>
+<item>
+<title>ATV Industry Rift Exposes U.S. Divide on Chinese Tariffs</title>
+<link>https://www.wsj.com/articles/atv-industry-rift-exposes-u-s-divide-on-chinese-tariffs-11644843600?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Polaris says removing tariffs on Chinese ATVs but keeping them on parts it imports creates an “unlevel playing field.”]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 08:00:00 -0500</pubDate>
+<guid isPermaLink="false">SB10575699542376643610504588359211131979342</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-484833/medium" type="image/jpeg" medium="image">
+<media:credit>Dan Koeck for The Wall Street Journal</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Business</wsj:articletype>
+</item>
+<item>
+<title>DoorDash to Bump Up Its Fees on Slow McDonald's Restaurants</title>
+<link>https://www.wsj.com/articles/doordash-to-bump-up-its-fees-on-slow-mcdonalds-restaurants-11644834602?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Orders that aren’t filled on time will incur higher commission charges starting next year, as the food-delivery app tries to tackle profit obstacles.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 05:30:00 -0500</pubDate>
+<guid isPermaLink="false">SB10575699542376643610504588359371195172806</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-481617/medium" type="image/jpeg" medium="image">
+<media:credit>Jutharat Pinyodoonyachet for The Wall Street Journal</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Technology</wsj:articletype>
+</item>
+<item>
+<title>How a Small Alabama Company Fueled Private Equity's Push Into Hospitals</title>
+<link>https://www.wsj.com/articles/hospitals-private-equity-reit-mpt-steward-11644849598?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[A buying binge made Medical Properties Trust one of the biggest owners of U.S. hospitals. But its largest tenant piled up $800 million in losses.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 09:56:00 -0500</pubDate>
+<guid isPermaLink="false">SB10604051220243133415904588101860542593792</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-481346/medium" type="image/jpeg" medium="image">
+<media:credit>Nate Smallwood for The Wall Street Journal</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Finance</wsj:articletype>
+</item>
+<item>
+<title>Manchin Pushes Democrats to Revisit Tax-Rate Hikes, Sinema Could Present a Roadblock</title>
+<link>https://www.wsj.com/articles/manchin-pushes-democrats-to-revisit-tax-rate-increases-11644834602?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Democrats hoping to resurrect the party’s economic agenda are facing a problem: Sen. Joe Manchin’s goal for raising tax rates clashes with Sen. Kyrsten Sinema’s opposition.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 05:30:00 -0500</pubDate>
+<guid isPermaLink="false">SB10575699542376643610504588357270653984976</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-484907/medium" type="image/jpeg" medium="image">
+<media:credit>Bonnie Cash/Zuma Press</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Politics and Policy</wsj:articletype>
+</item>
+<item>
+<title>Central Bank Should Weigh Asset Sales to Curb Inflation, Says Fed Official</title>
+<link>https://www.wsj.com/articles/central-bank-should-weigh-asset-sales-to-curb-inflation-says-fed-official-11644834601?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Kansas City Fed President Esther George says that removing stimulus should be systematic.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 05:30:00 -0500</pubDate>
+<guid isPermaLink="false">SB10575699542376643610504588357471828312276</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-484880/medium" type="image/jpeg" medium="image">
+<media:credit>Daniel Brenner/Bloomberg News</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>U.S. Economy</wsj:articletype>
+</item>
+<item>
+<title>Soaring Inflation Means Britons Face Biggest Fall in Real Incomes in 30 Years</title>
+<link>https://www.wsj.com/articles/soaring-inflation-means-britons-face-biggest-fall-in-real-incomes-in-30-years-11644834600?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Inflation is galloping ahead of wage growth, a stark illustration of the challenge facing central banks as they try to tame prices without snuffing out recoveries from the pandemic.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 05:30:00 -0500</pubDate>
+<guid isPermaLink="false">SB11971267361088594036304588360291320380174</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-485289/medium" type="image/jpeg" medium="image">
+<media:credit>neil hall/Shutterstock</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Europe Economy</wsj:articletype>
+</item>
+<item>
+<title>Omicron's Threat to the Global Economy Runs Through China</title>
+<link>https://www.wsj.com/articles/omicrons-threat-to-global-economy-increasingly-runs-through-china-11644764401?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[The U.S. and Europe are learning to live with the virus, but Beijing’s zero-Covid strategy could lead to recurring lockdowns and limit exports the rest of the world relies on.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 06:26:00 -0500</pubDate>
+<guid isPermaLink="false">SB10575699542376643610504588348813674247572</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-482851/medium" type="image/jpeg" medium="image">
+<media:credit>Yu Fangping/Costfoto/Zuma Press</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>The Outlook</wsj:articletype>
+</item>
+<item>
+<title>People Are Going Out Again, but Not to the Office</title>
+<link>https://www.wsj.com/articles/people-are-going-out-again-but-not-to-the-office-11644843600?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Only a third of U.S. employees have returned to the office, as workers prefer remote work and companies fear ordering them back.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 08:00:00 -0500</pubDate>
+<guid isPermaLink="false">SB10575699542376643610504588356821770107916</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-483091/medium" type="image/jpeg" medium="image">
+<media:credit>David Paul Morris/Bloomberg News</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Commercial Real Estate</wsj:articletype>
+</item>
+<item>
+<title>Harvard Wants M.B.A.s to Learn How to Be Happy at Work</title>
+<link>https://www.wsj.com/articles/harvard-wants-m-b-a-s-to-learn-how-to-be-happy-at-work-11644836400?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[A Harvard Business School course popular in the pandemic is teaching M.B.A.s that to lead a happy team, you first have to learn to be happy yourself.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 06:00:00 -0500</pubDate>
+<guid isPermaLink="false">SB10575699542376643610504588357132982755570</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-484044/medium" type="image/jpeg" medium="image">
+<media:credit>DAISY KORPICS/THE WALL STREET JOURNAL, GETTY</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Management &amp; Careers</wsj:articletype>
+</item>
+<item>
+<title>On Valentine's Day, Expect to Pay Up if You Want Red Roses</title>
+<link>https://www.wsj.com/articles/valentines-day-flower-prices-climb-as-inflation-hits-wholesalers-retailers-11644845671?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Flower sellers say they are asking shoppers to consider less-traditional Valentine’s Day bouquets, including shorter-stemmed roses or different flowers.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 11:56:00 -0500</pubDate>
+<guid isPermaLink="false">SB11971267361088594036304588360570482246756</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-485558/medium" type="image/jpeg" medium="image">
+<media:credit>Photo Illustration by Tonje Thilesen</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Business</wsj:articletype>
+</item>
+<item>
+<title>Discover Is Bringing a Payment Option Popular in Asia to the U.S.</title>
+<link>https://www.wsj.com/articles/discover-is-bringing-a-payment-option-popular-in-asia-to-the-u-s-11644843601?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[The card company is partnering with fintech firm Buy It Mobility Networks, whose technology allows consumers to pay directly from their checking accounts using merchants’ apps.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 08:00:00 -0500</pubDate>
+<guid isPermaLink="false">SB11971267361088594036304588360741876365714</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-483819/medium" type="image/jpeg" medium="image">
+<media:credit>Rogelio V. Solis/Associated Press</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Finance</wsj:articletype>
+</item>
+<item>
+<title>Doing Business in Myanmar Is Tough, but One Company Finds That Leaving Isn't Much Easier</title>
+<link>https://www.wsj.com/articles/doing-business-in-myanmar-is-tough-but-one-company-finds-that-leaving-isnt-much-easier-11644845400?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[Norwegian telecommunications provider Telenor is among nearly two dozen major foreign companies that have decided to exit from the country since last year’s coup.]]></description>
+<content:encoded/>
+<pubDate>Mon, 14 Feb 2022 08:30:00 -0500</pubDate>
+<guid isPermaLink="false">SB11971267361088594036304588361590576137444</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-485404/medium" type="image/jpeg" medium="image">
+<media:credit>lynn bo bo/Shutterstock</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Asian Business News</wsj:articletype>
+</item>
+<item>
+<title>Blackstone Buys Casino Business for $6.3 Billion</title>
+<link>https://www.wsj.com/articles/australias-crown-resorts-agrees-to-6-3-billion-blackstone-takeover-11644803100?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[The agreement follows a roughly yearlong effort by the U.S. private-equity giant to acquire the company.]]></description>
+<content:encoded/>
+<pubDate>Sun, 13 Feb 2022 20:45:00 -0500</pubDate>
+<guid isPermaLink="false">SB11971267361088594036304588361481247128930</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-485409/medium" type="image/jpeg" medium="image">
+<media:credit>Darrian Traynor/Getty Images</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Business</wsj:articletype>
+</item>
+<item>
+<title>Lockheed Martin Scraps Aerojet Rocketdyne Deal</title>
+<link>https://www.wsj.com/articles/lockheed-martin-scraps-aerojet-rocketdyne-deal-11644800824?mod=pls_whats_news_us_business_f</link>
+<description><![CDATA[The deal is dropped after an antitrust lawsuit. The rocket maker could draw interest from other potential buyers, analysts say]]></description>
+<content:encoded/>
+<pubDate>Sun, 13 Feb 2022 23:56:00 -0500</pubDate>
+<guid isPermaLink="false">SB11971267361088594036304588361440277877864</guid>
+<category domain="AccessClassName">PAID</category>
+<media:content xmlns:media="http://search.yahoo.com/mrss/" url="https://images.wsj.net/im-485407/medium" type="image/jpeg" medium="image">
+<media:credit>BEN LISTERMAN/AGENCE FRANCE-PRESSE/GETTY IMAGES</media:credit>
+<media:description/>
+</media:content>
+<wsj:articletype>Business</wsj:articletype>
+</item>
+</channel>
+</rss>

@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"
+  xmlns:content="http://purl.org/rss/1.0/modules/content/"
+  xmlns:media="http://search.yahoo.com/mrss/"
+  xmlns:wfw="http://wellformedweb.org/CommentAPI/"
+  xmlns:dc="http://purl.org/dc/elements/1.1/"
+  xmlns:atom="http://www.w3.org/2005/Atom"
+  xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+  xmlns:slash="http://purl.org/rss/1.0/modules/slash/"
+	>
+
+<channel>
+	<title>Quanta Magazine</title>
+	<atom:link href="https://api.quantamagazine.org/feed/" rel="self" type="application/rss+xml"></atom:link>
+	<link>https://www.quantamagazine.org</link>
+	<description>Illuminating science</description>
+	<lastBuildDate>Mon, 14 Feb 2022 19:28:42 +0000</lastBuildDate>
+	<language>en-US</language>
+	<sy:updatePeriod>hourly</sy:updatePeriod>
+	<sy:updateFrequency>1</sy:updateFrequency>
+	<generator>https://wordpress.org/?v=4.9.17</generator>
+	<item>
+		<title>The Mysterious Forces Inside the Nucleus Grow a Little Less Strange</title>
+		<link>https://www.quantamagazine.org/colliders-and-supercomputers-force-fresh-hints-in-quark-mystery-20220214/</link>
+		<comments>https://www.quantamagazine.org/colliders-and-supercomputers-force-fresh-hints-in-quark-mystery-20220214/#respond</comments>
+		<pubDate>Mon, 14 Feb 2022 16:13:42 +0000</pubDate>
+    <dc:creator><![CDATA[Charlie Wood]]></dc:creator>
+				<category><![CDATA[Abstractions blog]]></category>
+		<category><![CDATA[Physics]]></category>
+
+		<guid isPermaLink="false">https://www.quantamagazine.org/?p=112573</guid>
+		<description><![CDATA[The strong force holds protons and neutrons together, but the theory behind it is largely inscrutable. Two new approaches show how it works.            <p>The post <a href="https://www.quantamagazine.org/colliders-and-supercomputers-force-fresh-hints-in-quark-mystery-20220214/" target="_blank">The Mysterious Forces Inside the Nucleus Grow a Little Less Strange</a> first appeared on <a href="https://api.quantamagazine.org" target="_blank">Quanta Magazine</a></p>]]></description>
+				<content:encoded><![CDATA[<p>Billions of times each minute, the Large Hadron Collider (LHC) smashes protons together, unleashing a maelstrom of energy that crystallizes into more protons, neutrons, and less familiar cousins of the nuclear particles. Some particles encounter each other as they flee the scene. What happens next — whether a given pair pulls together or pushes apart — physicists generally can’t say.</p>
+<p><a href="https://www.quantamagazine.org/colliders-and-supercomputers-force-fresh-hints-in-quark-mystery-20220214/" rel="nofollow">Source</a></p>]]></content:encoded>
+			<wfw:commentRss>https://www.quantamagazine.org/colliders-and-supercomputers-force-fresh-hints-in-quark-mystery-20220214/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<media:content url="https://d2r55xnwy6nx47.cloudfront.net/uploads/2022/02/Quark_Quirks_520x292.jpg" type="image/jpg"></media:content>
+	</item>
+		<item>
+		<title>Computer Scientists Prove Why Bigger Neural Networks Do Better</title>
+		<link>https://www.quantamagazine.org/computer-scientists-prove-why-bigger-neural-networks-do-better-20220210/</link>
+		<comments>https://www.quantamagazine.org/computer-scientists-prove-why-bigger-neural-networks-do-better-20220210/#respond</comments>
+		<pubDate>Thu, 10 Feb 2022 15:58:46 +0000</pubDate>
+    <dc:creator><![CDATA[Mordechai Rorvig]]></dc:creator>
+				<category><![CDATA[Abstractions blog]]></category>
+		<category><![CDATA[Computer Science]]></category>
+		<category><![CDATA[Mathematics]]></category>
+
+		<guid isPermaLink="false">https://www.quantamagazine.org/?p=112416</guid>
+		<description><![CDATA[Two researchers show that for neural networks to be able to remember better, they need far more parameters than previously thought.            <p>The post <a href="https://www.quantamagazine.org/computer-scientists-prove-why-bigger-neural-networks-do-better-20220210/" target="_blank">Computer Scientists Prove Why Bigger Neural Networks Do Better</a> first appeared on <a href="https://api.quantamagazine.org" target="_blank">Quanta Magazine</a></p>]]></description>
+				<content:encoded><![CDATA[<p>Our species owes a lot to opposable thumbs. But if evolution had given us extra thumbs, things probably wouldn’t have improved much. One thumb per hand is enough. Not so for neural networks, the leading artificial intelligence systems for performing humanlike tasks. As they’ve gotten bigger, they have come to grasp more. This has been a surprise to onlookers. Fundamental mathematical results had...</p>
+<p><a href="https://www.quantamagazine.org/computer-scientists-prove-why-bigger-neural-networks-do-better-20220210/" rel="nofollow">Source</a></p>]]></content:encoded>
+			<wfw:commentRss>https://www.quantamagazine.org/computer-scientists-prove-why-bigger-neural-networks-do-better-20220210/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<media:content url="https://d2r55xnwy6nx47.cloudfront.net/uploads/2022/02/SCALING_NETS_520x292.svg" type="image/jpg"></media:content>
+	</item>
+		<item>
+		<title>New Map of Meaning in the Brain Changes Ideas About Memory</title>
+		<link>https://www.quantamagazine.org/new-map-of-meaning-in-the-brain-changes-ideas-about-memory-20220208/</link>
+		<comments>https://www.quantamagazine.org/new-map-of-meaning-in-the-brain-changes-ideas-about-memory-20220208/#respond</comments>
+		<pubDate>Tue, 08 Feb 2022 15:44:11 +0000</pubDate>
+    <dc:creator><![CDATA[Jordana Cepelewicz]]></dc:creator>
+				<category><![CDATA[Biology]]></category>
+
+		<guid isPermaLink="false">https://www.quantamagazine.org/?p=112413</guid>
+		<description><![CDATA[Researchers have mapped hundreds of semantic categories to the tiny bits of the cortex that represent them in our thoughts and perceptions. What they discovered might change our view of memory.            <p>The post <a href="https://www.quantamagazine.org/new-map-of-meaning-in-the-brain-changes-ideas-about-memory-20220208/" target="_blank">New Map of Meaning in the Brain Changes Ideas About Memory</a> first appeared on <a href="https://api.quantamagazine.org" target="_blank">Quanta Magazine</a></p>]]></description>
+				<content:encoded><![CDATA[<p>We often think of memory as a rerun of the past — a mental duplication of events and sensations that we’ve experienced. In the brain, that would be akin to the same patterns of neural activity getting expressed again: Remembering a person’s face, for instance, might activate the same neural patterns as the ones for seeing their face. And indeed, in some memory processes, something like this does...</p>
+<p><a href="https://www.quantamagazine.org/new-map-of-meaning-in-the-brain-changes-ideas-about-memory-20220208/" rel="nofollow">Source</a></p>]]></content:encoded>
+			<wfw:commentRss>https://www.quantamagazine.org/new-map-of-meaning-in-the-brain-changes-ideas-about-memory-20220208/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<media:content url="https://d2r55xnwy6nx47.cloudfront.net/uploads/2022/02/Semantic-Maps_520x292.jpg" type="image/jpg"></media:content>
+	</item>
+		<item>
+		<title>An Ancient Geometry Problem Falls to New Mathematical Techniques</title>
+		<link>https://www.quantamagazine.org/an-ancient-geometry-problem-falls-to-new-mathematical-techniques-20220208/</link>
+		<comments>https://www.quantamagazine.org/an-ancient-geometry-problem-falls-to-new-mathematical-techniques-20220208/#respond</comments>
+		<pubDate>Tue, 08 Feb 2022 14:58:36 +0000</pubDate>
+    <dc:creator><![CDATA[Steve Nadis]]></dc:creator>
+				<category><![CDATA[Abstractions blog]]></category>
+		<category><![CDATA[Mathematics]]></category>
+
+		<guid isPermaLink="false">https://www.quantamagazine.org/?p=112408</guid>
+		<description><![CDATA[Three mathematicians show, for the first time, how to form a square with the same area as a circle by cutting them into interchangeable pieces that can be visualized.            <p>The post <a href="https://www.quantamagazine.org/an-ancient-geometry-problem-falls-to-new-mathematical-techniques-20220208/" target="_blank">An Ancient Geometry Problem Falls to New Mathematical Techniques</a> first appeared on <a href="https://api.quantamagazine.org" target="_blank">Quanta Magazine</a></p>]]></description>
+				<content:encoded><![CDATA[<p>Around 450 BCE, Anaxagoras of Clazomenae had some time to think. The Greek mathematician was in prison for claiming the sun was not a god, but rather an incandescent rock as big as the Peloponnese peninsula. A philosopher who believed that “reason rules the world,” he used his incarceration to grapple with a now-famous math problem known as squaring the circle: Using a compass and a straightedge...</p>
+<p><a href="https://www.quantamagazine.org/an-ancient-geometry-problem-falls-to-new-mathematical-techniques-20220208/" rel="nofollow">Source</a></p>]]></content:encoded>
+			<wfw:commentRss>https://www.quantamagazine.org/an-ancient-geometry-problem-falls-to-new-mathematical-techniques-20220208/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<media:content url="https://d2r55xnwy6nx47.cloudfront.net/uploads/2022/02/circle-square-520x292.jpg" type="image/jpg"></media:content>
+	</item>
+		<item>
+		<title>Quantum Complexity Tamed by Machine Learning</title>
+		<link>https://www.quantamagazine.org/quantum-complexity-tamed-by-machine-learning-20220207/</link>
+		<comments>https://www.quantamagazine.org/quantum-complexity-tamed-by-machine-learning-20220207/#respond</comments>
+		<pubDate>Mon, 07 Feb 2022 15:54:09 +0000</pubDate>
+    <dc:creator><![CDATA[Charlie Wood]]></dc:creator>
+				<category><![CDATA[Physics]]></category>
+
+		<guid isPermaLink="false">https://www.quantamagazine.org/?p=112374</guid>
+		<description><![CDATA[If only scientists understood exactly how electrons act in molecules, they’d be able to predict the behavior of everything from experimental drugs to high-temperature superconductors. Following decades of physics-based insights, artificial intelligence systems are taking the next leap.            <p>The post <a href="https://www.quantamagazine.org/quantum-complexity-tamed-by-machine-learning-20220207/" target="_blank">Quantum Complexity Tamed by Machine Learning</a> first appeared on <a href="https://api.quantamagazine.org" target="_blank">Quanta Magazine</a></p>]]></description>
+				<content:encoded><![CDATA[<p>In 2018, climate simulations were the third-largest use of computing cycles at a leading U.S. supercomputing cluster. The study of quarks and other subatomic particles came in second. Topping the list was the most heavily cited idea in the physical sciences — though few have ever heard of it. “It’s ridiculously important,” said Kieron Burke, a theoretical chemist at the University of California...</p>
+<p><a href="https://www.quantamagazine.org/quantum-complexity-tamed-by-machine-learning-20220207/" rel="nofollow">Source</a></p>]]></content:encoded>
+			<wfw:commentRss>https://www.quantamagazine.org/quantum-complexity-tamed-by-machine-learning-20220207/feed/</wfw:commentRss>
+		<slash:comments>0</slash:comments>
+<media:content url="https://d2r55xnwy6nx47.cloudfront.net/uploads/2022/02/DFT-520x292.jpg" type="image/jpg"></media:content>
+	</item>
+	</channel>
+</rss>
