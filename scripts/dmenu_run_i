@@ -1,0 +1,16 @@
+#!/bin/sh
+# dmenu_run improved
+# if a command ends with "!", it is started in term.
+
+termcmd="alacritty -e"
+test -s $HOME/.dmenurc && . $HOME/.dmenurc
+
+cmd="$(dmenu_path | dmenu -f $@ -nb "#061b49" -shb "#061b49" -sf "#ffe3e9" -sb "#ff5a4a" -shf "#fb676e")" 
+# cmd="$(dmenu_path | dmenu -f $@ -sb "#2cf49b" -shb "#2cf49b" -shf "#ff222e")" 
+# -sf "#F2F3D9")" -nb "#465A64" -nf "#F2F3D9" 
+case $cmd in
+    *\! ) ${termcmd} "$(printf "%s" "${cmd}" | cut -d'!' -f1)";;
+    * ) ${cmd} ;;
+esac
+exit
+

@@ -8,12 +8,12 @@ init () {
 
 copy_dots () {
 	for dir in $dotfiles; do
-		rsync -Pad $dir $HOME/.backup/dotfiles/
+		rsync -dPzv $dir $HOME/.backup/dotfiles/
 	done
 }
 
 copy_scripts () {
-	for dir in $scriptNprojects; do
+	for dir in $scripts; do
 		rsync -avz $dir $HOME/.backup/scripts/
 	done
 	ls $HOME/.backup/scripts
