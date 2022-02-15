@@ -8,7 +8,7 @@ init () {
 
 copy_dots () {
 	for dir in $dotfiles; do
-		rsync -drzv $dir $HOME/.backup/dotfiles/
+		rsync -drzvP $dir $HOME/.backup/dotfiles/
 	done
 }
 
@@ -34,11 +34,11 @@ git_update () {
 HOME="/home/ramel"
 
 dotfiles="$HOME/.bashrc $HOME/.zshrc $HOME/.vimrc $HOME/.zshAliases 
-$HOME/.config/nvim/lua/custom/* $HOME/.config/alacritty/alacritty.yml
+$HOME/.config/nvim/lua/custom $HOME/.config/alacritty/alacritty.yml
 $HOME/.config/qtile/config.py $HOME/.config/conky/conky.conf
 $HOME/.config/dunst/dunstrc $HOME/.xinitrc $HOME/.config/kitty/kitty.conf
-$HOME/.config/polybar/ $HOME/.config/fish/config.fish
-$HOME/.config/i3/i3config $HOME/.newsboat"
+$HOME/.config/polybar $HOME/.config/fish/config.fish
+$HOME/.config/i3 $HOME/.newsboat"
 
 scripts="$HOME/Scripts/" 
 

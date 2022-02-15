@@ -1,0 +1,114 @@
+{
+    "border": "normal",
+    "floating": "auto_off",
+    "layout": "splith",
+    "marks": [],
+    "percent": 3,
+    "type": "con",
+    "nodes": [
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "marks": [],
+            "percent": 0.48,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 501,
+                       "width": 738,
+                       "x": 380,
+                       "y": 1261
+                    },
+                    "marks": [],
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                        "class": "^firefox$",
+                        "instance": "^Navigator$",
+                        "window_role": "^browser$"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 501,
+                       "width": 610,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "marks": [],
+                    "percent": 0.5,
+                    "swallows": [
+                       {
+                        "class": "^Alacritty$",
+                        "instance": "^Alacritty$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        },
+        {
+            "border": "normal",
+            "floating": "auto_off",
+            "layout": "splitv",
+            "marks": [],
+            "percent": 0.52,
+            "type": "con",
+            "nodes": [
+                {
+                    "border": "pixel",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 501,
+                       "width": 930,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "marks": [],
+                    "percent": 0.76,
+                    "swallows": [
+                       {
+                       "class": "^kitty$",
+                       "instance": "^kitty$",
+                       "title": "VIM"
+                       }
+                    ],
+                    "type": "con"
+                },
+                {
+                    "border": "pixel",
+                    "current_border_width": 2,
+                    "floating": "auto_off",
+                    "geometry": {
+                       "height": 501,
+                       "width": 610,
+                       "x": 0,
+                       "y": 0
+                    },
+                    "marks": [],
+                    "name": "ramel@musashi:~",
+                    "percent": 0.24,
+                    "swallows": [
+                       {
+                        "class": "^Alacritty$",
+                        "instance": "^Alacritty$"
+                       }
+                    ],
+                    "type": "con"
+                }
+            ]
+        }
+    ]
+}
+
