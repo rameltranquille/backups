@@ -1,5 +1,0 @@
-#!/bin/bash
-# show todos for conky
-
-todoist l --filter '(today|tomorrow|overdue)' | cut -d ' ' -f 5-
-
