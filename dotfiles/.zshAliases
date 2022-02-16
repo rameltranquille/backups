@@ -73,5 +73,13 @@ alias cheat="cd /home/ramel/Dropbox/workbench; vim cheatsheet.md"
 alias lo-notes="i3-msg 'workspace 2; append_layout /home/ramel/.config/i3/customWorkspaces/ws-notes1.json'"
 # alias layout-notes-ws1="i3-msg 'workspace 1; append_layout /home/ramel/.config/i3/customWorkspaces/ws-notes1.json'"
 
+###############################################################
+#------------Shortening
+###############################################################
+alias open="xdg-open"
+
+
+
+
 
 

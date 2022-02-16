@@ -25,6 +25,7 @@ bind-key U show-urls
 bind-key x pb-delete
 
 browser firefox
+macro p open-all-unread-in-browser-and-mark-read
 macro , open-in-browser
 #macro t set browser "qndl" ; open-in-browser ; set browser firefox
 macro a set browser "tsp youtube-dl --add-metadata -xic -f bestaudio/best" ; open-in-browser ; set browser firefox

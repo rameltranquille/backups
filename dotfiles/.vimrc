@@ -19,7 +19,7 @@ endif
 
 " General
 Plug 'preservim/tagbar', { 'on': 'TagbarToggle' }
-Plug 'preservim/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeCWD', 'OpenBookmark'] }
+Plug 'preservim/nerdtree', { 'on': ['NERDTreeToggle', 'NERDFind', 'OpenBookmark'] }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
@@ -33,7 +33,7 @@ Plug 'tpope/vim-repeat'
 " VimTex
 Plug 'lervag/vimtex', { 'for' : 'tex'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
-Plug 'preservim/vim-markdown',
+" Plug 'preservim/vim-markdown',
 
 " Plug 'drmingdrmer/vim-tabbar'
 Plug 'ghifarit53/tokyonight-vim'
@@ -98,7 +98,7 @@ let g:airline_mode_map = {
     \ ''     : 'V',
     \ }
 
-au BufEnter *.md setl syntax=markdown
+" au BufEnter *.md setl syntax=markdown
 
 " YouCompleteMe
 " let g:ycm_min_num_of_chars_for_completion = 2
@@ -113,7 +113,7 @@ au BufEnter *.md setl syntax=markdown
 nmap <leader>mp <Plug>MarkdownPreview
 nmap <leader>ms <Plug>MarkdownPreviewStop
 nmap <leader>mt <Plug>MarkdownPreviewToggle
-let g:vim_markdown_folding_disabled = 1
+" let g:vim_markdown_folding_disabled = 1
 " let g:vim_markdown_math = 1
 " let g:vim_markdown_auto_extension_ext = ['md', 'txt', 'vimwiki']
 " let g:vim_markdown_no_extensions_in_markdown = 1
@@ -147,12 +147,12 @@ endfunction
 
 nmap <leader>wa :call VimwikiFindAllIncompleteTasks()<CR>
 nmap <leader>wx :call VimwikiFindIncompleteTasks()<CR>
-nmap <leader>glc <Plug>VimwikiToggleListItem<CR>
-nmap glc <Plug>VimwikiToggleListItem<CR>
+nmap <leader>glc <Plug>VimwikiToggleListItem
+nmap glc <Plug>VimwikiToggleListItem
 
-nmap <leader>vs <Plug>VimwikiVSplitLink<CR>
-nmap <leader>vv <Plug>VimwikiSplitLink<CR>
-nmap <leader>vt <Plug>VimwikiTabnewLink<CR>
+nmap <leader>vs <Plug>VimwikiVSplitLink
+nmap <leader>vv <Plug>VimwikiSplitLink
+nmap <leader>vt <Plug>VimwikiTabnewLink
 let g:vimwiki_hl_cb_checked = 2
 
 
@@ -180,7 +180,7 @@ nnoremap <leader>fz :FZF<CR>
 " Nerdtree
 let NERDTreeShowHidden=0
 " let NERDTreeBookmarksFile='/home/ramel/Dropbox/.bookmarks'
-nnoremap <C-n> :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeFind<CR>
 nnoremap <leader>nt :NERDTreeToggle<CR>
 nnoremap <leader>nc :NERDTreeCWD<CR>
 nnoremap <leader>nb :NERDTreeShowBookmarks<CR>
