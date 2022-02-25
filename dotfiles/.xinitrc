@@ -1,3 +1,10 @@
+if [ -d /etc/X11/xinit/xinitrc.d ]; then
+  for f in /etc/X11/xinit/xinitrc.d/*; do
+    [ -x "$f" ] && . "$f"
+  done
+  unset f
+fi
+
 systemctl enable cronie.service &
 systemctl start cronie.service &
 picom -b &
@@ -5,11 +12,5 @@ flameshot &
 dropbox &
 dunst &
 todoist sync &
-#xfsettingsd &
-
-#xrandr --output DVI-D-0 --primary --mode 1920x1080 --pos 0x1080 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --mode 1366x768 --pos 1920x508 --rotate left &
-#feh --bg-scale --no-xinerama --randomize .config/qtile/largeWallpapers/the-shooting-star-3840x2160.jpg
-
-#qtile start -c .config/qtile/config.py
 
 exec i3 -c /home/ramel/.config/i3/i3config

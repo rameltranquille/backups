@@ -6,8 +6,8 @@ font pango:JetBrains Mono 10
 set $mod Mod4
 
 # Display 
-exec_always --no-startup-id feh --bg-scale --no-xinerama /home/ramel/.config/i3/the-shooting-star-3840×2160.jpg
 exec_always --no-startup-id xrandr --output DVI-D-0 --primary --mode 1920x1080 --pos 0x1080 --rotate normal --output HDMI-0 --mode 1920x1080 --pos 0x0 --rotate normal --output DP-0 --mode 1366x768 --pos 1920x508 --rotate left &
+exec_always --no-startup-id feh --bg-scale --no-xinerama /home/ramel/.config/i3/the-shooting-star-3840×2160.jpg
 exec_always --no-startup-id /home/ramel/.config/polybar/launch.sh &
 exec_always --no-startup-id autotiling
 exec --no-startup-id kitty vim -c VimwikiIndex &
@@ -104,8 +104,8 @@ bindsym $mod+Shift+g focus mode_toggle
 
 
 # change container layout (stacked, tabbed, toggle split)
-bindsym $mod+control+Tab layout stacking
-bindsym $mod+Shift+Tab layout tabbed
+# bindsym $mod+control+Tab layout tabbed
+bindsym $mod+Shift+Tab layout toggle stacking tabbed
 bindsym $mod+Tab layout toggle split
 
 # change focus between tiling / floating windows
@@ -217,6 +217,8 @@ bindsym F12 exec --no-startup-id xfce4-terminal --drop-down;focus
 
 
 popup_during_fullscreen smart
+focus_on_window_activation smart
+workspace_auto_back_and_forth yes
 
 
 ######################################################################
@@ -224,12 +226,12 @@ popup_during_fullscreen smart
 ######################################################################
 smart_borders on
 for_window [class="^.*"] border pixel 2
-gaps inner 5
-gaps outer 5
+gaps inner 1
+gaps outer 1
 
  # Window color settings
     # class                 border  backgr. text    indicator
-    client.focused          #6790EB #ff755d #e5e5e5 #6790EB
+    client.focused          #6790EB #aaff00 #e5e5e5 #6790EB
     client.unfocused        #222222 #222222 #aaaaaa #222222
     client.focused_inactive #222222 #222222 #a9a9a9 #222222
     client.placeholder      #222222 #222222 #aaaaaa #222222

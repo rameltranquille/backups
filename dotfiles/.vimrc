@@ -19,7 +19,7 @@ endif
 
 " General
 Plug 'preservim/tagbar', { 'on': 'TagbarToggle' }
-Plug 'preservim/nerdtree', { 'on': ['NERDTreeToggle', 'NERDFind', 'OpenBookmark'] }
+Plug 'preservim/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind', 'OpenBookmark'] }
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 

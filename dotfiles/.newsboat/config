@@ -3,7 +3,7 @@ include /usr/share/doc/newsboat/contrib/colorschemes/schleichfahrt
 #prepopulate-query-feeds yes
 external-url-viewer "urlscan -dc -r 'firefox {}'"
 auto-reload yes
-reload-time 10
+reload-time 1
 reload-threads 100
 bind-key j down
 bind-key k up
