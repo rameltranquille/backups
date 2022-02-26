@@ -203,16 +203,14 @@ bindsym $mod+n exec kitty vim -c VimwikiIndex &
 bindsym $mod+m exec --no-startup-id dmenu_run_i;focus
 bindsym $mod+Shift+p exec --no-startup-id passmenu;focus
 
-# F Keys
-#bindsym F1 exec --no-startup-id dmenu_task;focus
-##bindsym F2 exec --no-startup-id dmenu_launch --notes;focus
+bindsym F1 exec --no-startup-id bmks;focus
+#bindsym F2 exec --no-startup-id dmenu_launch --notes;focus
 #bindsym F3 exec --no-startup-id dmenu_launch --search;focus
-#bindsym F11 exec --no-startup-id dmenu_run_i;focus
-#bindsym F4 exec --no-startup-id dmenu_notetaker;focus
+#bindsym F4 exec --no-startup-id dmenu_run_i;focus
+#bindsym F5 exec --no-startup-id dmenu_run_i;focus
 
-
-bindsym F10 exec --no-startup-id dmenu_launch --notes;focus
-bindsym F11 exec --no-startup-id bmks;focus
+#bindsym F10 exec --no-startup-id dmenu_launch --notes;focus
+#bindsym F11 exec --no-startup-id bmks;focus
 bindsym F12 exec --no-startup-id xfce4-terminal --drop-down;focus
 
 
