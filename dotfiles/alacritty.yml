@@ -403,6 +403,7 @@ cursor:
 #   - (Windows) powershell
 shell:
  program: /bin/zsh
+ # program: /bin/zsh
  # args:
  #   - --login
 

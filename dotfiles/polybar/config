@@ -10,9 +10,9 @@ height = 18
 offset-x = 0
 offset-y = 0
 background = #50010101
-foreground = #FFFFFF
+foreground = #ffffff
 line-size = 0
-line-color = #fff
+line-color = #000
 padding-right = 0
 padding-left = 2
 module-margin = 1
@@ -24,10 +24,10 @@ font-0 = Jetbrains Mono:medium:size=6;2
 font-1 = FontAwesome5Free:style=Solid:size=6;3
 font-2 = Jetbrains Mono:size=6;2
 
-modules-left = i3 sep date
+modules-left = i3 date
 modules-center = xwindow 
-modules-right = spotify sep info-hackspeed sep wired-network sep 
-separator = 
+modules-right = spotify wired-network 
+separator = |
 
 ; Opacity value between 0.0 and 1.0 used on fade in/out
 dim-value = 1.0
@@ -47,7 +47,7 @@ enable-ipc = false
 
 
 [bar/bar2]
-monitor = HDMI-0 
+monitor = DP-0
 ;monitor = ${env:MONITOR:}
 monitor-fallback = HDMI-0
 override-redirect = false
@@ -58,9 +58,9 @@ height = 18
 offset-x = 0
 offset-y = 0
 background = #50010101
-foreground = #FFFFFF
+foreground = #ffffff
 line-size = 0
-line-color = #fff
+line-color = #000
 padding-right = 3
 padding-left = 3
 module-margin = 1
@@ -74,7 +74,7 @@ font-2 = Jetbrains Mono:size=6;2
 
 modules-left = i3
 modules-center = xwindow ;sep ;zzz
-modules-right = todoist timer 
+modules-right = 
 separator = 
 
 ; Opacity value between 0.0 and 1.0 used on fade in/out
@@ -98,9 +98,9 @@ height = 18
 offset-x = 0
 offset-y = 0
 background = #50010101
-foreground = #FFFFFF
+foreground = #ffffff
 line-size = 0
-line-color = #fff
+line-color = #000
 padding-right = 3
 padding-left = 3
 module-margin = 1
@@ -114,7 +114,7 @@ font-2 = Jetbrains Mono:size=6;2
 
 modules-left = i3
 modules-center = 
-modules-right = zzz
+;modules-right = zzz
 separator = 
 
 ; Opacity value between 0.0 and 1.0 used on fade in/out
@@ -146,7 +146,7 @@ ws-icon-1 = 2;
 ws-icon-2 = 3;
 ws-icon-3 = 4;
 ws-icon-4 = 5;
-ws-icon-5 = 6;
+ws-icon-5 = 6;
 ws-icon-6 = 7;
 
 label-unfocused = %icon% %index%
@@ -155,7 +155,7 @@ label-unfocused-foreground = #ffffff
 
 label-focused = %icon% %index%
 label-focused-foreground = #fff
-label-focused-background = #20009fdd 
+label-focused-background = #209fdd 
 label-focused-underline = #f92672
 label-focused-padding = 4
 
@@ -173,11 +173,11 @@ time = %l:%M %p
 ; if `date-alt` or `time-alt` is defined, clicking
 ; the module will toggle between formats
 date-alt = %A, %d %B %Y
-time-alt = %H:%M:%S
+time-alt = %I:%M:%S
 
 label = %date% @%time%
 label-font = 0
-label-foreground = #D8DEE9
+label-foreground = #fff0f0
 
 [module/wireless-network]
 type = internal/network
@@ -422,11 +422,6 @@ format-disconnected-underline = ${colors.alert}
 label-disconnected-foreground = ${colors.foreground}
 
 
-[module/info-hackspeed]
-type = custom/script
-exec = ~/.config/polybar/scripts/info-hackspeed.sh
-tail = true
-
 [module/spotify]
 type = custom/script
 interval = 1
@@ -440,36 +435,10 @@ click-left = playerctl --player=spotify play-pause
 click-right = playerctl --player=spotify next 
 click-middle = playerctl --player=spotify previous 
 
-[module/todoist]
-
-type = custom/script
-
-exec = python -u /home/ramel/.config/polybar/scripts/polybar-todoist.py
-tail = true
-
-click-left = xdg-open https://todoist.com
-click-right = xdg-open https://calendar.google.com
-click-middle = obsidian
-
-[module/zzz]
-
-type = custom/script
-interval = 10
-format-prefix = "Current Task: "
-format-prefix-foreground =  "ffffff"
-format-foreground = "ff755d"
-exec = cat /home/ramel/currTask
-tail = true
-
-
-[module/timer]
-type = custom/script
-
-exec = time /home/ramel/.config/polybar/scripts/polybar-timer.sh tail 'TIMER' 5 && play /home/ramel/.config/polybar/scripts/notificationSound.mp3
-tail = true
-
-click-left = /home/ramel/.config/polybar/scripts/polybar-timer.sh new 25 'Pomo session' 'Paused' 'notify-send "Session finished"' ; /home/ramel/.config/polybar/scripts/polybar-timer.sh update %pid%;
-click-middle = /home/ramel/.config/polybar/scripts/polybar-timer.sh cancel ; /home/ramel/.config/polybar/scripts/polybar-timer.sh update %pid%;
-click-right = /home/ramel/.config/polybar/scripts/polybar-timer.sh togglepause ; /home/ramel/.config/polybar/scripts/polybar-timer.sh update %pid%;
-scroll-up = /home/ramel/.config/polybar/scripts/polybar-timer.sh increase 60 || /home/ramel/.config/polybar/scripts/polybar-timer.sh new 1 'TIMER' 'PAUSED' 'notify-send -u critical "Timer expired."' ; /home/ramel/.config/polybar/scripts/polybar-timer.sh update %pid%; 
-scroll-down = /home/ramel/.config/polybar/scripts/polybar-timer.sh increase -60 ; /home/ramel/.config/polybar/scripts/polybar-timer.sh update %pid%;
+[module/wind]
+type = custom/ipc
+format-background = #073642
+format-foreground = #ffffff
+format-padding = 1
+initial = 1
+hook-0 = echo $(($(xdotool get_desktop)+1))

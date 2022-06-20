@@ -12,7 +12,7 @@ if type "xrandr"; then
     if [[ "$m" == "DVI-D-0" ]]; then
         MONITOR=$m polybar --reload bar1 &
    else 
-	if [[ "$m" == "HDMI-0" ]]; then 
+	if [[ "$m" == "DP-0" ]]; then 
         	MONITOR=$m polybar --reload bar2 &
         # else
 		# MONITOR=$m polybar --relaod bar3 &

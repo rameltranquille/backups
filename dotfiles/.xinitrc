@@ -8,9 +8,8 @@ fi
 systemctl enable cronie.service &
 systemctl start cronie.service &
 picom -b &
-flameshot &
-dropbox &
 dunst &
 todoist sync &
 
-exec i3 -c /home/ramel/.config/i3/i3config
+# exec i3 -c /home/ramel/.config/i3/i3config
+exec i3 

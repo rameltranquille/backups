@@ -5,17 +5,15 @@ let mapleader=" "
 " =================================
 
 call plug#begin('~/.vim/plugged')
+Plug 'tpope/vim-unimpaired', 
 
-" Zettel
+" Vimwiki
 Plug 'vimwiki/vimwiki', { 'on': 'VimwikiIndex' }
-Plug 'michal-h21/vim-zettel', { 'on' : 'VimwikiIndex', 'for' : 'vimwiki' }
-Plug 'alok/notational-fzf-vim', { 'on': 'NV' }
-Plug 'vim-airline/vim-airline', { 'for' : 'vimwiki' }
-Plug 'vim-airline/vim-airline-themes', { 'for' : 'vimwiki' }
+Plug 'tools-life/taskwiki', {'on':'VimwikiIndex'}
+" Plug 'farseer90718/vim-taskwarrior', {'on':'VimwikiIndex'}
 
-if !has("vim-airline")
-	Plug 'itchyny/lightline.vim'
-endif
+Plug 'vim-airline/vim-airline', 
+Plug 'vim-airline/vim-airline-themes', 
 
 " General
 Plug 'preservim/tagbar', { 'on': 'TagbarToggle' }
@@ -23,165 +21,32 @@ Plug 'preservim/nerdtree', { 'on': ['NERDTreeToggle', 'NERDTreeFind', 'OpenBookm
 Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
 Plug 'junegunn/fzf.vim'
 
-
 Plug 'jiangmiao/auto-pairs'
 Plug 'machakann/vim-sandwich' " change? 
 Plug 'tpope/vim-commentary'
 Plug 'tpope/vim-repeat'
-" Plug 'ycm-core/YouCompleteMe'
+Plug 'junegunn/vim-easy-align'
 
 " VimTex
 Plug 'lervag/vimtex', { 'for' : 'tex'}
 Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
-" Plug 'preservim/vim-markdown',
+Plug 'morhetz/gruvbox'
 
-" Plug 'drmingdrmer/vim-tabbar'
-Plug 'ghifarit53/tokyonight-vim'
-" Plug 'arcticicestudio/nord-vim'
-" Plug 'mangeshrex/uwu.vim'
-
-Plug 'junegunn/vim-easy-align'
 call plug#end()
 
 " =================================
 " Plugin Settings
 " =================================
-
 nnoremap <Plug> <Plug>Markdown_OpenUrlUnderCursor
-" Tabs
-nmap <leader>qt :tabclose<CR>
-" Tagbar
 nmap <leader>tt :TagbarToggle<CR>
 " List Marks
-nnoremap <leader>ml :<C-u>marks<CR>:normal!
-" Colorscheme
-colorscheme tokyonight
-let g:tokyonight_style = 'storm'
-
+nnoremap <leader>ml :<C-u>marks<CR>:normal! 
 " Vim-Sandwich
 let g:sandwich#recipes = deepcopy(g:sandwich#default_recipes)
 
-" Vim Lightline
-set laststatus=2
-let g:lightline = {
-      \ 'colorscheme': 'wombat',
-      \ }
-
-" Vim Airline
-let g:airline#extensions#tabline#enabled = 1
-" Airline
-let g:airline_theme='bubblegum'
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-" let g:airline_symbols.branch = ''
-let g:airline_section_z= 'X: %-4lTot: %-4L | Y: %c'
-let g:airline_mode_map = {
-    \ '__'     : '-',
-    \ 'c'      : 'C',
-    \ 'i'      : 'I',
-    \ 'ic'     : 'I',
-    \ 'ix'     : 'I',
-    \ 'n'      : 'N',
-    \ 'multi'  : 'M',
-    \ 'ni'     : 'N',
-    \ 'no'     : 'N',
-    \ 'R'      : 'R',
-    \ 'Rv'     : 'R',
-    \ 's'      : 'S',
-    \ 'S'      : 'S',
-    \ ''     : 'S',
-    \ 't'      : 'T',
-    \ 'v'      : 'V',
-    \ 'V'      : 'V',
-    \ ''     : 'V',
-    \ }
-
-" au BufEnter *.md setl syntax=markdown
-
-" YouCompleteMe
-" let g:ycm_min_num_of_chars_for_completion = 2
-" let g:ycm_auto_trigger = 1
-" let g:ycm_complete_in_comments = 1
-" let g:ycm_complete_in_strings = 1
-" nmap <leader>yt <plug>(YCMHover)
-" let g:ycm_use_ultisnips_completer = 1
-
-
-" Vim-Markdown
-nmap <leader>mp <Plug>MarkdownPreview
-nmap <leader>ms <Plug>MarkdownPreviewStop
-nmap <leader>mt <Plug>MarkdownPreviewToggle
-" let g:vim_markdown_folding_disabled = 1
-" let g:vim_markdown_math = 1
-" let g:vim_markdown_auto_extension_ext = ['md', 'txt', 'vimwiki']
-" let g:vim_markdown_no_extensions_in_markdown = 1
-
-" Notational-fzf
-let g:nv_search_paths = ['~/Dropbox/workbench', '~/Dropbox/foundations', '~/Dropbox/orgComm', '~/Dropbox/AsianEcon', '~/Dropbox/DS']
-let g:nv_default_extension = '.md'
-nnoremap <silent> <leader>nv :NV<CR>
-
-" Vimwiki
-let g:vimwiki_list = [
-	\ {'path':'~/Dropbox/workbench/','ext':'.md','syntax':'markdown', 'index':'home'}, 
-	\ {'path':'~/Dropbox/foundations/','ext':'.md','syntax':'markdown', 'index':'benchF'}, 
-	\ {'path':'~/Dropbox/AsianEcon/','ext':'.md','syntax':'markdown', 'index':'benchA'}, 
-	\ {'path':'~/Dropbox/orgComm/','ext':'.md','syntax':'markdown', 'index':'benchOC'}, 
-	\ {'path':'~/Dropbox/DS/','ext':'.md','syntax':'markdown', 'index':'benchDS'}, 
-	\ ]
-	" \ {'path':'~/Dropbox/','ext':'.md','syntax':'markdown', 'index':'index'}, 
-
-
-" let g:vimwiki_global_ext = 0
-function! VimwikiFindIncompleteTasks()
-  lvimgrep /- \[ \]/ %:p
-  lopen
-endfunction
-
-function! VimwikiFindAllIncompleteTasks()
-  VimwikiSearch /- \[ \]/
-  lopen
-endfunction
-
-nmap <leader>wa :call VimwikiFindAllIncompleteTasks()<CR>
-nmap <leader>wx :call VimwikiFindIncompleteTasks()<CR>
-nmap <leader>glc <Plug>VimwikiToggleListItem
-nmap glc <Plug>VimwikiToggleListItem
-
-nmap <leader>vs <Plug>VimwikiVSplitLink
-nmap <leader>vv <Plug>VimwikiSplitLink
-nmap <leader>vt <Plug>VimwikiTabnewLink
-let g:vimwiki_hl_cb_checked = 2
-
-
-
-" Zettel
-let g:zettel_format = "%y%m%d-%H%M-%title"
-nnoremap <leader>zn :ZettelNew<CR>
-nnoremap <leader>zo :ZettelOpen<CR>
-nnoremap <leader>zc :ZettelCapture<CR>
-nnoremap <leader>zs :ZettelSearch<CR>
-" set completeopt=longest,menuone
-
-
-" Vimtex
-let g:vimtex_view_method = 'zathura'
-
-
-" fzf
-let g:fzf_preview_window = ['right:40%', 'ctrl-/']
-" TEXT IN FILES
-nnoremap <leader>fr  :Rg<CR>
-" FILES
-nnoremap <leader>fz :FZF<CR>
-
 " Nerdtree
 let NERDTreeShowHidden=0
-" let NERDTreeBookmarksFile='/home/ramel/Dropbox/.bookmarks'
-nnoremap <C-n> :NERDTreeFind<CR>
-nnoremap <leader>nt :NERDTreeToggle<CR>
+nnoremap <C-n> :NERDTreeToggle<CR>
 nnoremap <leader>nc :NERDTreeCWD<CR>
 nnoremap <leader>nb :NERDTreeShowBookmarks<CR>
 nnoremap <leader>nf :NERDTreeFind<CR>
@@ -191,38 +56,42 @@ autocmd BufEnter * if tabpagenr('$') == 1 && winnr('$') == 1 && exists('b:NERDTr
 " Close the tab if NERDTree is the only window remaining in it.
 autocmd BufEnter * if winnr('$') == 1 && exists('b:NERDTree') && b:NERDTree.isTabTree() | quit | endif
 
-
-" =================================
-" Programming Language Specific
-" =================================
-au Filetype python set
-    \ tabstop=4
-    \ softtabstop=4
-    \ shiftwidth=4
-    \ textwidth=79
-
+" fzf
+let g:fzf_preview_window = ['right:40%', 'ctrl-/']
+" TEXT IN FILES
+nnoremap <leader>fr  :Rg<CR>
+" FILES
+nnoremap <leader>fz :FZF<CR>
 
 " =================================
 " General
 " =================================
-" colorscheme uwu
+set shiftwidth=4
+set tabstop=4
+set smarttab
+set expandtab
+
 set background=dark
 set title
 set clipboard+=unnamedplus
 set encoding=UTF-8
-set nocompatible
+colorscheme gruvbox
+
 set number
 set relativenumber
+
 set incsearch
 set hlsearch
+
 set showcmd
-set smarttab
 set ignorecase
 set smartcase
 set ruler
 set wrap
 set splitbelow splitright
+set autoindent
 filetype plugin indent on
+filetype plugin on
 syntax on
 
 autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
@@ -231,26 +100,38 @@ autocmd FileType * setlocal formatoptions-=c formatoptions-=r formatoptions-=o
 " Mappings
 " =================================
 
+nnoremap <C-f> za
 nnoremap <leader>sq i*Q* 
-imap <C-b> ****<Esc>2ha
-imap <C-i> **<Esc>ha
 nnoremap Y y$
 nnoremap 'q :vimgrep /\*\*Q\*\*/ %<CR>
 nmap ; :
 imap jj <Esc>
 imap jk <Esc>
-nnoremap <leader>sb i****<ESC>hi
-nnoremap <leader>si i**<ESC>i
 
+map <leader>+ <C-w>5+
+map <leader>- <C-w>5-
+map <leader>< <C-w>5<
+map <leader>> <C-w>5>
+map <leader>= <C-w>=
+map <leader>_ <C-w>|
 map <C-h> <C-w>h
 map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+nmap gcw guw~l
+nmap gcW guW~l
+nmap gciw guiw~l
+nmap gciW guiW~l
+nmap gcis  guis~l
+nmap gcgc guu~l
+vmap gc :s/\%V\v<(.)(\w*)/\u\1\L\2/g<CR> \| `<
+
 hi Normal guibg=NONE ctermbg=NONE
-" set cursorline
-" highlight CursorLine cterm=NONE ctermbg=NONE ctermfg=NONE guibg=NONE guifg=NONE
-" hi CursorLineNR cterm=bold guifg=pink 
-set conceallevel=2
+hi LineNr ctermfg=yellow
+set conceallevel=1
 set noshowmode
+set nocompatible
+
+source ~/.vimrc-extra
 

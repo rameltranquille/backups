@@ -37,3 +37,6 @@ alias nzsh="nvim /home/ramel/.zshrc"
 alias update="sudo pacman -Syyu"
 alias updateYay="yay -Syu"
 alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"
+
+# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
+export PATH="$PATH:$HOME/.rvm/bin"

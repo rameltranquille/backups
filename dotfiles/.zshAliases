@@ -1,85 +1,75 @@
-alias drop="cd ~/Dropbox/"
-alias t="todoist"
-alias calc="gnome-calculator &"
-alias cav="alacritty -o font.offset.y=-1 &"
-alias fetch="cpufetch --color 64,64,181:251,103,110:64,64,181:251,103,110"
+alias rub="source $HOME/.rvm/scripts/rvm"
+alias drop="cd $HOME/Dropbox/"
 alias ls='ls --color=auto'
 alias la='ls -Al'
 alias l='ls -CF'
 alias sps='sudo pacman -S'
 alias ll='ls -al --sort=extension'
-alias lp="sudo sh -c 'sysctl -w abi.vsyscall32=0'"
 alias py='python'
 alias smi='sudo make install'
 alias pat='patch -p1 <'
-alias mb='xrandr --output DVI-D-0 --brightness 1 && xrandr --output HDMI-0 --brightness 1'
-alias dlm='youtube-dl --extract-audio --audio-format mp3'
-alias due="todoist list --filter '(today|overdue|tomorrow)'"
 alias updateYay="yay -Syu"
-alias toly="sudo pacman -S ly --noconfirm --needed ; sudo systemctl enable ly.service -f ; echo 'Ly is active - reboot now'"
-alias cdi3='cd /home/ramel/.config/i3/'
+alias cdi3='cd /$HOME/.config/i3/'
 
 
-############ EDITOR: Nvim
-alias nv="nvim +PackerSync"
-alias ni3="nvim /home/ramel/.config/i3/i3config"
-alias ncon="nvim /home/ramel/.config/conky/conky.conf"
-alias nbar="nvim /home/ramel/.config/polybar/config"
-alias nzsh="nvim /home/ramel/.zshrc"
-alias update="sudo pacman -Syyu"
-alias nnvim='nvim /home/ramel/.config/nvim/lua/custom/init.lua'
-alias nchad='nvim /home/ramel/.config/nvim/lua/custom/chadrc.lua'
 
 ############ EDITOR: Vanilla Vim
 alias v="vim"
-alias vi3="vim /home/ramel/.config/i3/config"
-alias vcon="vim /home/ramel/.config/conky/conky.conf"
-alias vbar="vim /home/ramel/.config/polybar/config"
-alias vzsh="vim /home/ramel/.zshrc"
-alias vrc="vim /home/ramel/.vimrc"
-alias vnvim='vim /home/ramel/.config/nvim/lua/custom/init.lua'
-alias vchad='vim /home/ramel/.config/nvim/lua/custom/chadrc.lua'
-
+alias vi3="vim $HOME/.config/i3/config"
+alias vcon="vim $HOME/.config/conky/conky.conf"
+alias vbar="vim $HOME/.config/polybar/config"
+alias vzsh="vim -o $HOME/.zshrc /$HOME/.zshAliases"
+alias vrc="vim $HOME/.vimrc"
+alias vkit="vim $HOME/.config/kitty/kitty.conf"
+alias vtask="vim $HOME/.taskrc"
 ###############################################################
 #------------CLASS
 ###############################################################
-alias wfound="cd /home/ramel/Dropbox/foundations; vim -c 'Vimwiki 2'"
-alias nfound="cd /home/ramel/Dropbox/foundations; nvim -c 'Vimwiki 2'"
-alias cfound="cd /home/ramel/Dropbox/foundations/"
-
-alias wae="cd /home/ramel/Dropbox/AsianEcon; vim -c 'Vimwiki 3'"
-alias nae="cd /home/ramel/Dropbox/AsianEcon; nvim -c 'Vimwiki 3'"
-alias cae="cd /home/ramel/Dropbox/AsianEcon/"
-
-alias wds="cd /home/ramel/Dropbox/DS; vim -c 'Vimwiki 5'"
-alias nds="cd /home/ramel/Dropbox/DS; nvim -c 'Vimwiki 5'"
-alias cds="cd /home/ramel/Dropbox/DS/"
-
-alias woc="cd /home/ramel/Dropbox/orgComm; vim -c 'Vimwiki 4'"
-alias noc="cd /home/ramel/Dropbox/orgComm; nvim -c 'Vimwiki 4'"
-alias coc="cd /home/ramel/Dropbox/orgComm/"
-
 ## MORE VIMWIKI
-alias work="cd /home/ramel/Dropbox/workbench; vim -c VimwikiIndex"
-alias nwork="cd /home/ramel/Dropbox/; nvim -c VimwikiIndex"
-alias cwork="cd /home/ramel/Dropbox/workbench/"
-alias logWorkout="xdg-open /home/ramel/Dropbox/workbench/workoutLog.xlsx"
-alias cheat="cd /home/ramel/Dropbox/workbench; vim cheatsheet.md"
+alias home="cd $HOME/Dropbox/house; vim -c VimwikiIndex"
+alias chome="cd $HOME/Dropbox/house/"
+alias logW="xdg-open $HOME/Dropbox/house/workoutLog.xlsx"
+alias cheat="cd $HOME/Dropbox/house; vim cheatsheet.md"
 
 
 ###############################################################
-#------------i3-Layouts
+#------------task Warrior
 ###############################################################
-alias lo-notes="i3-msg 'workspace 2; append_layout /home/ramel/.config/i3/customWorkspaces/ws-notes1.json'"
-# alias layout-notes-ws1="i3-msg 'workspace 1; append_layout /home/ramel/.config/i3/customWorkspaces/ws-notes1.json'"
+alias ta="task add"
+alias tarm="task add recur:monthly"
+alias tarr="task add recur:daily"
+alias tarw="task add recur:weekly"
+alias td="task delete "
+alias tm="task modify"
+alias t="task"
+alias trd="task burndown.daily"
+alias trm="task burndown.monthly"
+alias trw="task burndown.weekly"
+alias tghist="task ghistory.monthly"
+alias thist="task history.monthly"
+alias tl="task list"
+alias tll="task long"
+alias tls="task ls"
+alias tdue="task overdue"
+alias ts="task summary"
+alias tt="task tags"
+alias tcal="task calendar"
+###############################################################
+#------------Time Warrior
+###############################################################
+alias tstart="timew start"
+alias tstop="timew stop"
+alias tcont="timew continue"
+alias tdeep="timew start Shool Deep"
+alias tshallow="timew start Shallow Maintenance"
+alias timeSum="timew summary"
+alias tStudy="timew start School Study Deep"
+alias tweek="timew week"
 
 ###############################################################
 #------------Shortening
 ###############################################################
 alias open="xdg-open"
-
-
-
 
 
 

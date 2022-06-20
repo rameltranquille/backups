@@ -2,7 +2,7 @@
 ######################################################################
 #   General
 ######################################################################
-font pango:JetBrains Mono 10
+font pango:JetBrains Mono 8
 set $mod Mod4
 
 # Display 
@@ -203,14 +203,17 @@ bindsym $mod+n exec kitty vim -c VimwikiIndex &
 bindsym $mod+m exec --no-startup-id dmenu_run_i;focus
 bindsym $mod+Shift+p exec --no-startup-id passmenu;focus
 
-bindsym F1 exec --no-startup-id bmks;focus
+#bindsym F1 exec --no-startup-id dmenu_launch --search;focus
 #bindsym F2 exec --no-startup-id dmenu_launch --notes;focus
-#bindsym F3 exec --no-startup-id dmenu_launch --search;focus
-#bindsym F4 exec --no-startup-id dmenu_run_i;focus
-#bindsym F5 exec --no-startup-id dmenu_run_i;focus
+#bindsym F3 exec --no-startup-id bmks;focus
 
-#bindsym F10 exec --no-startup-id dmenu_launch --notes;focus
-#bindsym F11 exec --no-startup-id bmks;focus
+bindsym F9 exec --no-startup-id bmks;focus
+bindsym F10 exec --no-startup-id kitty --start-as fullscreen;focus
+#exec_always --no-startup-id st -f 'JetBrains Mono:8' -e /home/ramel/Scripts/gcal
+exec_always --no-startup-id st -f 'JetBrains Mono:8' -e todoist list
+bindsym F11 [instance="st"] scratchpad show, move position center;
+for_window [instance="st"] floating enable, resize set 1200 1000, move scratchpad
+
 bindsym F12 exec --no-startup-id xfce4-terminal --drop-down;focus
 
 
@@ -223,13 +226,14 @@ workspace_auto_back_and_forth yes
 #   Borders
 ######################################################################
 smart_borders on
+smart_gaps on
 for_window [class="^.*"] border pixel 2
 gaps inner 1
 gaps outer 1
 
  # Window color settings
     # class                 border  backgr. text    indicator
-    client.focused          #6790EB #aaff00 #e5e5e5 #6790EB
+    client.focused          #6790EB #699e00 #000000 #6790EB
     client.unfocused        #222222 #222222 #aaaaaa #222222
     client.focused_inactive #222222 #222222 #a9a9a9 #222222
     client.placeholder      #222222 #222222 #aaaaaa #222222
@@ -277,4 +281,5 @@ mode "$mode_gaps_outer" {
         bindsym Escape mode "default"
 }
 
-
+workspace_layout stacking
+title_align center

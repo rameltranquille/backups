@@ -1,0 +1,94 @@
+" Vim-Markdown
+" =================================
+let g:mkdp_auto_start = 0
+let g:mkdp_auto_close = 1
+let g:mkdp_refresh_slow = 0
+nmap <leader>mp <Plug>MarkdownPreview
+nmap <leader>ms <Plug>MarkdownPreviewStop
+nmap <leader>mt <Plug>MarkdownPreviewToggle
+
+
+" Vimwiki
+" =================================
+let g:vimwiki_list = [
+	\ {'path':'~/Dropbox/house/','ext':'.md', 'syntax':'markdown', 'index':'home', 'auto_tags':1, 'auto_toc':1,
+    \ 'template_path':'~/Dropbox/house/', 'template_default':'zettelTemp', 'template_ext':'.tpl', 'custom_wiki2html':'vimwiki_markdown', 
+    \ 'html_filename_parameterization':1,}, 
+	\ {'path':'~/Dropbox/house/opmg/','ext':'.md', 'syntax':'markdown', 'index':'README', 'auto_tags':1, 'auto_toc':1,
+    \ 'template_path':'~/Dropbox/house/', 'template_default':'zettelTemp', 'template_ext':'.tpl', 'custom_wiki2html':'vimwiki_markdown',
+    \ 'html_filename_parameterization':1,}, 
+	\ {'path':'~/Dropbox/house/mAndO/','ext':'.md', 'syntax':'markdown', 'index':'README', 'auto_tags':1, 'auto_toc':1,
+    \ 'template_path':'~/Dropbox/house/', 'template_default':'zettelTemp', 'template_ext':'.tpl', 'custom_wiki2html':'vimwiki_markdown',
+    \ 'html_filename_parameterization':1,}, 
+	\ {'path':'~/Dropbox/house/AsianEcon/', 'ext':'.md', 'syntax':'markdown', 'index':'README', 'auto_tags':1, 'auto_toc':1,
+    \ 'template_path':'~/Dropbox/house/', 'template_default':'zettelTemp', 'template_ext':'.tpl', 'custom_wiki2html':'vimwiki_markdown',
+    \ 'html_filename_parameterization':1,}, 
+	\ ]
+
+let g:vimwiki_hl_cb_checked = 2
+let g:vimwiki_auto_chdir = 1
+let g:vimwiki_folding = 'expr'
+
+
+let g:vimwiki_global_ext = 0
+function! VimwikiFindIncompleteTasks()
+  lvimgrep /- \[ \]/ %:p
+  lopen
+endfunction
+
+function! VimwikiFindAllIncompleteTasks()
+  VimwikiSearch /- \[ \]/
+  lopen
+endfunction
+
+nmap <leader>wa :call VimwikiFindAllIncompleteTasks()<CR>
+nmap <leader>wx :call VimwikiFindIncompleteTasks()<CR>
+nmap <leader>vs :VimwikiSplitLink<CR>
+nmap <leader>vv :VimwikiVSplitLink<CR>
+nmap <leader>vt :VimwikiTabnewLink<CR>
+nmap glc <Plug>VimwikiToggleListItem
+
+
+" if get(g:, 'loaded_lightline', 0)
+"     echom /"loaded"
+"     set no
+" else
+"     echom /"not loaded"
+"     set showmode
+"     call s:MinimalStatusLine() " you no longer need an autoload plugin with this approach as the function could be in the same file
+" endif
+
+" Vimtex
+" =================================
+let g:vimtex_view_method = 'zathura'
+
+
+" Vim Airline
+" =================================
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='bubblegum'
+let g:airline_left_sep = ''
+let g:airline_left_alt_sep = ''
+let g:airline_right_sep = ''
+let g:airline_right_alt_sep = ''
+let g:airline_section_z= 'X: %-4lTot: %-4L | Y: %c'
+let g:airline_mode_map = {
+    \ '__'     : '-',
+    \ 'c'      : 'C',
+    \ 'i'      : 'I',
+    \ 'ic'     : 'I',
+    \ 'ix'     : 'I',
+    \ 'n'      : 'N',
+    \ 'multi'  : 'M',
+    \ 'ni'     : 'N',
+    \ 'no'     : 'N',
+    \ 'R'      : 'R',
+    \ 'Rv'     : 'R',
+    \ 's'      : 'S',
+    \ 'S'      : 'S',
+    \ ''     : 'S',
+    \ 't'      : 'T',
+    \ 'v'      : 'V',
+    \ 'V'      : 'V',
+    \ ''     : 'V',
+    \ }
