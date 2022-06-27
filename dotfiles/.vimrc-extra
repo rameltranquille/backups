@@ -1,13 +1,3 @@
-" Vim-Markdown
-" =================================
-let g:mkdp_auto_start = 0
-let g:mkdp_auto_close = 1
-let g:mkdp_refresh_slow = 0
-nmap <leader>mp <Plug>MarkdownPreview
-nmap <leader>ms <Plug>MarkdownPreviewStop
-nmap <leader>mt <Plug>MarkdownPreviewToggle
-
-
 " Vimwiki
 " =================================
 let g:vimwiki_list = [
@@ -49,19 +39,31 @@ nmap <leader>vt :VimwikiTabnewLink<CR>
 nmap glc <Plug>VimwikiToggleListItem
 
 
-" if get(g:, 'loaded_lightline', 0)
-"     echom /"loaded"
-"     set no
-" else
-"     echom /"not loaded"
-"     set showmode
-"     call s:MinimalStatusLine() " you no longer need an autoload plugin with this approach as the function could be in the same file
-" endif
-
 " Vimtex
 " =================================
 let g:vimtex_view_method = 'zathura'
+let g:vimtex_fold_manual = 1
+let g:vimtex_quickfix_ignore_filters = [
+            \ 'Underfull',
+            \ 'Overfull',
+            \]
+let g:vimtex_quickfix_open_on_warning = 0
+let g:vimtex_compiler_method = 'latexmk'
+            "" \ 'callback' : 1,
+let g:vimtex_compiler_latexmk = {
+            \ 'build_dir' : '',
+            \ 'continuous' : 1,
+            \ 'executable' : 'latexmk',
+            \ 'hooks' : [],
+            \ 'options' : [
+                \ '-file-line-error',
+                \ '-quiet',
+                \ '-synctex=1',
+                \ '-interaction=nonstopmode',
+                \],
+            \}
 
+nmap <leader>vc :VimtexCompile<CR>
 
 " Vim Airline
 " =================================

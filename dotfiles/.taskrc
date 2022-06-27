@@ -1,0 +1,70 @@
+# 'man task-sync' or 'man taskrc'
+
+# Here is an example of entries that use the default, override and blank values
+#   variable=foo   -- By specifying a value, this overrides the default
+#   variable=      -- By specifying no value, this means no default
+#   #variable=foo  -- By commenting out the line, or deleting it, this uses the default
+
+# You can also refence environment variables:
+#   variable=$HOME/task
+#   variable=$VALUE
+
+# Use the command 'task show' to see all defaults and overrides
+# Files
+data.location=$HOME/.task/
+
+# To use the default location of the XDG directories,
+# move this configuration file from ~/.taskrc to ~/.config/task/taskrc and uncomment below
+
+#data.location=~/.local/share/task
+#hooks.location=~/.config/task/hooks
+
+# Color theme (uncomment one to use)
+# include dark-16.theme
+# include dark-yellow-green.theme
+
+taskd.certificate=$HOME/.task/intheAM/private.certificate.pem
+taskd.key=$HOME/.task/intheAM/private.key.pem
+taskd.ca=$HOME/.task/intheAM/ca.cert.pem
+taskd.server=inthe.am:53589
+taskd.credentials=inthe_am/tranquilleramel/204d2e07-79a8-40c6-8b5c-910065ef3f52
+taskd.trust=strict
+
+search.case.sensitive=no
+default.due=3day
+default.project=Sift
+default.scheduled=now
+
+urgency.user.tags.coefficient=0.0
+urgency.user.projects.coefficient=0.0
+### PER TAG COEFF
+urgency.user.tag.shallow.coefficient=3.0
+urgency.user.tag.uni.coefficient=10.0
+urgency.user.tag.cs.coefficient=9.0
+urgency.user.tag.deep.coefficient=10.0
+urgency.user.tag.later.coefficient=-5.0
+### PER PROJECT COEFF
+urgency.user.project.Maintain.coefficient=0.1
+urgency.user.project.summer2022.coefficient=4.0
+urgency.user.project.spring2022.coefficient=5.0
+urgency.user.project.fall2022.coefficient=3.0
+urgency.user.project.important.coefficient=20.0
+urgency.user.project.Sift.coefficient=0.5
+
+
+
+### UDAs (User Defined Attributes)
+# uda.estimate.type=duration
+# uda.estimate.label=Est
+
+
+
+
+
+
+
+
+
+
+
+

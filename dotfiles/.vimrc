@@ -8,9 +8,8 @@ call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-unimpaired', 
 
 " Vimwiki
-Plug 'vimwiki/vimwiki', { 'on': 'VimwikiIndex' }
+Plug 'vimwiki/vimwiki', { 'on': 'VimwikiIndex', 'do':'set nocompatible' }
 Plug 'tools-life/taskwiki', {'on':'VimwikiIndex'}
-" Plug 'farseer90718/vim-taskwarrior', {'on':'VimwikiIndex'}
 
 Plug 'vim-airline/vim-airline', 
 Plug 'vim-airline/vim-airline-themes', 
@@ -29,7 +28,6 @@ Plug 'junegunn/vim-easy-align'
 
 " VimTex
 Plug 'lervag/vimtex', { 'for' : 'tex'}
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'morhetz/gruvbox'
 
 call plug#end()
@@ -37,7 +35,7 @@ call plug#end()
 " =================================
 " Plugin Settings
 " =================================
-nnoremap <Plug> <Plug>Markdown_OpenUrlUnderCursor
+" nnoremap <Plug> <Plug>Markdown_OpenUrlUnderCursor
 nmap <leader>tt :TagbarToggle<CR>
 " List Marks
 nnoremap <leader>ml :<C-u>marks<CR>:normal! 
@@ -119,19 +117,20 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
-nmap gcw guw~l
-nmap gcW guW~l
-nmap gciw guiw~l
-nmap gciW guiW~l
-nmap gcis  guis~l
-nmap gcgc guu~l
+if (&tildeop)
+  nmap gc$ gu$~l
+  vmap gc gu~l
+else
+  nmap gc$ gu$~h
+  vmap gc gu~h
+endif
+
 vmap gc :s/\%V\v<(.)(\w*)/\u\1\L\2/g<CR> \| `<
 
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr ctermfg=yellow
 set conceallevel=1
 set noshowmode
-set nocompatible
 
 source ~/.vimrc-extra
 

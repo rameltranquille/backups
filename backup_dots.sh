@@ -35,10 +35,10 @@ HOME="/home/ramel"
 
 dotfiles="$HOME/.bashrc $HOME/.zshrc $HOME/.vimrc $HOME/.vimrc-extra
 $HOME/.zshAliases $HOME/.config/alacritty/alacritty.yml
+$HOME/.taskrc $HOME/.config/helix/config.toml
 $HOME/.config/qtile/config.py $HOME/.config/conky/conky.conf
 $HOME/.config/dunst/dunstrc $HOME/.xinitrc $HOME/.config/kitty/kitty.conf
 $HOME/.config/polybar $HOME/.config/fish/config.fish
-$HOME/.config/.taskrc $HOME/.config/.task/pending.data
 $HOME/.config/i3 $HOME/.config/zathura"
 
 scripts="$HOME/Scripts/" 

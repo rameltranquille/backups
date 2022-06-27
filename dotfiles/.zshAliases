@@ -8,10 +8,8 @@ alias ll='ls -al --sort=extension'
 alias py='python'
 alias smi='sudo make install'
 alias pat='patch -p1 <'
-alias updateYay="yay -Syu"
+alias full-update="yay -Syuu"
 alias cdi3='cd /$HOME/.config/i3/'
-
-
 
 ############ EDITOR: Vanilla Vim
 alias v="vim"
@@ -19,41 +17,42 @@ alias vi3="vim $HOME/.config/i3/config"
 alias vcon="vim $HOME/.config/conky/conky.conf"
 alias vbar="vim $HOME/.config/polybar/config"
 alias vzsh="vim -o $HOME/.zshrc /$HOME/.zshAliases"
-alias vrc="vim $HOME/.vimrc"
+alias vrc="vim -o $HOME/.vimrc $HOME/.vimrc-extra"
 alias vkit="vim $HOME/.config/kitty/kitty.conf"
 alias vtask="vim $HOME/.taskrc"
+
 ###############################################################
 #------------CLASS
 ###############################################################
 ## MORE VIMWIKI
 alias home="cd $HOME/Dropbox/house; vim -c VimwikiIndex"
+alias opmg="cd $HOME/Dropbox/house/opmg; vim -c 'VimwikiIndex 2'"
+alias mao="cd $HOME/Dropbox/house/mAndO; vim -c 'VimwikiIndex 3'"
 alias chome="cd $HOME/Dropbox/house/"
 alias logW="xdg-open $HOME/Dropbox/house/workoutLog.xlsx"
-alias cheat="cd $HOME/Dropbox/house; vim cheatsheet.md"
-
 
 ###############################################################
 #------------task Warrior
 ###############################################################
+alias ta="task add"
 alias ta="task add"
 alias tarm="task add recur:monthly"
 alias tarr="task add recur:daily"
 alias tarw="task add recur:weekly"
 alias td="task delete "
 alias tm="task modify"
-alias t="task"
-alias trd="task burndown.daily"
-alias trm="task burndown.monthly"
-alias trw="task burndown.weekly"
-alias tghist="task ghistory.monthly"
-alias thist="task history.monthly"
+alias tbd="task burndown.daily"
 alias tl="task list"
 alias tll="task long"
 alias tls="task ls"
-alias tdue="task overdue"
+alias tdue="task +OVERDUE"
+alias tadt="task due:today"
+alias tadw="task due:wks"
+alias tadtm="task due:tom"
 alias ts="task summary"
-alias tt="task tags"
+alias tt="taskwarrior-tui"
 alias tcal="task calendar"
+
 ###############################################################
 #------------Time Warrior
 ###############################################################
@@ -67,9 +66,12 @@ alias tStudy="timew start School Study Deep"
 alias tweek="timew week"
 
 ###############################################################
-#------------Shortening
+#------------Other
 ###############################################################
 alias open="xdg-open"
+alias dlm="youtube-dl -f mp4"
+alias hx="helix"
+
 
 
 
