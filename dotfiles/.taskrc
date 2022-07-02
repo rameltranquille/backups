@@ -35,6 +35,7 @@ default.due=3day
 default.project=Sift
 default.scheduled=now
 
+urgency.due.coefficient=20.0
 urgency.user.tags.coefficient=0.0
 urgency.user.projects.coefficient=0.0
 ### PER TAG COEFF

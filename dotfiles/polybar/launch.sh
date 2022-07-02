@@ -14,16 +14,14 @@ if type "xrandr"; then
    else 
 	if [[ "$m" == "DP-0" ]]; then 
         	MONITOR=$m polybar --reload bar2 &
-        # else
-		# MONITOR=$m polybar --relaod bar3 &
-		# echo "$m"
 	fi
     fi
+	if [[ "$m" == "HDMI-0" ]]; then 
+        	MONITOR=$m polybar --reload bar3 &
+	fi
   done
 else
   polybar --reload bar1 &
 fi
-
-
 
 echo 'launched Polybar'

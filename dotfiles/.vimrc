@@ -3,9 +3,9 @@ let mapleader=" "
 " =================================
 " Vim Plugged
 " =================================
-
 call plug#begin('~/.vim/plugged')
 Plug 'tpope/vim-unimpaired', 
+Plug 'ghifarit53/tokyonight-vim',
 
 " Vimwiki
 Plug 'vimwiki/vimwiki', { 'on': 'VimwikiIndex', 'do':'set nocompatible' }
@@ -28,7 +28,7 @@ Plug 'junegunn/vim-easy-align'
 
 " VimTex
 Plug 'lervag/vimtex', { 'for' : 'tex'}
-Plug 'morhetz/gruvbox'
+" Plug 'morhetz/gruvbox'
 
 call plug#end()
 
@@ -73,7 +73,10 @@ set background=dark
 set title
 set clipboard+=unnamedplus
 set encoding=UTF-8
-colorscheme gruvbox
+set termguicolors
+let g:tokyonight_style = 'storm'
+let g:tokyonight_enable_italic = 1
+colorscheme tokyonight
 
 set number
 set relativenumber
@@ -118,14 +121,14 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 if (&tildeop)
-  nmap gc$ gu$~l
-  vmap gc gu~l
+  nmap <leader>cl gu$~l
+  vmap <leader>cg gu~l
 else
-  nmap gc$ gu$~h
-  vmap gc gu~h
+  nmap <leader>cl gu$~h
+  vmap <leader>cg gu~h
 endif
 
-vmap gc :s/\%V\v<(.)(\w*)/\u\1\L\2/g<CR> \| `<
+vmap <leader>cc :s/\%V\v<(.)(\w*)/\u\1\L\2/g<CR> \| `<
 
 hi Normal guibg=NONE ctermbg=NONE
 hi LineNr ctermfg=yellow

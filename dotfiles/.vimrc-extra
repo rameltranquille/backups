@@ -13,6 +13,9 @@ let g:vimwiki_list = [
 	\ {'path':'~/Dropbox/house/AsianEcon/', 'ext':'.md', 'syntax':'markdown', 'index':'README', 'auto_tags':1, 'auto_toc':1,
     \ 'template_path':'~/Dropbox/house/', 'template_default':'zettelTemp', 'template_ext':'.tpl', 'custom_wiki2html':'vimwiki_markdown',
     \ 'html_filename_parameterization':1,}, 
+	\ {'path':'~/Dropbox/house/Chess/','ext':'.md', 'syntax':'markdown', 'index':'chessBoard', 'auto_tags':1, 'auto_toc':1,
+    \ 'template_path':'~/Dropbox/house/', 'template_default':'zettelTemp', 'template_ext':'.tpl', 'custom_wiki2html':'vimwiki_markdown',
+    \ 'html_filename_parameterization':1,}, 
 	\ ]
 
 let g:vimwiki_hl_cb_checked = 2
@@ -68,7 +71,7 @@ nmap <leader>vc :VimtexCompile<CR>
 " Vim Airline
 " =================================
 let g:airline#extensions#tabline#enabled = 1
-let g:airline_theme='bubblegum'
+let g:airline_theme='tokyonight'
 let g:airline_left_sep = ''
 let g:airline_left_alt_sep = ''
 let g:airline_right_sep = ''
